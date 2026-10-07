@@ -1,0 +1,47 @@
+name: rain-monitor
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: '1 = 強制檢查所有鏡頭（測試用）'
+        default: '1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rain-monitor
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 安裝套件
+        run: |
+          pip install requests
+          which ffmpeg || (sudo apt-get update && sudo apt-get install -y ffmpeg)
+
+      - name: 執行盯雨
+        env:
+          CWA_API_KEY: ${{ secrets.CWA_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FORCE: ${{ github.event.inputs.force || '0' }}
+        run: python monitor.py
+
+      - name: 存回紀錄
+        run: |
+          git config user.name "rain-bot"
+          git config user.email "rain-bot@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || (git commit -m "rain log" && git pull --rebase && git push)
