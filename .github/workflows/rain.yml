@@ -8,6 +8,9 @@ on:
       force:
         description: '1 = 強制檢查所有鏡頭（測試用）'
         default: '1'
+      test_mail:
+        description: '1 = 另外寄一封測試通知信'
+        default: '0'
 
 permissions:
   contents: write
@@ -37,6 +40,9 @@ jobs:
           CWA_API_KEY: ${{ secrets.CWA_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           FORCE: ${{ github.event.inputs.force || '0' }}
+          TEST_MAIL: ${{ github.event.inputs.test_mail || '0' }}
+          MAIL_URL: ${{ secrets.MAIL_URL }}
+          MAIL_TOKEN: ${{ secrets.MAIL_TOKEN }}
         run: python monitor.py
 
       - name: 存回紀錄
