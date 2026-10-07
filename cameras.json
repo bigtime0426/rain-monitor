@@ -143,5 +143,29 @@
     "lat": 22.826389,
     "lon": 120.600806,
     "url": "https://cctv-ss05.thb.gov.tw/T22-31K+100/snapshot"
+  },
+  {
+    "area": "高雄桃源",
+    "name": "台20線 82K+850（配對寶山部落站，距離未知）",
+    "lat": 0,
+    "lon": 0,
+    "station": "寶山部落",
+    "url": "https://cctv-ss05.thb.gov.tw/T20-82K+850/snapshot",
+    "alwaysCheck": true
+  },
+  {
+    "area": "高雄桃源",
+    "name": "台20線 89K+400（配對寶山部落站，距離未知）",
+    "lat": 0,
+    "lon": 0,
+    "station": "寶山部落",
+    "url": "https://cctv-ss05.thb.gov.tw/T20-89K+400/snapshot"
+  },
+  {
+    "area": "高雄桃源",
+    "name": "台20線 103K+950",
+    "lat": 23.2579,
+    "lon": 120.81985,
+    "url": "https://cctv-ss04.thb.gov.tw/T20-103K+950/snapshot"
   }
 ]
