@@ -1,0 +1,20 @@
+﻿抓取時間,地區,鏡頭,最近雨量站,距離(km),站觀測時間,資料落後(分),10分鐘(mm),1小時(mm),判斷下雨,路面濕,信心,理由,型號,畫面,狀態
+2026-10-07 15:36:19,台北中山,242 松江路-民權東路口,臺北市中山區 建國,1.2,2026-10-07T15:30:00+08:00,6,0.0,0.0,,,,,,,"ffmpeg 失敗：or opening input: Connection timed out
+Error opening input file https://jtmctrafficcctv3.gov.taipei/NVR/f140de28-abed-486b-84b4-825687a89b26/live.m3u8.
+Error opening input files: Connection "
+2026-10-07 15:36:19,台北中山,汐五高架 22.7K（北向）,臺北市中山區 建國,0.9,2026-10-07T15:30:00+08:00,6,0.0,0.0,,,,,,,"HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=90)"
+2026-10-07 15:36:19,台北信義,277 信義路五段7號（台北101）,臺北市信義區 信義,0.4,2026-10-07T15:30:00+08:00,6,0.0,0.0,,,,,,,"ffmpeg 失敗：or opening input: Connection timed out
+Error opening input file https://jtmctrafficcctv5.gov.taipei/NVR/b3ab732e-915d-4f43-a4f5-3d8584816dde/live.m3u8.
+Error opening input files: Connection "
+2026-10-07 15:36:19,台北信義,135 基隆路-信義路,臺北市信義區 三興國小,0.5,2026-10-07T15:30:00+08:00,6,0.0,0.0,,,,,,,"ffmpeg 失敗：or opening input: Connection timed out
+Error opening input file https://jtmctrafficcctv2.gov.taipei/NVR/a5198a0c-7a68-48c4-a9cd-047331709534/live.m3u8.
+Error opening input files: Connection "
+2026-10-07 15:36:19,台北北投,407 石牌路2段-東華街1段（捷運石牌站）,臺北市北投區 石牌,0.2,2026-10-07T15:30:00+08:00,6,0.0,0.0,,,,,,,"ffmpeg 失敗：or opening input: Connection timed out
+Error opening input file https://jtmctrafficcctv4.gov.taipei/NVR/51152ddb-a22f-45a3-89d5-d579fc3e6853/live.m3u8.
+Error opening input files: Connection "
+2026-10-07 15:36:19,台北北投,427 承德路七段-文林北路,臺北市北投區 石牌,0.6,2026-10-07T15:30:00+08:00,6,0.0,0.0,,,,,,,"ffmpeg 失敗：or opening input: Connection timed out
+Error opening input file https://jtmctrafficcctv3.gov.taipei/NVR/9e0acfb5-198a-41ee-9fc2-0092db324cdb/live.m3u8.
+Error opening input files: Connection "
+2026-10-07 15:36:19,關渡（北投側）,308 大度路與立德路口（東南角）,臺北市北投區 關渡,1.2,2026-10-07T15:30:00+08:00,6,0.0,0.0,,,,,,,"ffmpeg 失敗：or opening input: Connection timed out
+Error opening input file https://jtmctrafficcctv2.gov.taipei/NVR/4f991a40-67da-43bf-85b0-8272e14c3b7d/live.m3u8.
+Error opening input files: Connection "
