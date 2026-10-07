@@ -68,6 +68,60 @@
     "lat": 25.01418,
     "lon": 121.55797,
     "url": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=91080",
+    "disabled": true,
+    "note": "畫面在隧道內，看不到天氣，停用"
+  },
+  {
+    "area": "關渡",
+    "name": "台15線 關渡橋近淡水端（0K+500）",
+    "lat": 25.12686,
+    "lon": 121.4594,
+    "url": "https://cctv-ss07.thb.gov.tw/T15-0K+500/snapshot",
     "alwaysCheck": true
+  },
+  {
+    "area": "關渡",
+    "name": "台15線 關渡橋中段（0K+750）",
+    "lat": 25.12588,
+    "lon": 121.4578,
+    "url": "https://cctv-ss07.thb.gov.tw/T15-0K+750/snapshot"
+  },
+  {
+    "area": "關渡",
+    "name": "台2線 0K+100",
+    "lat": 25.12836,
+    "lon": 121.4602,
+    "url": "https://cctv-ss01.thb.gov.tw/T2-0K+100/snapshot"
+  },
+  {
+    "area": "高雄苓雅",
+    "name": "建國一路、正義路",
+    "lat": 22.629907,
+    "lon": 120.338374,
+    "url": "https://cctv1.kctmc.nat.gov.tw/f4587ee1/snapshot",
+    "alwaysCheck": true
+  },
+  {
+    "area": "高雄苓雅",
+    "name": "凱旋二路、四維一路",
+    "lat": 22.6238934,
+    "lon": 120.3238679,
+    "url": "https://cctv4.kctmc.nat.gov.tw/d3b36c3a/snapshot"
+  },
+  {
+    "area": "高雄苓雅",
+    "name": "中正一路、體育場路",
+    "lat": 22.6274197,
+    "lon": 120.3339245,
+    "url": "https://cctv10.kctmc.nat.gov.tw/c48657d6/snapshot"
+  },
+  {
+    "area": "台北信義",
+    "name": "128 信義松智東南角",
+    "lat": 25.032854,
+    "lon": 121.565483,
+    "url": "https://jtmctrafficcctv2.gov.taipei/NVR/0b0ea88c-4ac6-4e76-b1d0-6868c0354cf3/live.m3u8",
+    "disabled": true,
+    "note": "市府 HLS，GitHub 海外機器連不上；改用台灣的機器時再啟用"
   }
 ]
