@@ -81,9 +81,9 @@ def grab_frame(url):
     """用 ffmpeg 從 HLS 或 MJPEG 串流截一張畫面，回傳 JPEG 位元組"""
     with tempfile.TemporaryDirectory() as d:
         out = os.path.join(d, "f.jpg")
-        cmd = ["ffmpeg", "-y", "-loglevel", "error", "-rw_timeout", "20000000",
+        cmd = ["ffmpeg", "-y", "-loglevel", "error", "-rw_timeout", "10000000",
                "-i", url, "-frames:v", "1", "-q:v", "2", out]
-        p = subprocess.run(cmd, capture_output=True, timeout=90)
+        p = subprocess.run(cmd, capture_output=True, timeout=45)
         if p.returncode != 0 or not os.path.exists(out):
             raise RuntimeError("ffmpeg 失敗：" + p.stderr.decode("utf-8", "ignore")[-200:].strip())
         data = open(out, "rb").read()
@@ -98,11 +98,16 @@ def call_gemini(img):
     last = (None, 0, "")
     for model in GEMINI_MODELS:
         for attempt in (1, 2):
-            r = requests.post(GEMINI_URL, headers={"x-goog-api-key": key}, timeout=90, json={
-                "model": model,
-                "input": [{"type": "text", "text": PROMPT},
-                          {"type": "image", "data": b64, "mime_type": "image/jpeg"}],
-            })
+            try:
+                r = requests.post(GEMINI_URL, headers={"x-goog-api-key": key}, timeout=45, json={
+                    "model": model,
+                    "input": [{"type": "text", "text": PROMPT},
+                              {"type": "image", "data": b64, "mime_type": "image/jpeg"}],
+                })
+            except requests.RequestException as e:   # 逾時或連線中斷：等一下再試，不行就換型號
+                last = (model, 0, str(e)[:120])
+                time.sleep(attempt * 3)
+                continue
             last = (model, r.status_code, r.text)
             if r.status_code == 200:
                 return last
@@ -130,7 +135,7 @@ def judge(cam):
     img = grab_frame(cam["url"])
     model, status, text = call_gemini(img)
     if status != 200:
-        raise RuntimeError("Gemini HTTP %s" % status)
+        raise RuntimeError("Gemini HTTP %s %s" % (status, text[:100] if status == 0 else ""))
     ans = parse_answer(text)
     if not ans:
         raise RuntimeError("看不懂 Gemini 回應")
@@ -146,6 +151,8 @@ def main():
 
     rows, jobs = [], []
     for cam in cams:
+        if cam.get("disabled"):      # 已知連不上的鏡頭先停用，不浪費執行時間
+            continue
         st, d = nearest(cam, stations)
         info = {"cam": cam, "st": st, "km": d}
         if d > MAX_KM:
