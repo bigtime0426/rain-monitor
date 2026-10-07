@@ -152,6 +152,73 @@ def judge(cam):
         raise RuntimeError("看不懂 Gemini 回應：" + (model_text(text) or text)[:150].replace("\n", " "))
     return img, model, ans
 
+NOTIFY_M10 = 1.0          # 雨量站 10 分鐘雨量達這個值（mm）就算「有雨」要通知
+NOTIFY_COOLDOWN_MIN = 60  # 同一地區，這段時間內只通知一次
+
+
+def send_mail(subject, body):
+    """透過你自己的 Apps Script 寄信給你自己。失敗只記錄，不影響主流程。"""
+    url, token = os.environ.get("MAIL_URL"), os.environ.get("MAIL_TOKEN")
+    if not url or not token:
+        print("未設定 MAIL_URL / MAIL_TOKEN，略過通知")
+        return False
+    try:
+        r = requests.post(url, json={"token": token, "subject": subject, "body": body}, timeout=60)
+        ok = r.status_code == 200 and bool(r.json().get("ok"))
+        print("通知寄送：成功" if ok else "通知寄送：失敗 %s %s" % (r.status_code, r.text[:80].replace("\n", " ")))
+        return ok
+    except Exception as e:  # noqa: BLE001
+        print("通知寄送：失敗", str(e)[:100])
+        return False
+
+
+def notify(rows, now):
+    try:
+        state = json.load(open("state.json", encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        state = {}
+    repo = os.environ.get("GITHUB_REPOSITORY", "")
+    by_area = {}
+    for info, ans, _model, frame, _x, status in rows:
+        if status.startswith("略過"):
+            continue
+        st = info["st"]
+        rainy = (st["m10"] or 0) >= NOTIFY_M10 or bool(ans and ans.get("raining") == "yes")
+        by_area.setdefault(info["cam"]["area"], []).append((info, ans, frame, status, rainy))
+
+    changed = False
+    for area, items in by_area.items():
+        if not any(x[4] for x in items):
+            continue
+        last = state.get(area)
+        if last:
+            try:
+                if (now - dt.datetime.fromisoformat(last)).total_seconds() / 60 < NOTIFY_COOLDOWN_MIN:
+                    continue
+            except Exception:  # noqa: BLE001
+                pass
+        st0 = items[0][0]["st"]
+        lines = ["%s 目前有雨" % area, "雨量站：%s%s %s" % (st0["county"], st0["town"], st0["name"]),
+                 "10 分鐘 %s mm，1 小時 %s mm（觀測時間 %s）" % (
+                     "-" if st0["m10"] is None else st0["m10"], "-" if st0["h1"] is None else st0["h1"], st0["time"]),
+                 ""]
+        for info, ans, frame, status, _rainy in items:
+            if ans:
+                res = "鏡頭判斷：%s（信心 %s）%s" % (ans.get("raining"), ans.get("confidence"), ans.get("reason", ""))
+            else:
+                res = "鏡頭未能判斷：" + status[:60].replace("\n", " ")
+            lines.append("• " + info["cam"]["name"])
+            lines.append("  " + res)
+            if frame and repo:
+                lines.append("  畫面：https://github.com/%s/blob/main/%s" % (repo, frame))
+        lines += ["", "注意：雨量站資料通常比現在晚 10～15 分鐘。"]
+        top = max((x[0]["st"]["m10"] or 0) for x in items)
+        if send_mail("【下雨】%s：10 分鐘 %s mm" % (area, top), "\n".join(lines)):
+            state[area] = now.isoformat()
+            changed = True
+    if changed:
+        json.dump(state, open("state.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+
 
 def main():
     force = os.environ.get("FORCE") == "1"
@@ -228,6 +295,9 @@ def main():
                 model, frame or "", status,
             ])
     print("完成：檢查 %d 支鏡頭，寫入 %d 列" % (len(jobs), len(rows)))
+    if os.environ.get("TEST_MAIL") == "1":
+        send_mail("【雨在哪裡】測試通知", "如果你收到這封信，表示下雨通知的整條路線是通的。\n時間：" + now.strftime("%Y-%m-%d %H:%M"))
+    notify(rows, now)
 
 
 if __name__ == "__main__":
