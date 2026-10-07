@@ -118,17 +118,28 @@ def call_gemini(img):
     return last
 
 
-def parse_answer(text):
+def model_text(text):
+    """從 Gemini 回應取出模型說的那段文字；找不到回傳空字串"""
     try:
         data = json.loads(text)
         for st in data.get("steps", []):
             if st.get("type") == "model_output" and st.get("content"):
-                t = st["content"][0].get("text", "")
-                t = t.replace("```json", "").replace("```", "").strip()
-                return json.loads(t)
+                return st["content"][0].get("text", "") or ""
+    except Exception:
+        pass
+    return ""
+
+
+def parse_answer(text):
+    """容錯解析：去掉 ``` 圍欄，再取第一個 { 到最後一個 } 之間的內容"""
+    t = model_text(text).replace("```json", "").replace("```", "").strip()
+    i, j = t.find("{"), t.rfind("}")
+    if i < 0 or j <= i:
+        return None
+    try:
+        return json.loads(t[i:j + 1])
     except Exception:
         return None
-    return None
 
 
 def judge(cam):
@@ -138,7 +149,7 @@ def judge(cam):
         raise RuntimeError("Gemini HTTP %s %s" % (status, text[:100] if status == 0 else ""))
     ans = parse_answer(text)
     if not ans:
-        raise RuntimeError("看不懂 Gemini 回應")
+        raise RuntimeError("看不懂 Gemini 回應：" + (model_text(text) or text)[:150].replace("\n", " "))
     return img, model, ans
 
 
@@ -153,7 +164,14 @@ def main():
     for cam in cams:
         if cam.get("disabled"):      # 已知連不上的鏡頭先停用，不浪費執行時間
             continue
-        st, d = nearest(cam, stations)
+        if cam.get("station"):       # 沒有精確座標的鏡頭：直接指定要配對的雨量站名稱，距離記為 0（不準）
+            st = next((s for s in stations if s["name"] == cam["station"]), None)
+            if st is None:
+                print("找不到雨量站：", cam["station"])
+                continue
+            d = 0.0
+        else:
+            st, d = nearest(cam, stations)
         info = {"cam": cam, "st": st, "km": d}
         if d > MAX_KM:
             rows.append((info, None, "", None, "", "略過：%d km 內沒有雨量站" % MAX_KM))
