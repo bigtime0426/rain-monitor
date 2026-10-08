@@ -1,7 +1,7 @@
 # 台股第二輪探測
 
-執行時間：2026-10-08 17:10（台灣時間）；最近交易日：20261008；回補測試日：20261001
-成功 12 項，失敗 1 項。
+執行時間：2026-10-08 17:17（台灣時間）；最近交易日：20261008；回補測試日：20261001
+成功 14 項，失敗 0 項。
 
 
 ## 櫃買說明檔：全部資料集路徑（225 個）
@@ -236,16 +236,81 @@
 
 `https://www.tpex.org.tw/openapi/v1/tpex_mainboard_daily_close_quotes`
 
-**失敗**
+通，44.0 秒，4670 KB，application/json
 
-- 第1次：傳輸中斷於 2095 KB（ChunkedEncodingError；壓縮=gzip）
-- 第2次：傳輸中斷於 3648 KB（ChunkedEncodingError；壓縮=無）
+12221 筆
+
+欄位：
+```
+Date
+SecuritiesCompanyCode
+CompanyName
+Close
+Change
+Open
+High
+Low
+Average
+TradingShares
+TransactionAmount
+TransactionNumber
+LatestBidPrice
+LatesAskPrice
+Capitals
+NextReferencePrice
+NextLimitUp
+NextLimitDown
+```
+
+範例 1：
+```
+Date = 1151008
+SecuritiesCompanyCode = 00411A
+CompanyName = 主動統一前沿科技
+Close = 11.13
+Change = -0.10 
+Open = 11.06
+High = 11.16
+Low = 11.06
+Average = 11.12
+TradingShares = 15878753
+TransactionAmount = 176540418
+TransactionNumber = 2826
+LatestBidPrice = 11.12
+LatesAskPrice = 11.13
+Capitals = 419576000
+NextReferencePrice = 11.13
+NextLimitUp = 9999.95
+NextLimitDown = 0.01
+```
+
+範例 2：
+```
+Date = 1151008
+SecuritiesCompanyCode = 006201
+CompanyName = 元大富櫃50
+Close = 47.82
+Change = -0.66 
+Open = 48.38
+High = 48.38
+Low = 47.00
+Average = 47.77
+TradingShares = 243420
+TransactionAmount = 11629139
+TransactionNumber = 277
+LatestBidPrice = 47.80
+LatesAskPrice = 47.82
+Capitals = 22946000
+NextReferencePrice = 47.82
+NextLimitUp = 52.60
+NextLimitDown = 43.04
+```
 
 ## 櫃買 候選 /tpex_mainboard_quotes　上櫃股票收盤行情
 
 `https://www.tpex.org.tw/openapi/v1/tpex_mainboard_quotes`
 
-通，1.5 秒，348 KB，application/json
+通，2.7 秒，348 KB，application/json
 
 1011 筆
 
@@ -313,7 +378,7 @@ NextLimitDown = 0.01
 
 `https://www.tpex.org.tw/openapi/v1/tpex_exright_daily`
 
-通，0.4 秒，0 KB，application/json
+通，0.3 秒，0 KB，application/json
 
 1 筆
 
@@ -371,7 +436,7 @@ SubscribedProRataThousandShares = 0.00000000
 
 `https://www.tpex.org.tw/openapi/v1/tpex_3insti_daily_trading`
 
-通，1.2 秒，824 KB，application/json
+通，5.8 秒，824 KB，application/json
 
 892 筆
 
@@ -451,7 +516,7 @@ TotalDifference = 1281890
 
 `https://www.tpex.org.tw/openapi/v1/tpex_daily_trading_index`
 
-通，0.5 秒，0 KB，application/json
+通，0.3 秒，0 KB，application/json
 
 6 筆
 
@@ -489,7 +554,7 @@ Change = 8.11
 
 `https://www.tpex.org.tw/openapi/v1/tpex_daily_broker1`
 
-通，0.9 秒，211 KB，application/json
+通，1.3 秒，211 KB，application/json
 
 855 筆
 
@@ -539,7 +604,7 @@ CurrentMonthClosingRatio = 5.47%
 
 `https://www.tpex.org.tw/openapi/v1/tpex_daily_market_value`
 
-通，2.0 秒，133 KB，application/json
+通，0.8 秒，133 KB，application/json
 
 887 筆
 
@@ -580,7 +645,7 @@ MarketValue = 596768
 
 `https://www.tpex.org.tw/openapi/v1/tpex_daily_turnover`
 
-通，3.0 秒，143 KB，application/json
+通，2.6 秒，143 KB，application/json
 
 887 筆
 
@@ -621,7 +686,7 @@ TurnoverRatio = 23.52
 
 `https://www.tpex.org.tw/openapi/v1/tpex_daily_qutoes_block`
 
-通，2.5 秒，4 KB，application/json
+通，0.3 秒，4 KB，application/json
 
 21 筆
 
@@ -668,7 +733,7 @@ TradingTime = 141000
 
 `https://www.tpex.org.tw/web/stock/aftertrading/daily_close_quotes/stk_quote_result.php`　參數：{'l': 'zh-tw', 'd': '115/10/01', 'o': 'json'}
 
-通，8.7 秒，1798 KB，application/json;charset=UTF-8；先前嘗試：第1次：傳輸中斷於 1102 KB（ChunkedEncodingError；壓縮=gzip）
+通，45.0 秒，1798 KB，application/json;charset=UTF-8
 
 頂層鍵：['date', 'tables', 'flagField', 'stat']；stat=ok
 
@@ -744,7 +809,7 @@ TradingTime = 141000
 
 `https://www.tpex.org.tw/www/zh-tw/afterTrading/otc`　參數：{'date': '2026/10/01', 'type': 'EW', 'response': 'json'}
 
-通，1.5 秒，142 KB，application/json;charset=UTF-8
+通，0.9 秒，142 KB，application/json;charset=UTF-8
 
 頂層鍵：['tables', 'date', 'flagField', 'stat']；stat=ok
 
@@ -789,11 +854,44 @@ TradingTime = 141000
 次日跌停價 = 0.01
 ```
 
+## 櫃買 單檔月成交資訊（twstock 原始碼用的路徑，尚未實測；環球晶 6488）
+
+`https://www.tpex.org.tw/www/zh-tw/afterTrading/tradingStock`　參數：{'date': '2026/10/01', 'code': '6488', 'response': 'json'}
+
+通，0.9 秒，1 KB，application/json;charset=UTF-8
+
+頂層鍵：['tables', 'date', 'code', 'name', 'showListPriceNote', 'showListPriceLink', 'flagField', 'stat']；stat=ok
+
+### 表格：個股日成交資訊（6 筆）
+```
+日 期
+成交張數
+成交仟元
+開盤
+最高
+最低
+收盤
+漲跌
+筆數
+```
+範例：
+```
+日 期 = 115/10/01
+成交張數 = 24,330
+成交仟元 = 26,580,157
+開盤 = 1,055.00
+最高 = 1,135.00
+最低 = 1,045.00
+收盤 = 1,085.00
+漲跌 = 50.00
+筆數 = 39,220
+```
+
 ## 證交所 全市場收盤行情（回補測試日）（路徑是猜的）
 
 `https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX`　參數：{'date': '20261001', 'type': 'ALLBUT0999', 'response': 'json'}
 
-通，5.2 秒，241 KB，application/json;charset=UTF-8
+通，1.8 秒，241 KB，application/json;charset=UTF-8
 
 頂層鍵：['tables', 'type', 'params', 'stat', 'date']；stat=OK
 
@@ -987,7 +1085,7 @@ TradingTime = 141000
 
 `https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX`　參數：{'date': '20261008', 'type': 'ALLBUT0999', 'response': 'json'}
 
-通，1.4 秒，241 KB，application/json;charset=UTF-8
+通，1.2 秒，241 KB，application/json;charset=UTF-8
 
 頂層鍵：['tables', 'type', 'params', 'stat', 'date']；stat=OK
 
