@@ -195,6 +195,69 @@ def send_mail(subject, body):
         return False
 
 
+ROAD_STATION_PREFIXES = ("國一", "國三")      # 高公局國道旁雨量站的名稱開頭（國一N013K、國三S156K…）
+
+
+def uncovered_rain_stations(stations, cams):
+    """找出『國道旁、正在下雨、而且附近沒有任何抓得到畫面的鏡頭』的雨量站（例如連不上的南部國道）。
+    回傳 {地區名稱: [雨量站, ...]}。附近有可用鏡頭的站不算，那些由鏡頭判斷負責通知。"""
+    scope = load_json("scope.json", {})
+    prefixes = tuple(scope.get("stationPrefixes", ROAD_STATION_PREFIXES))
+    usable = [c for c in cams if not c.get("disabled") and c.get("lat") is not None and c.get("lon") is not None]
+    usable += (load_json("cameras_auto.json", {}) or {}).get("cameras") or []
+    covered = set()
+    for c in usable:
+        st, d = nearest(c, stations)
+        if d <= MAX_KM:
+            covered.add(st["name"])
+    out = {}
+    for st in stations:
+        if not st["name"].startswith(prefixes) or st["name"] in covered:
+            continue
+        if (st["m10"] or 0) < NOTIFY_M10:
+            continue
+        road = {"國一": "國道1號", "國三": "國道3號"}.get(st["name"][:2], "國道")
+        out.setdefault("%s·%s（無鏡頭）" % (road, norm(st["county"])), []).append(st)
+    return out
+
+
+def notify_uncovered(unc, now, ctx=None):
+    """沒有鏡頭可確認的國道段：雨量站達門檻就寄一封，標題註明沒有畫面佐證。"""
+    if not unc:
+        return
+    state = load_json("state.json", {})
+    changed = False
+    for area, sts in unc.items():
+        last = state.get(area)
+        if last:
+            try:
+                if (now - dt.datetime.fromisoformat(last)).total_seconds() / 60 < NOTIFY_COOLDOWN_MIN:
+                    continue
+            except Exception:  # noqa: BLE001
+                pass
+        sts = sorted(sts, key=lambda t: -(t["m10"] or 0))
+        lines = ["%s 雨量站顯示有雨" % area, "這一段目前沒有抓得到畫面的鏡頭，所以沒有 AI 影像判斷，只能參考雨量站。", ""]
+        for st in sts[:6]:
+            lines.append("雨量站：%s%s %s　10 分鐘 %s mm，1 小時 %s mm（觀測 %s）" % (
+                st["county"], st["town"], st["name"],
+                "-" if st["m10"] is None else st["m10"], "-" if st["h1"] is None else st["h1"], st["time"]))
+        if len(sts) > 6:
+            lines.append("…另外還有 %d 個雨量站也有雨" % (len(sts) - 6))
+        if traffic and ctx:
+            try:
+                lines += [""] + traffic.lines_for(ctx, area)[:-1]
+            except Exception as e:  # noqa: BLE001
+                print("路況文字產生失敗：", str(e)[:80])
+        lines += ["", "注意：雨量站資料通常比現在晚 10～15 分鐘。"]
+        top10 = max((t["m10"] or 0) for t in sts)
+        top1h = max((t["h1"] or 0) for t in sts)
+        if send_mail("【下雨】%s：10分鐘 %s mm／1小時 %s mm（雨量站有雨，無鏡頭可確認）" % (area, top10, top1h), "\n".join(lines)):
+            state[area] = now.isoformat()
+            changed = True
+    if changed:
+        json.dump(state, open("state.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+
+
 def merge_area(area):
     """通知用的合併：台北各區（台北中山、台北信義、關渡…）與「臺北市」併成一封，避免同時下雨寄好幾封"""
     a = norm(area)
@@ -411,6 +474,13 @@ def main():
     except Exception as e:  # noqa: BLE001
         print("自動鏡頭挑選失敗（不影響手動鏡頭）：", str(e)[:120])
 
+    unc = {}
+    try:
+        unc = uncovered_rain_stations(stations, cams)
+        print("無鏡頭但有雨的國道雨量站：%d 個地區" % len(unc))
+    except Exception as e:  # noqa: BLE001
+        print("無鏡頭雨量站檢查失敗（不影響其他）：", str(e)[:100])
+
     os.makedirs("frames", exist_ok=True)
     results = {}
     with cf.ThreadPoolExecutor(max_workers=2) as ex:
@@ -467,6 +537,9 @@ def main():
                 cam = info["cam"]
                 if cam.get("lat") is not None and cam.get("lon") is not None and cam["area"] not in areas:
                     areas[cam["area"]] = (cam["lat"], cam["lon"], info["st"]["county"])
+            for a, sts in unc.items():
+                top = max(sts, key=lambda t: t["m10"] or 0)
+                areas[a] = (top["lat"], top["lon"], top["county"])
             ctx = traffic.build_context(areas, os.environ.get("CWA_API_KEY"), now)
         except Exception as e:  # noqa: BLE001
             print("路況整合失敗（不影響盯雨）：", str(e)[:120])
@@ -475,6 +548,7 @@ def main():
     except Exception as e:  # noqa: BLE001
         print("地圖資料輸出失敗（不影響盯雨）：", str(e)[:120])
     notify(rows, now, ctx)
+    notify_uncovered(unc, now, ctx)
 
 
 if __name__ == "__main__":
