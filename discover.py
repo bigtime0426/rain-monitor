@@ -34,10 +34,10 @@ def in_bbox(lat, lon, box):
     return box[0] <= lat <= box[1] and box[2] <= lon <= box[3]
 
 
-def reachable(url):
+def reachable(url, connect=5, read=6):
     """抓前幾 KB，看是不是圖片或 MJPEG 串流。回 (是否成功, 說明)。"""
     try:
-        r = requests.get(url, stream=True, timeout=(5, 6), headers={"User-Agent": "Mozilla/5.0"})
+        r = requests.get(url, stream=True, timeout=(connect, read), headers={"User-Agent": "Mozilla/5.0"})
         ctype = r.headers.get("content-type", "")
         if r.status_code != 200:
             r.close()
@@ -87,7 +87,7 @@ def main():
             })
     print("清單：%s；符合範圍 %d 支，開始測試連線" % (listed, len(cands)))
 
-    good, fail_reasons = [], {}
+    good, fail_reasons, failed = [], {}, []
     start = time.time()
     with cf.ThreadPoolExecutor(max_workers=TEST_WORKERS) as ex:
         futs = {ex.submit(reachable, c["url"]): c for c in cands}
@@ -103,9 +103,45 @@ def main():
                 host = c["url"].split("/")[2]
                 key = "%s %s" % (host, why)
                 fail_reasons[key] = fail_reasons.get(key, 0) + 1
+                failed.append(c)
             if time.time() - start > BUDGET_SEC:
                 print("超過時間預算，停止測試")
                 break
+
+
+    # 整台主機連不上時，換個方式再測（判斷是被擋還是只是慢）
+    variant = []
+    by_host = {}
+    for c in failed:
+        by_host.setdefault(c["url"].split("/")[2], []).append(c)
+    for host, cs in by_host.items():
+        if len(cs) < 20:
+            continue
+        for c in cs[:3]:
+            u = c["url"]
+            http_u = u.replace("https://", "http://", 1)
+            a = reachable(u, connect=15, read=10)
+            b = reachable(http_u, connect=15, read=10)
+            variant.append("%s | https長等待=%s | http=%s" % (host, a, b))
+
+    tally = {}
+    try:
+        import monitor
+        stations = monitor.fetch_stations()
+        counties = [monitor.norm(x) for x in scope.get("counties", [])]
+        ex_towns = set(scope.get("excludeTowns", []))
+        for c in good:
+            st, d = monitor.nearest(c, stations)
+            if d > monitor.MAX_KM or st["town"] in ex_towns:
+                continue
+            county = monitor.norm(st["county"])
+            on_road = any(c["road"].startswith(r) for r in roads)
+            if county in counties:
+                tally[county] = tally.get(county, 0) + 1
+            elif on_road:
+                tally["國道1/3號·其他縣市"] = tally.get("國道1/3號·其他縣市", 0) + 1
+    except Exception as e:  # noqa: BLE001
+        tally = {"統計失敗": str(e)[:80]}
 
     good.sort(key=lambda c: (c["road"], c["lat"]))
     json.dump({"updated": dt.datetime.now(dt.timezone.utc).isoformat(), "cameras": good},
@@ -115,7 +151,9 @@ def main():
         by_road[c["road"]] = by_road.get(c["road"], 0) + 1
     lines = ["清單筆數：%s" % listed, "符合範圍：%d 支" % len(cands), "抓得到畫面：%d 支" % len(good),
              "抓得到（依道路）：%s" % json.dumps(by_road, ensure_ascii=False),
-             "失敗原因：%s" % json.dumps(fail_reasons, ensure_ascii=False)]
+             "失敗原因：%s" % json.dumps(fail_reasons, ensure_ascii=False),
+             "範圍內可用鏡頭（依縣市）：%s" % json.dumps(tally, ensure_ascii=False),
+             "連不上主機的變體測試：", *(variant or ["（無）"])]
     open(REPORT, "w", encoding="utf-8").write("\n".join(lines) + "\n")
     print("\n".join(lines))
 
