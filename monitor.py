@@ -139,11 +139,13 @@ def model_text(text):
 def parse_answer(text):
     """容錯解析：去掉 ``` 圍欄，再取第一個 { 到最後一個 } 之間的內容"""
     t = model_text(text).replace("```json", "").replace("```", "").strip()
-    i, j = t.find("{"), t.rfind("}")
-    if i < 0 or j <= i:
+    i = t.find("{")
+    if i < 0:
         return None
     try:
-        return json.loads(t[i:j + 1])
+        # raw_decode 只讀第一個完整的 JSON，後面多出來的 } 或文字會被忽略
+        obj, _end = json.JSONDecoder().raw_decode(t[i:])
+        return obj if isinstance(obj, dict) else None
     except Exception:
         return None
 
@@ -254,6 +256,8 @@ def auto_candidates(stations, manual_urls, force):
     counties = [norm(c) for c in scope.get("counties", [])]
     ex_towns = set(scope.get("excludeTowns", []))
     per_station = scope.get("maxPerStation", 2)
+    road_km = scope.get("roadStationMaxKm", 5)          # 國道鏡頭：雨量站要在這個距離內
+    road_per = scope.get("roadPerStation", per_station)  # 國道：每站最多幾支
     cap = scope.get("maxAutoPerRun", 16)
     picked = []
     for c in auto:
@@ -266,17 +270,30 @@ def auto_candidates(stations, manual_urls, force):
         on_road = any(c["road"].startswith(r) for r in roads)
         if not (on_road or county in counties):
             continue
+        if on_road and d > road_km:      # 國道鏡頭旁沒有雨量站就不用（對不了答案）
+            continue
         if not force and not (st["m10"] is not None and st["m10"] > RAIN_MIN_M10):
             continue
         cam = dict(c)
+        cam["_road"] = on_road
         cam["area"] = county if county in counties else "%s·%s" % (c["road"], county)
         picked.append({"cam": cam, "st": st, "km": d})
-    # 雨大的優先；同一個雨量站最多 per_station 支（挑最近的）
-    picked.sort(key=lambda j: (-(j["st"]["m10"] or 0), j["km"]))
+    # 優先順序：台北市、高雄市先；再來雨大的；同一個雨量站最多 per_station 支（挑最近的）
+    in_city = lambda j: norm(j["st"]["county"]) in counties
+    picked.sort(key=lambda j: (not in_city(j), -(j["st"]["m10"] or 0), j["km"]))
+    if force:    # 測試模式：各地區輪流挑，確保每個地區都有被抽到
+        groups = {}
+        for j in picked:
+            groups.setdefault(j["cam"]["area"], []).append(j)
+        picked = []
+        while any(groups.values()):
+            for a in list(groups):
+                if groups[a]:
+                    picked.append(groups[a].pop(0))
     out, count = [], {}
     for j in picked:
-        sid = j["st"]["name"]
-        if count.get(sid, 0) >= per_station:
+        sid = (j["st"]["name"], j["cam"]["_road"])
+        if count.get(sid, 0) >= (road_per if j["cam"]["_road"] else per_station):
             continue
         count[sid] = count.get(sid, 0) + 1
         out.append(j)
