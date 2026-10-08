@@ -17,6 +17,12 @@ import time
 
 import requests
 
+try:
+    import traffic          # 路況與特報；缺檔或出錯都不影響主流程
+except Exception as _e:     # noqa: BLE001
+    traffic = None
+    print("路況模組載入失敗：", str(_e)[:80])
+
 TZ = dt.timezone(dt.timedelta(hours=8))
 MAX_KM = 5            # 鏡頭和雨量站超過這個距離，就不當作同一場雨
 RAIN_MIN_M10 = 0      # 最近 10 分鐘雨量大於這個值才抓畫面
@@ -172,7 +178,7 @@ def send_mail(subject, body):
         return False
 
 
-def notify(rows, now):
+def notify(rows, now, ctx=None):
     try:
         state = json.load(open("state.json", encoding="utf-8"))
     except Exception:  # noqa: BLE001
@@ -211,9 +217,17 @@ def notify(rows, now):
             lines.append("  " + res)
             if frame and repo:
                 lines.append("  畫面：https://github.com/%s/blob/main/%s" % (repo, frame))
+        if traffic and ctx:
+            try:
+                lines += [""] + traffic.lines_for(ctx, area)[:-1]
+            except Exception as e:  # noqa: BLE001
+                print("路況文字產生失敗：", str(e)[:80])
         lines += ["", "注意：雨量站資料通常比現在晚 10～15 分鐘。"]
-        top = max((x[0]["st"]["m10"] or 0) for x in items)
-        if send_mail("【下雨】%s：10 分鐘 %s mm" % (area, top), "\n".join(lines)):
+        top10 = max((x[0]["st"]["m10"] or 0) for x in items)
+        top1h = max((x[0]["st"]["h1"] or 0) for x in items)
+        cam_yes = any(x[1] and x[1].get("raining") == "yes" for x in items)
+        tag = "鏡頭判斷有雨" if cam_yes else "雨量站有雨"
+        if send_mail("【下雨】%s：10分鐘 %s mm／1小時 %s mm（%s）" % (area, top10, top1h, tag), "\n".join(lines)):
             state[area] = now.isoformat()
             changed = True
     if changed:
@@ -297,7 +311,18 @@ def main():
     print("完成：檢查 %d 支鏡頭，寫入 %d 列" % (len(jobs), len(rows)))
     if os.environ.get("TEST_MAIL") == "1":
         send_mail("【雨在哪裡】測試通知", "如果你收到這封信，表示下雨通知的整條路線是通的。\n時間：" + now.strftime("%Y-%m-%d %H:%M"))
-    notify(rows, now)
+    ctx = None
+    if traffic:
+        try:
+            areas = {}
+            for info, *_rest in rows:
+                cam = info["cam"]
+                if cam.get("lat") is not None and cam.get("lon") is not None and cam["area"] not in areas:
+                    areas[cam["area"]] = (cam["lat"], cam["lon"], info["st"]["county"])
+            ctx = traffic.build_context(areas, os.environ.get("CWA_API_KEY"), now)
+        except Exception as e:  # noqa: BLE001
+            print("路況整合失敗（不影響盯雨）：", str(e)[:120])
+    notify(rows, now, ctx)
 
 
 if __name__ == "__main__":
