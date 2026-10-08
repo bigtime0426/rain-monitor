@@ -1,37 +1,44 @@
 {
-  "說明": "要監看的範圍。roads：國道／省道名稱開頭；counties：雨量站所在縣市；excludeTowns：排除的鏡頭所在鄉鎮區；roadStationMaxKm：roads 上的鏡頭，雨量站要在這個距離內才用（想只留旁邊有雨量站的，改成 0.5）；roadPerStation：roads 上每個雨量站最多用幾支鏡頭（想省額度，改成 1）。",
-  "roads": [
-    "國道1號",
-    "國1高架",
-    "國道3號"
+ "說明": "要監看的範圍。roads：國道／省道名稱開頭；counties：雨量站所在縣市；excludeTowns：排除的鏡頭所在鄉鎮區；roadStationMaxKm：roads 上的鏡頭，雨量站要在這個距離內才用（想只留旁邊有雨量站的，改成 0.5）；roadPerStation：roads 上每個雨量站最多用幾支鏡頭（想省額度，改成 1）。",
+ "roads": [
+  "國道1號",
+  "國1高架",
+  "國道3號"
+ ],
+ "counties": [
+  "臺北市",
+  "高雄市",
+  "屏東縣"
+ ],
+ "excludeTowns": [
+  "桃源區",
+  "那瑪夏區",
+  "茂林區"
+ ],
+ "bboxes": {
+  "臺北市": [
+   24.95,
+   25.22,
+   121.44,
+   121.68
   ],
-  "counties": [
-    "臺北市",
-    "高雄市"
+  "高雄市": [
+   22.4,
+   23.5,
+   120.1,
+   121.05
   ],
-  "excludeTowns": [
-    "桃源區",
-    "那瑪夏區",
-    "茂林區"
-  ],
-  "bboxes": {
-    "臺北市": [
-      24.95,
-      25.22,
-      121.44,
-      121.68
-    ],
-    "高雄市": [
-      22.4,
-      23.5,
-      120.1,
-      121.05
-    ]
-  },
-  "maxAutoPerRun": 16,
-  "maxPerStation": 2,
-  "roadStationMaxKm": 5,
-  "roadPerStation": 2,
-  "forceMaxAutoPerRun": 24,
-  "forcePerArea": 6
+  "屏東縣": [
+   22.0,
+   22.95,
+   120.35,
+   120.95
+  ]
+ },
+ "maxAutoPerRun": 16,
+ "maxPerStation": 2,
+ "roadStationMaxKm": 5,
+ "roadPerStation": 2,
+ "forceMaxAutoPerRun": 24,
+ "forcePerArea": 6
 }
