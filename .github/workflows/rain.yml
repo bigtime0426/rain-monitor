@@ -43,6 +43,7 @@ jobs:
           TDX_CLIENT_ID: ${{ secrets.TDX_CLIENT_ID }}
           TDX_CLIENT_SECRET: ${{ secrets.TDX_CLIENT_SECRET }}
           FORCE_DISCOVER: ${{ github.event.inputs.discover || '0' }}
+          CWA_API_KEY: ${{ secrets.CWA_API_KEY }}
         run: python discover.py || true
 
       - name: 執行盯雨
