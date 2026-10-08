@@ -26,6 +26,8 @@ jobs:
   run:
     runs-on: ubuntu-24.04
     timeout-minutes: 25
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
     steps:
       - uses: actions/checkout@v5
 
@@ -62,5 +64,14 @@ jobs:
         run: |
           git config user.name "rain-bot"
           git config user.email "rain-bot@users.noreply.github.com"
+          git rm -r --cached __pycache__ -q 2>/dev/null || true
           git add -A
-          git diff --cached --quiet || (git commit -m "rain log" && git pull --rebase && git push)
+          git diff --cached --quiet && exit 0
+          git commit -m "rain log"
+          for i in 1 2 3; do
+            git pull --rebase -X theirs && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          echo "存回失敗（已重試 3 次）"
+          exit 1
