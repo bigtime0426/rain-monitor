@@ -99,29 +99,41 @@ def grab_frame(url):
         return data
 
 
+GEMINI_STATE = {"timeouts": 0}     # 連續逾時次數（跨鏡頭共用）
+GEMINI_GIVE_UP_AFTER = 4           # 連續這麼多支都逾時，這一輪就不再呼叫 Gemini
+GEMINI_CALL_BUDGET = 80            # 單支鏡頭最多花這麼多秒（含換型號重試）
+
+
 def call_gemini(img):
+    if GEMINI_STATE["timeouts"] >= GEMINI_GIVE_UP_AFTER:
+        return (None, 0, "本輪 Gemini 連續逾時，略過")
     key = os.environ["GEMINI_API_KEY"]
     b64 = base64.b64encode(img).decode()
     last = (None, 0, "")
+    t0 = time.time()
     for model in GEMINI_MODELS:
         for attempt in (1, 2):
+            if time.time() - t0 > GEMINI_CALL_BUDGET:
+                break
             try:
-                r = requests.post(GEMINI_URL, headers={"x-goog-api-key": key}, timeout=45, json={
+                r = requests.post(GEMINI_URL, headers={"x-goog-api-key": key}, timeout=(10, 30), json={
                     "model": model,
                     "input": [{"type": "text", "text": PROMPT},
                               {"type": "image", "data": b64, "mime_type": "image/jpeg"}],
                 })
-            except requests.RequestException as e:   # 逾時或連線中斷：等一下再試，不行就換型號
+            except requests.RequestException as e:   # 逾時或連線中斷：不在同一型號耗時間，直接換下一個型號
                 last = (model, 0, str(e)[:120])
-                time.sleep(attempt * 3)
-                continue
+                break
             last = (model, r.status_code, r.text)
             if r.status_code == 200:
+                GEMINI_STATE["timeouts"] = 0
                 return last
             if r.status_code in (503, 429):
                 time.sleep(attempt * 4)
                 continue
             break
+    if last[1] == 0:
+        GEMINI_STATE["timeouts"] += 1
     return last
 
 
