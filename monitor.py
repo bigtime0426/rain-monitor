@@ -366,7 +366,13 @@ def write_map(rows, ctx, now):
                 keep.append(c)
         except Exception:  # noqa: BLE001
             pass
-    out = {"updated": now.isoformat(), "cameras": keep,
+    tmap = None
+    if traffic:
+        try:
+            tmap = traffic.write_traffic_map(load_json("scope.json", {}), now)
+        except Exception as e:  # noqa: BLE001
+            print("路況地圖資料失敗（不影響盯雨）：", str(e)[:100])
+    out = {"updated": now.isoformat(), "cameras": keep, "traffic": tmap or old.get("traffic"),
            "warnings": (ctx or {}).get("warnings_all") or old.get("warnings") or {}}
     json.dump(out, open("map.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
 
