@@ -43,6 +43,8 @@ jobs:
           TEST_MAIL: ${{ github.event.inputs.test_mail || '0' }}
           MAIL_URL: ${{ secrets.MAIL_URL }}
           MAIL_TOKEN: ${{ secrets.MAIL_TOKEN }}
+          TDX_CLIENT_ID: ${{ secrets.TDX_CLIENT_ID }}
+          TDX_CLIENT_SECRET: ${{ secrets.TDX_CLIENT_SECRET }}
         run: python monitor.py
 
       - name: 存回紀錄
