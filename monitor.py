@@ -11,6 +11,7 @@ import datetime as dt
 import json
 import math
 import os
+import re
 import subprocess
 import tempfile
 import time
@@ -145,9 +146,23 @@ def parse_answer(text):
     try:
         # raw_decode 只讀第一個完整的 JSON，後面多出來的 } 或文字會被忽略
         obj, _end = json.JSONDecoder().raw_decode(t[i:])
-        return obj if isinstance(obj, dict) else None
+        if isinstance(obj, dict):
+            return obj
     except Exception:
+        pass
+    # JSON 壞掉（例如夾了 <br>）時，直接用規則撈出各欄位
+    m = re.search(r'"raining"\s*:\s*"(yes|no|unclear)"', t)
+    if not m:
         return None
+    wet = re.search(r'"road_wet"\s*:\s*(true|false)', t)
+    conf = re.search(r'"confidence"\s*:\s*([0-9.]+)', t)
+    reason = re.search(r'"reason"\s*:\s*"([^"]*)', t)
+    try:
+        conf_v = float(conf.group(1).rstrip(".")) if conf else None
+    except ValueError:
+        conf_v = None
+    return {"raining": m.group(1), "road_wet": bool(wet and wet.group(1) == "true"), "confidence": conf_v,
+            "reason": (reason.group(1) if reason else "").replace("<br>", "").strip()}
 
 
 def judge(cam):
@@ -259,6 +274,9 @@ def auto_candidates(stations, manual_urls, force):
     road_km = scope.get("roadStationMaxKm", 5)          # 國道鏡頭：雨量站要在這個距離內
     road_per = scope.get("roadPerStation", per_station)  # 國道：每站最多幾支
     cap = scope.get("maxAutoPerRun", 16)
+    force_per_area = scope.get("forcePerArea", 6)     # 測試模式：每個地區最多抽幾支
+    if force:
+        cap = scope.get("forceMaxAutoPerRun", 24)
     picked = []
     for c in auto:
         if c["url"] in manual_urls:
@@ -281,15 +299,18 @@ def auto_candidates(stations, manual_urls, force):
     # 優先順序：台北市、高雄市先；再來雨大的；同一個雨量站最多 per_station 支（挑最近的）
     in_city = lambda j: norm(j["st"]["county"]) in counties
     picked.sort(key=lambda j: (not in_city(j), -(j["st"]["m10"] or 0), j["km"]))
-    if force:    # 測試模式：各地區輪流挑，確保每個地區都有被抽到
+    if force:    # 測試模式：以「地區＋雨量站」輪流挑，每個地區最多 force_per_area 支，確保台北、高雄多抽到幾個不同位置
         groups = {}
         for j in picked:
-            groups.setdefault(j["cam"]["area"], []).append(j)
-        picked = []
+            groups.setdefault((j["cam"]["area"], j["st"]["name"]), []).append(j)
+        picked, taken = [], {}
         while any(groups.values()):
-            for a in list(groups):
-                if groups[a]:
-                    picked.append(groups[a].pop(0))
+            for k in list(groups):
+                if groups[k] and taken.get(k[0], 0) < force_per_area:
+                    picked.append(groups[k].pop(0))
+                    taken[k[0]] = taken.get(k[0], 0) + 1
+                else:
+                    groups[k] = []
     out, count = [], {}
     for j in picked:
         sid = (j["st"]["name"], j["cam"]["_road"])
@@ -339,7 +360,7 @@ def main():
 
     os.makedirs("frames", exist_ok=True)
     results = {}
-    with cf.ThreadPoolExecutor(max_workers=4) as ex:
+    with cf.ThreadPoolExecutor(max_workers=2) as ex:
         futs = {ex.submit(judge, j["cam"]): i for i, j in enumerate(jobs)}
         for f in cf.as_completed(futs):
             i = futs[f]
