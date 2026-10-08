@@ -337,6 +337,40 @@ def auto_candidates(stations, manual_urls, force):
     return out
 
 
+def write_map(rows, ctx, now):
+    """輸出 map.json 給網頁地圖用：每支鏡頭的『最新一次判斷』（沒被檢查的保留舊結果，超過 24 小時移除）＋全台雨相關特報"""
+    old = load_json("map.json", {})
+    cams = {c["key"]: c for c in old.get("cameras", [])}
+    for info, ans, model, frame, _x, status in rows:
+        cam, st = info["cam"], info["st"]
+        if status.startswith("略過") or cam.get("lat") is None or cam.get("lon") is None:
+            continue
+        key = cam["name"] + "|" + cam["area"]
+        if not ans and cams.get(key, {}).get("ok"):     # 這輪抓不到，保留上一次成功的判斷
+            continue
+        cams[key] = {
+            "key": key, "area": cam["area"], "name": cam["name"], "lat": cam["lat"], "lon": cam["lon"],
+            "raining": ans.get("raining") if ans else None,
+            "road_wet": ans.get("road_wet") if ans else None,
+            "confidence": ans.get("confidence") if ans else None,
+            "reason": ans.get("reason", "") if ans else "",
+            "model": model or "", "frame": frame or "",
+            "ok": bool(ans), "checked": now.isoformat(),
+            "station": "%s%s %s" % (st["county"], st["town"], st["name"]),
+            "m10": st["m10"], "h1": st["h1"], "obs": st["time"],
+        }
+    keep = []
+    for c in cams.values():
+        try:
+            if (now - dt.datetime.fromisoformat(c["checked"])).total_seconds() < 24 * 3600:
+                keep.append(c)
+        except Exception:  # noqa: BLE001
+            pass
+    out = {"updated": now.isoformat(), "cameras": keep,
+           "warnings": (ctx or {}).get("warnings_all") or old.get("warnings") or {}}
+    json.dump(out, open("map.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+
+
 def main():
     force = os.environ.get("FORCE") == "1"
     now = dt.datetime.now(TZ)
@@ -430,6 +464,10 @@ def main():
             ctx = traffic.build_context(areas, os.environ.get("CWA_API_KEY"), now)
         except Exception as e:  # noqa: BLE001
             print("路況整合失敗（不影響盯雨）：", str(e)[:120])
+    try:
+        write_map(rows, ctx, now)
+    except Exception as e:  # noqa: BLE001
+        print("地圖資料輸出失敗（不影響盯雨）：", str(e)[:120])
     notify(rows, now, ctx)
 
 
