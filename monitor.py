@@ -195,6 +195,14 @@ def send_mail(subject, body):
         return False
 
 
+def merge_area(area):
+    """通知用的合併：台北各區（台北中山、台北信義、關渡…）與「臺北市」併成一封，避免同時下雨寄好幾封"""
+    a = norm(area)
+    if a.startswith("北市") or a.startswith("臺北") or a.startswith("關渡"):
+        return "臺北市"
+    return area
+
+
 def notify(rows, now, ctx=None):
     try:
         state = json.load(open("state.json", encoding="utf-8"))
@@ -207,7 +215,7 @@ def notify(rows, now, ctx=None):
             continue
         st = info["st"]
         rainy = (st["m10"] or 0) >= NOTIFY_M10 or bool(ans and ans.get("raining") == "yes")
-        by_area.setdefault(info["cam"]["area"], []).append((info, ans, frame, status, rainy))
+        by_area.setdefault(merge_area(info["cam"]["area"]), []).append((info, ans, frame, status, rainy))
 
     changed = False
     for area, items in by_area.items():
@@ -220,11 +228,16 @@ def notify(rows, now, ctx=None):
                     continue
             except Exception:  # noqa: BLE001
                 pass
-        st0 = items[0][0]["st"]
-        lines = ["%s 目前有雨" % area, "雨量站：%s%s %s" % (st0["county"], st0["town"], st0["name"]),
-                 "10 分鐘 %s mm，1 小時 %s mm（觀測時間 %s）" % (
-                     "-" if st0["m10"] is None else st0["m10"], "-" if st0["h1"] is None else st0["h1"], st0["time"]),
-                 ""]
+        stations = {}
+        for x in items:
+            stations.setdefault(x[0]["st"]["name"], x[0]["st"])
+        sts = sorted(stations.values(), key=lambda t: -(t["m10"] or 0))
+        lines = ["%s 目前有雨" % area, ""]
+        for st0 in sts:
+            lines.append("雨量站：%s%s %s　10 分鐘 %s mm，1 小時 %s mm（觀測 %s）" % (
+                st0["county"], st0["town"], st0["name"],
+                "-" if st0["m10"] is None else st0["m10"], "-" if st0["h1"] is None else st0["h1"], st0["time"]))
+        lines.append("")
         for info, ans, frame, status, _rainy in items:
             if ans:
                 res = "鏡頭判斷：%s（信心 %s）%s" % (ans.get("raining"), ans.get("confidence"), ans.get("reason", ""))
@@ -236,7 +249,7 @@ def notify(rows, now, ctx=None):
                 lines.append("  畫面：https://github.com/%s/blob/main/%s" % (repo, frame))
         if traffic and ctx:
             try:
-                lines += [""] + traffic.lines_for(ctx, area)[:-1]
+                lines += [""] + traffic.lines_for(ctx, items[0][0]["cam"]["area"])[:-1]
             except Exception as e:  # noqa: BLE001
                 print("路況文字產生失敗：", str(e)[:80])
         lines += ["", "注意：雨量站資料通常比現在晚 10～15 分鐘。"]
