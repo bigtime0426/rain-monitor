@@ -234,6 +234,58 @@ def notify(rows, now, ctx=None):
         json.dump(state, open("state.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 
 
+def load_json(path, default):
+    try:
+        return json.load(open(path, encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        return default
+
+
+def norm(s):
+    return (s or "").replace("台", "臺")
+
+
+def auto_candidates(stations, manual_urls, force):
+    """從自動找到的鏡頭（cameras_auto.json）挑出這一輪要檢查的：
+    在 scope.json 範圍內、附近雨量站有雨，每站最多幾支、整輪最多幾支。"""
+    scope = load_json("scope.json", {})
+    auto = (load_json("cameras_auto.json", {}) or {}).get("cameras") or []
+    roads = scope.get("roads", [])
+    counties = [norm(c) for c in scope.get("counties", [])]
+    ex_towns = set(scope.get("excludeTowns", []))
+    per_station = scope.get("maxPerStation", 2)
+    cap = scope.get("maxAutoPerRun", 16)
+    picked = []
+    for c in auto:
+        if c["url"] in manual_urls:
+            continue
+        st, d = nearest(c, stations)
+        if d > MAX_KM or st["town"] in ex_towns:
+            continue
+        county = norm(st["county"])
+        on_road = any(c["road"].startswith(r) for r in roads)
+        if not (on_road or county in counties):
+            continue
+        if not force and not (st["m10"] is not None and st["m10"] > RAIN_MIN_M10):
+            continue
+        cam = dict(c)
+        cam["area"] = county if county in counties else "%s·%s" % (c["road"], county)
+        picked.append({"cam": cam, "st": st, "km": d})
+    # 雨大的優先；同一個雨量站最多 per_station 支（挑最近的）
+    picked.sort(key=lambda j: (-(j["st"]["m10"] or 0), j["km"]))
+    out, count = [], {}
+    for j in picked:
+        sid = j["st"]["name"]
+        if count.get(sid, 0) >= per_station:
+            continue
+        count[sid] = count.get(sid, 0) + 1
+        out.append(j)
+        if len(out) >= cap:
+            break
+    print("自動鏡頭：範圍內且有雨 %d 支，本輪檢查 %d 支" % (len(picked), len(out)))
+    return out
+
+
 def main():
     force = os.environ.get("FORCE") == "1"
     now = dt.datetime.now(TZ)
@@ -262,6 +314,11 @@ def main():
         control = cam.get("alwaysCheck") and now.minute < 15
         if rainy or control or force:
             jobs.append(info)
+
+    try:
+        jobs.extend(auto_candidates(stations, {c.get("url") for c in cams}, force))
+    except Exception as e:  # noqa: BLE001
+        print("自動鏡頭挑選失敗（不影響手動鏡頭）：", str(e)[:120])
 
     os.makedirs("frames", exist_ok=True)
     results = {}
