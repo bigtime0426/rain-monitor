@@ -178,6 +178,93 @@ def section_names(kind_en, ids, token):
     return out
 
 
+# ---------- 路段名稱表（每 7 天更新一次，存成 section_names.json） ----------
+NAMES_FILE = "section_names.json"
+NAMES_MAX_AGE_DAYS = 7
+
+
+def _mile_text(sec):
+    """SectionMile 的格式不確定，盡量讀出 起點–終點 公里數；讀不出來回空字串。"""
+    sm = sec.get("SectionMile")
+    cand = sm if isinstance(sm, list) else [sm]
+    for m in cand:
+        if isinstance(m, dict):
+            a = m.get("StartKM") if m.get("StartKM") is not None else m.get("Start")
+            b = m.get("EndKM") if m.get("EndKM") is not None else m.get("End")
+            if a is not None and b is not None:
+                return "%s–%sK" % (a, b)
+    return ""
+
+
+def section_label(sec):
+    name = (sec.get("SectionName") or "").strip()
+    road = (sec.get("RoadName") or "").strip()
+    if name and road and road not in name:
+        name = road + " " + name
+    if not name and road:
+        name = (road + " " + _mile_text(sec)).strip()
+    return name
+
+
+def load_section_names(token):
+    """{'國道:0285': '國道3號 名間–竹山', ...}。抓不到就沿用舊檔。"""
+    old = {}
+    try:
+        old = json.load(open(NAMES_FILE, encoding="utf-8"))
+        age = (dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(old["updated"])).total_seconds() / 86400
+        if age < NAMES_MAX_AGE_DAYS:
+            return old.get("names") or {}
+    except Exception:  # noqa: BLE001
+        pass
+    names, counts = {}, {}
+    for kind_en, label in (("Freeway", "國道"), ("Highway", "省道")):
+        data = fetch("Section/" + kind_en, token)
+        secs = []
+        if isinstance(data, dict):
+            secs = next((v for v in data.values() if isinstance(v, list)), [])
+        elif isinstance(data, list):
+            secs = data
+        got = 0
+        for sec in secs:
+            lab = section_label(sec)
+            if sec.get("SectionID") and lab:
+                names["%s:%s" % (label, sec["SectionID"])] = lab
+                got += 1
+        counts[label] = (len(secs), got)
+        if secs:
+            print("路名表 %s：%d 筆，其中 %d 筆有名稱；範例欄位：%s" % (label, len(secs), got, list(secs[0].keys())[:8]))
+        else:
+            print("路名表 %s：沒有取得資料" % label)
+    now = dt.datetime.now(dt.timezone.utc)
+    if not names:      # 這次沒抓到：保留舊名稱，並讓檔案在約 6 小時後視為過期再試，避免每一輪都白等
+        names = old.get("names") or {}
+        stamp = now - dt.timedelta(days=NAMES_MAX_AGE_DAYS - 0.25)
+    else:
+        stamp = now
+    json.dump({"updated": stamp.isoformat(), "names": names},
+              open(NAMES_FILE, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+    return names
+
+
+def camera_label(r, cams, max_km=3):
+    """路名表查不到時：用最近的國道／省道鏡頭的里程當描述，例如『國道3號 約238K+414 附近』。"""
+    if not r.get("pts"):
+        return ""
+    lat, lon = r["pts"][0]
+    best, bd = None, max_km
+    for c in cams:
+        if (c.get("kind") or "") != r["kind"]:
+            continue
+        d = km(lat, lon, c["lat"], c["lon"])
+        if d < bd:
+            best, bd = c, d
+    if not best:
+        return ""
+    parts = (best.get("name") or "").split()
+    mile = parts[1] if len(parts) > 1 else ""
+    return ("%s 約 %s 附近" % (best.get("road", ""), mile)).strip()
+
+
 def nearby(items, lat, lon, radius=RADIUS_KM, limit=MAX_ROADS):
     found = []
     for it in items:
@@ -284,18 +371,23 @@ def build_context(areas, cwa_key, now):
     ctx["stats"] = stats
     warnings = load_warnings(cwa_key)
     ctx["warnings_all"] = warnings
+    names = {}
+    try:
+        names = load_section_names(token)
+    except Exception as e:  # noqa: BLE001
+        print("路名表失敗（改用鏡頭里程描述）：", str(e)[:80])
+    try:
+        cams = (json.load(open("cameras_auto.json", encoding="utf-8")) or {}).get("cameras") or []
+    except Exception:  # noqa: BLE001
+        cams = []
     for area, (lat, lon, county) in areas.items():
         roads, used = [], RADIUS_KM
         for used in (RADIUS_KM, 10, 20):       # 附近沒有路況就逐步放寬範圍
             roads = nearby(items, lat, lon, radius=used)
             if roads:
                 break
-        for kind_en, label in (("Freeway", "國道"), ("Highway", "省道")):
-            ids = [r["id"] for r in roads if r["kind"] == label]
-            names = section_names(kind_en, ids, token) if ids else {}
-            for r in roads:
-                if r["kind"] == label:
-                    r["name"] = names.get(r["id"]) or ""
+        for r in roads:
+            r["name"] = names.get("%s:%s" % (r["kind"], r["id"])) or camera_label(r, cams) or ""
         county_key = (county or "").replace("台", "臺")
         ctx["areas"][area] = {
             "county": county,
