@@ -31,5 +31,7 @@
   "maxAutoPerRun": 16,
   "maxPerStation": 2,
   "roadStationMaxKm": 5,
-  "roadPerStation": 2
+  "roadPerStation": 2,
+  "forceMaxAutoPerRun": 24,
+  "forcePerArea": 6
 }
