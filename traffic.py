@@ -97,6 +97,45 @@ def decode_openlr(s):
     return None
 
 
+def decode_openlr_line(s):
+    """OpenLR 的整條路段 → [(緯度, 經度), ...]（第一點＋後面各參考點）。解不開或不合理就只回第一點。"""
+    first = decode_openlr(s)
+    if not first:
+        return []
+    try:
+        b = base64.b64decode(s)
+        rem = len(b) - 10                 # 第一個參考點佔 1(標頭)+9 個位元組
+        if rem < 6:
+            return [first]
+
+        def c(x):
+            v = int.from_bytes(x, "big", signed=True)
+            sgn = (v > 0) - (v < 0)
+            return (v - sgn * 0.5) * 360 / 2 ** 24
+        lat, lon = c(b[4:7]), c(b[1:4])
+        pts, pos, n = [first], 10, (rem - 6) // 7
+        for i in range(n + 1):            # n 個中間點＋最後一點，座標是相對前一點的位移（1e-5 度）
+            dlon = int.from_bytes(b[pos:pos + 2], "big", signed=True) / 1e5
+            dlat = int.from_bytes(b[pos + 2:pos + 4], "big", signed=True) / 1e5
+            nlat, nlon = lat + dlat, lon + dlon
+            if not (20 <= nlat <= 27 and 118 <= nlon <= 123) or km(lat, lon, nlat, nlon) > 30:
+                break                     # 不合理就停在這裡，保留已解出的點
+            lat, lon = nlat, nlon
+            pts.append((round(lat, 5), round(lon, 5)))
+            pos += 7 if i < n else 6
+        return pts
+    except Exception:  # noqa: BLE001
+        return [first]
+
+
+def line_of(item):
+    for lr in item.get("OpenLRs") or []:
+        pts = decode_openlr_line(lr.get("OpenLR")) if isinstance(lr, dict) else []
+        if pts:
+            return pts
+    return []
+
+
 def points_of(item):
     pts = []
     for lr in item.get("OpenLRs") or []:
@@ -118,7 +157,7 @@ def load_live(token):
             pts = points_of(it)
             if pts:
                 with_loc += 1
-            items.append({"kind": label, "id": it.get("SectionID"),
+            items.append({"kind": label, "id": it.get("SectionID"), "line": line_of(it),
                           "speed": it.get("TravelSpeed"), "level": it.get("CongestionLevel"),
                           "pts": pts})
         stats[label] = {"總筆數": total, "有位置": with_loc}
@@ -180,6 +219,59 @@ def level_text(lv):
     return "壅塞等級 %s（1 最順暢，數字越大越塞）" % lv if lv not in (None, "") else "壅塞等級不明"
 
 
+# ---------- 地圖用路況（給網頁畫線） ----------
+LAST_ITEMS = []
+GEO_FILE = "road_geo.json"
+GEO_MAX_AGE_DAYS = 7
+
+
+def _in_boxes(pts, boxes):
+    return any(b[0] <= p[0] <= b[1] and b[2] <= p[1] <= b[3] for p in pts for b in boxes)
+
+
+def write_traffic_map(scope, now, items=None):
+    """road_geo.json：路段形狀（很少變，每 7 天重建）。回傳要放進 map.json 的 {'geo','lv','sp'}：
+    geo = 形狀檔的版本戳，lv = 每個路段的壅塞等級（一個字元），sp = 車速陣列。順序與 road_geo.json 相同。"""
+    items = items if items is not None else LAST_ITEMS
+    if not items:
+        return None
+    boxes = list((scope.get("bboxes") or {}).values())
+    geo = None
+    try:
+        geo = json.load(open(GEO_FILE, encoding="utf-8"))
+        age = (now - dt.datetime.fromisoformat(geo["updated"])).days
+        if age >= GEO_MAX_AGE_DAYS:
+            geo = None
+    except Exception:  # noqa: BLE001
+        geo = None
+    if geo is None and not {"國道", "省道"} <= {it["kind"] for it in items if it.get("line")}:
+        try:      # 這輪資料不完整（某一類沒抓到）：沿用舊的形狀檔，不要拿殘缺資料重建
+            geo = json.load(open(GEO_FILE, encoding="utf-8"))
+        except Exception:  # noqa: BLE001
+            return None
+    if geo is None:
+        secs = []
+        for it in items:
+            line = it.get("line") or []
+            if not it.get("id") or not line:
+                continue
+            if it["kind"] == "省道" and not _in_boxes(line, boxes):      # 省道只留台北市、高雄市範圍
+                continue
+            secs.append({"id": it["id"], "k": it["kind"], "p": [[round(p[0], 4), round(p[1], 4)] for p in line]})
+        geo = {"updated": now.isoformat(), "sections": secs}
+        json.dump(geo, open(GEO_FILE, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+        print("路段形狀檔重建：%d 段" % len(secs))
+    by_id = {it["id"]: it for it in items if it.get("id")}
+    lv, sp = [], []
+    for sec in geo["sections"]:
+        it = by_id.get(sec["id"])
+        level = str((it or {}).get("level"))
+        lv.append(level if level in ("1", "2", "3", "4", "5") else "-")
+        spd = (it or {}).get("speed")
+        sp.append(int(spd) if isinstance(spd, (int, float)) and lv[-1] != "-" else None)
+    return {"geo": geo["updated"], "lv": "".join(lv), "sp": sp}
+
+
 # ---------- 整合：每個監看地區的路況＋特報 ----------
 def build_context(areas, cwa_key, now):
     """areas: {地區: (緯度, 經度, 縣市)}。回傳 ctx，並寫出 traffic.json（體積很小）。"""
@@ -187,6 +279,8 @@ def build_context(areas, cwa_key, now):
     token = get_token()
     ctx["auth"] = "金鑰" if token else "匿名"
     items, stats = load_live(token)
+    global LAST_ITEMS
+    LAST_ITEMS = items
     ctx["stats"] = stats
     warnings = load_warnings(cwa_key)
     ctx["warnings_all"] = warnings
