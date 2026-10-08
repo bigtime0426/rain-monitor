@@ -83,6 +83,9 @@ def rows_of(obj):
         for k, v in obj.items():
             if isinstance(v, list) and v and isinstance(v[0], dict):
                 return list(v[0].keys()), len(v), v[:2]
+            if isinstance(v, list) and v and isinstance(v[0], list):      # 舊版網站 aaData：只有列、沒有欄位名稱
+                cols = ["第%d欄" % (i + 1) for i in range(len(v[0]))]
+                return cols, len(v), [dict(zip(cols, r)) for r in v[:2]]
         return list(obj.keys()), 0, []
     return [], 0, []
 
@@ -156,6 +159,8 @@ def main():
          {"l": "zh-tw", "d": roc, "o": "json"}, True),
         ("櫃買 新版網站 JSON（回補測試日）", "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc",
          {"date": past.strftime("%Y/%m/%d"), "type": "EW", "response": "json"}, True),
+        ("櫃買 單檔月成交資訊（twstock 原始碼用的路徑，尚未實測；環球晶 6488）", "https://www.tpex.org.tw/www/zh-tw/afterTrading/tradingStock",
+         {"date": "%d/%02d/01" % (past.year, past.month), "code": "6488", "response": "json"}, False),
         ("證交所 全市場收盤行情（回補測試日）", "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX",
          {"date": past.strftime("%Y%m%d"), "type": "ALLBUT0999", "response": "json"}, True),
         ("證交所 全市場收盤行情（最近交易日，看當天是否已更新）", "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX",
