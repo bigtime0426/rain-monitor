@@ -144,6 +144,8 @@ def nearby(items, lat, lon, radius=RADIUS_KM, limit=MAX_ROADS):
     for it in items:
         if not it["pts"] or it["speed"] is None:
             continue
+        if str(it["level"]) == "-99":          # -99 = 沒有資料，不是車速 0
+            continue
         d = min(km(lat, lon, p[0], p[1]) for p in it["pts"])
         if d <= radius:
             found.append((d, it))
@@ -183,11 +185,17 @@ def build_context(areas, cwa_key, now):
     """areas: {地區: (緯度, 經度, 縣市)}。回傳 ctx，並寫出 traffic.json（體積很小）。"""
     ctx = {"updated": now.isoformat(), "stats": {}, "areas": {}}
     token = get_token()
+    ctx["auth"] = "金鑰" if token else "匿名"
     items, stats = load_live(token)
     ctx["stats"] = stats
     warnings = load_warnings(cwa_key)
+    ctx["warnings_all"] = warnings
     for area, (lat, lon, county) in areas.items():
-        roads = nearby(items, lat, lon)
+        roads, used = [], RADIUS_KM
+        for used in (RADIUS_KM, 10, 20):       # 附近沒有路況就逐步放寬範圍
+            roads = nearby(items, lat, lon, radius=used)
+            if roads:
+                break
         for kind_en, label in (("Freeway", "國道"), ("Highway", "省道")):
             ids = [r["id"] for r in roads if r["kind"] == label]
             names = section_names(kind_en, ids, token) if ids else {}
@@ -197,6 +205,7 @@ def build_context(areas, cwa_key, now):
         county_key = (county or "").replace("台", "臺")
         ctx["areas"][area] = {
             "county": county,
+            "radius": used,
             "warnings": warnings.get(county_key, []),
             "roads": [{"kind": r["kind"], "name": r.get("name", ""), "id": r["id"],
                        "speed": r["speed"], "level": r["level"], "km": r["km"]} for r in roads],
@@ -211,7 +220,9 @@ def lines_for(ctx, area):
     a = (ctx or {}).get("areas", {}).get(area)
     if a is None:
         return []
-    out = ["路況（%d km 內）：" % RADIUS_KM]
+    out = ["路況（%d km 內）：" % a.get("radius", RADIUS_KM)]
+    if a.get("radius", RADIUS_KM) > RADIUS_KM and a["roads"]:
+        out[0] = "路況（附近 %d km 內才有資料，距離較遠僅供參考）：" % a["radius"]
     if a["roads"]:
         for r in a["roads"]:
             label = r["name"] or "%s路段 %s" % (r["kind"], r["id"])
