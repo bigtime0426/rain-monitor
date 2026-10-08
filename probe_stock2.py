@@ -13,6 +13,7 @@ TZ = dt.timezone(dt.timedelta(hours=8))
 REPORT = "stock_samples2.md"
 UA = {"User-Agent": "Mozilla/5.0 data-probe"}
 TPEX = "https://www.tpex.org.tw/openapi/v1"
+TPEX_SWAGGER = "https://www.tpex.org.tw/openapi/swagger.json"     # 注意：說明檔在 /openapi/，不在 /openapi/v1/
 MAX_CAND = 8
 
 
@@ -114,7 +115,7 @@ def dump(title, url, params=None, guess=False):
 def swagger_all():
     notes, data = [], None
     for i in range(3):
-        data, _s, _n, nt, _c = fetch(TPEX + "/swagger.json", tries=1)
+        data, _s, _n, nt, _c = fetch(TPEX_SWAGGER, tries=1)
         notes += ["第%d輪 %s" % (i + 1, x) for x in nt]
         if isinstance(data, dict) and data.get("paths"):
             break
