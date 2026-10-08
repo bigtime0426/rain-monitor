@@ -11,6 +11,9 @@ on:
       test_mail:
         description: '1 = 另外寄一封測試通知信'
         default: '0'
+      discover:
+        description: '1 = 立刻重新找一次鏡頭（平常每 7 天自動更新）'
+        default: '0'
 
 permissions:
   contents: write
@@ -22,7 +25,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
 
@@ -34,6 +37,13 @@ jobs:
         run: |
           pip install requests
           which ffmpeg || (sudo apt-get update && sudo apt-get install -y ffmpeg)
+
+      - name: 自動找鏡頭（每 7 天更新一次，失敗不影響盯雨）
+        env:
+          TDX_CLIENT_ID: ${{ secrets.TDX_CLIENT_ID }}
+          TDX_CLIENT_SECRET: ${{ secrets.TDX_CLIENT_SECRET }}
+          FORCE_DISCOVER: ${{ github.event.inputs.discover || '0' }}
+        run: python discover.py || true
 
       - name: 執行盯雨
         env:
