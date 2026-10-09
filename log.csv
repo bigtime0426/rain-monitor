@@ -296,3 +296,7 @@ Error opening input files: End of file"
 [in#0 @ 0x55798161cdc0] Error opening input: End of file
 Error opening input file https://cctv-ss07.thb.gov.tw/T15-0K+500/snapshot.
 Error opening input files: En"
+2026-10-10 05:51:40,國道3號·基隆市,國道3號 4K+110,基隆市七堵區 國三S004K,0.0,2026-10-10T05:40:00+08:00,12,0.5,0.5,no,False,0.9,路面乾燥且無反光，未見雨絲或水花痕跡。,gemini-3.5-flash-lite,frames/20261010-0551_0.jpg,OK
+2026-10-10 05:51:40,國道3號·基隆市,國道3號 4K+110,基隆市七堵區 國三S004K,0.0,2026-10-10T05:40:00+08:00,12,0.5,0.5,yes,True,0.8,鏡頭上有明顯水漬水痕，且路面潮濕泛有路燈反光,gemini-3.7-flash,frames/20261010-0551_1.jpg,OK
+2026-10-10 05:51:40,國道1號·基隆市,國道1號 1K+000,基隆市安樂區 國一S001K,0.0,2026-10-10T05:40:00+08:00,12,0.5,1.0,no,False,0.9,路面呈現乾燥灰白色且無反光積水，鏡頭亦無水珠或降雨痕跡。,gemini-3.7-flash,frames/20261010-0551_2.jpg,OK
+2026-10-10 05:51:40,國道1號·基隆市,國道1號 0K+700,基隆市安樂區 國一S001K,0.3,2026-10-10T05:40:00+08:00,12,0.5,1.0,unclear,True,0.7,路面與分隔島有明顯積水及燈光反光，但未見明顯雨絲或車輛水花。,gemini-3.8-flash,frames/20261010-0551_3.jpg,OK
