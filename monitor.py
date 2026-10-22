@@ -331,7 +331,12 @@ def notify(rows, now, ctx=None):
         top10 = max((x[0]["st"]["m10"] or 0) for x in items)
         top1h = max((x[0]["st"]["h1"] or 0) for x in items)
         cam_yes = any(x[1] and x[1].get("raining") == "yes" for x in items)
-        tag = "鏡頭判斷有雨" if cam_yes else "雨量站有雨"
+        if cam_yes and top10 >= NOTIFY_M10:
+            tag = "鏡頭判斷有雨"
+        elif cam_yes:
+            tag = "疑似下雨：鏡頭判有雨，但雨量站僅毛毛雨，可能是鏡頭水痕"
+        else:
+            tag = "雨量站有雨"
         if send_mail("【下雨】%s：10分鐘 %s mm／1小時 %s mm（%s）" % (area, top10, top1h, tag), "\n".join(lines)):
             state[area] = now.isoformat()
             changed = True
@@ -485,6 +490,19 @@ def main():
         jobs.extend(auto_candidates(stations, {c.get("url") for c in cams}, force))
     except Exception as e:  # noqa: BLE001
         print("自動鏡頭挑選失敗（不影響手動鏡頭）：", str(e)[:120])
+
+    # 同名鏡頭（例如同一里程的兩個方向）加上編號，信件與地圖才分得出來
+    try:
+        seen_names = {}
+        for j in jobs:
+            seen_names.setdefault((j["cam"]["area"], j["cam"]["name"]), []).append(j["cam"])
+        for (_a, nm), cs in seen_names.items():
+            if len(cs) < 2:
+                continue
+            for n, c in enumerate(cs, 1):
+                c["name"] = "%s（%s）" % (nm, ("編號 %s" % c["id"]) if c.get("id") else "畫面 %d" % n)
+    except Exception as e:  # noqa: BLE001
+        print("同名鏡頭編號失敗（不影響其他）：", str(e)[:80])
 
     unc = {}
     try:
