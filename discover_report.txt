@@ -1,10 +1,13 @@
-清單筆數：{'國道': 1833, '省道': 2393}
-符合範圍：2084 支
-抓得到畫面：1518 支
-抓得到（依道路）：{"103": 1, "107甲": 1, "108": 2, "163": 1, "168": 1, "171甲": 1, "172": 1, "187": 1, "188": 2, "中山路": 1, "中山路一段": 1, "中正路": 2, "中環路三段": 1, "中環路二段": 1, "中義路": 2, "九大路": 1, "光復路": 1, "南港聯絡道": 2, "南雄南路": 1, "台15線": 6, "台17甲線": 2, "台17線": 32, "台18線": 37, "台19甲線": 13, "台19線": 7, "台1線": 46, "台20線": 32, "台22線": 4, "台24線": 13, "台25線": 5, "台27甲線": 4, "台27線": 9, "台28線": 15, "台29線": 24, "台2線": 7, "台37線": 2, "台39線": 5, "台3線": 30, "台61側車道": 4, "台61線": 7, "台64線": 34, "台65線": 13, "台82線": 23, "台84北門玉井線側邊道路": 1, "台84線": 24, "台86線": 16, "台88線": 21, "台9甲線": 1, "台9線": 43, "國道1號": 338, "國道1號五股楊梅高架道路": 77, "國道1號汐止五股高架道路": 42, "國道3甲": 20, "國道3號": 484, "國道5號": 25, "外環路": 1, "大同路": 1, "安明路四段": 1, "延平一路": 1, "延平二路": 1, "建國路": 2, "新北大橋機車專用道": 1, "旗南三路": 1, "板城路": 4, "民族路": 1, "民生東路": 1, "沿海路": 1, "淡金路": 2, "濱南路": 1, "無名道路5": 2, "無名道路6": 1, "石化二路": 1, "統嶺路": 1, "華中南路": 1, "載南路": 1, "金崙火車站道路": 2}
-失敗原因：{"cctvn.freeway.gov.tw ReadTimeout": 15, "cctvn5.freeway.gov.tw HTTP 404": 1, "cctvc.freeway.gov.tw ConnectionError": 1, "cctvs.freeway.gov.tw ConnectTimeout": 541, "cctv-ss08.thb.gov.tw:443 HTTP 404": 1, "cctv-ss04.thb.gov.tw:443 SSLError": 3, "cctv-ss03.thb.gov.tw:443 SSLError": 1, "cctv-ss05.thb.gov.tw:443 SSLError": 1, "cctv-ss06.thb.gov.tw:443 SSLError": 2}
-範圍內可用鏡頭（依縣市）：{"國道1/3號·其他縣市": 855, "臺北市": 134, "高雄市": 98}
+清單筆數：{'國道': 1834, '省道': 2397}
+符合範圍：2086 支
+抓得到畫面：1482 支
+抓得到（依道路）：{"103": 1, "107甲": 1, "108": 2, "163": 1, "168": 1, "171甲": 1, "172": 1, "187": 1, "188": 2, "中山路": 1, "中山路一段": 1, "中正路": 2, "中環路三段": 1, "中環路二段": 1, "中義路": 2, "九大路": 1, "光復路": 1, "南港聯絡道": 2, "南雄南路": 1, "台15線": 6, "台17甲線": 2, "台17線": 34, "台18線": 37, "台19甲線": 13, "台19線": 7, "台1線": 47, "台20線": 32, "台22線": 4, "台24線": 13, "台25線": 5, "台27甲線": 4, "台27線": 9, "台28線": 15, "台29線": 25, "台2線": 7, "台37線": 2, "台39線": 5, "台3線": 30, "台61側車道": 4, "台61線": 7, "台64線": 35, "台65線": 14, "台82線": 23, "台84北門玉井線側邊道路": 1, "台84線": 24, "台86線": 15, "台88線": 21, "台9甲線": 1, "台9線": 42, "國道1號": 312, "國道1號五股楊梅高架道路": 77, "國道1號汐止五股高架道路": 42, "國道3甲": 19, "國道3號": 470, "國道5號": 25, "外環路": 1, "大同路": 1, "大潭路": 1, "安明路四段": 1, "延平一路": 1, "延平二路": 1, "建國路": 2, "新北大橋機車專用道": 1, "旗南三路": 1, "板城路": 4, "民族路": 1, "民生東路": 1, "沿海路": 1, "淡金路": 2, "濱南路": 1, "無名道路5": 2, "無名道路6": 1, "石化二路": 1, "統嶺路": 1, "華中南路": 1, "載南路": 1, "金崙火車站道路": 2}
+失敗原因：{"cctvn.freeway.gov.tw ReadTimeout": 2, "cctvn5.freeway.gov.tw HTTP 403": 1, "cctvc.freeway.gov.tw ConnectionError": 57, "cctvs.freeway.gov.tw ConnectTimeout": 541, "cctv-ss03.thb.gov.tw:443 ConnectionError": 1, "cctv-ss06.thb.gov.tw:443 SSLError": 1, "cctv-ss08.thb.gov.tw:443 ConnectionError": 1}
+範圍內可用鏡頭（依縣市）：{"統計失敗": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without"}
 連不上主機的變體測試：
+cctvc.freeway.gov.tw | https長等待=(True, 'multipart/x-mixed-replace;boun') | http=(False, 'ConnectTimeout')
+cctvc.freeway.gov.tw | https長等待=(False, 'ConnectionError') | http=(False, 'ConnectTimeout')
+cctvc.freeway.gov.tw | https長等待=(True, 'multipart/x-mixed-replace;boun') | http=(False, 'ConnectTimeout')
 cctvs.freeway.gov.tw | https長等待=(False, 'ConnectTimeout') | http=(False, 'ConnectTimeout')
 cctvs.freeway.gov.tw | https長等待=(False, 'ConnectTimeout') | http=(False, 'ConnectTimeout')
 cctvs.freeway.gov.tw | https長等待=(False, 'ConnectTimeout') | http=(False, 'ConnectTimeout')
