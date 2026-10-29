@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T07:25:44.117285+00:00",
+ "updated": "2026-10-29T07:34:59.760858+00:00",
  "cameras": [
   {
    "id": "CCTV-12-0150-001-001",
@@ -18,6 +18,15 @@
    "lat": 25.06091,
    "lon": 121.4411,
    "url": "https://cctv-ss03.thb.gov.tw:443/T65-0K+750/snapshot"
+  },
+  {
+   "id": "CCTV-12-0640-011-005",
+   "road": "108",
+   "kind": "省道",
+   "name": "108 11K+000 台64線11K+000",
+   "lat": 25.0814049,
+   "lon": 121.442381,
+   "url": "https://cctv-ss08.thb.gov.tw:443/T64-11K+000/snapshot"
   },
   {
    "id": "CCTV-12-0640-000-007",
@@ -108,6 +117,15 @@
    "lat": 22.87423,
    "lon": 120.25372,
    "url": "https://cctv-ss05.thb.gov.tw:443/T1-350K+200/snapshot"
+  },
+  {
+   "id": "CCTV-54-019A-033-001",
+   "road": "中正路",
+   "kind": "省道",
+   "name": "中正路 33K+940 台南市新化區中正路990號",
+   "lat": 23.0531,
+   "lon": 120.30016,
+   "url": "https://cctv-ss06.thb.gov.tw:443/T19A-33K+940/snapshot"
   },
   {
    "id": "CCTV-12-0640-025-003",
@@ -261,6 +279,15 @@
    "lat": 22.89554,
    "lon": 120.22369,
    "url": "https://cctv-ss04.thb.gov.tw:443/T17A-24K+350/snapshot"
+  },
+  {
+   "id": "CCTV-31-017A-019-001",
+   "road": "台17甲線",
+   "kind": "省道",
+   "name": "台17甲線 19K+900 台17甲線19K+900",
+   "lat": 22.91401,
+   "lon": 120.19032,
+   "url": "https://cctv-ss04.thb.gov.tw:443/T17A-19K+900/snapshot"
   },
   {
    "id": "CCTV-32-0170-269-002",
@@ -659,15 +686,6 @@
    "url": "https://cctv-ss06.thb.gov.tw:443/T18-39K+400/snapshot"
   },
   {
-   "id": "CCTV-56-0180-034-002",
-   "road": "台18線",
-   "kind": "省道",
-   "name": "台18線 34K+650 觸口明隧道東邊100公尺",
-   "lat": 23.43827,
-   "lon": 120.60757,
-   "url": "https://cctv-ss06.thb.gov.tw:443/T18-34K+650/snapshot"
-  },
-  {
    "id": "CCTV-56-0180-034-001",
    "road": "台18線",
    "kind": "省道",
@@ -675,6 +693,15 @@
    "lat": 23.43827,
    "lon": 120.60715,
    "url": "https://cctv-ss06.thb.gov.tw:443/T18-34K+300/snapshot"
+  },
+  {
+   "id": "CCTV-56-0180-034-002",
+   "road": "台18線",
+   "kind": "省道",
+   "name": "台18線 34K+650 觸口明隧道東邊100公尺",
+   "lat": 23.43827,
+   "lon": 120.60757,
+   "url": "https://cctv-ss06.thb.gov.tw:443/T18-34K+650/snapshot"
   },
   {
    "id": "CCTV-56-0180-056-001",
@@ -794,6 +821,24 @@
    "url": "https://cctv-ss06.thb.gov.tw:443/T18-70K+830/snapshot"
   },
   {
+   "id": "CCTV-56-0180-062-002",
+   "road": "台18線",
+   "kind": "省道",
+   "name": "台18線 62K+750 嘉義縣竹崎鄉石棹 7-11超商 東向路側",
+   "lat": 23.472501,
+   "lon": 120.696623,
+   "url": "https://cctv-ss06.thb.gov.tw:443/T18-62K+750/snapshot"
+  },
+  {
+   "id": "CCTV-56-0180-065-001",
+   "road": "台18線",
+   "kind": "省道",
+   "name": "台18線 65K+970 嘉義縣阿里山鄉迷糊步道 東向路側",
+   "lat": 23.477,
+   "lon": 120.71859,
+   "url": "https://cctv-ss06.thb.gov.tw:443/T18-65K+970/snapshot"
+  },
+  {
    "id": "CCTV-56-0180-071-003",
    "road": "台18線",
    "kind": "省道",
@@ -864,6 +909,15 @@
    "lat": 23.48937,
    "lon": 120.778948,
    "url": "https://cctv-ss06.thb.gov.tw:443/T18-79K+760/snapshot"
+  },
+  {
+   "id": "CCTV-56-0180-079-002",
+   "road": "台18線",
+   "kind": "省道",
+   "name": "台18線 79K+470 嘉義縣阿里山鄉明隧道 東向路側",
+   "lat": 23.4904,
+   "lon": 120.77641,
+   "url": "https://cctv-ss06.thb.gov.tw:443/T18-79K+470/snapshot"
   },
   {
    "id": "CCTV-56-0180-079-001",
@@ -1055,7 +1109,7 @@
    "url": "https://cctv-ss06.thb.gov.tw:443/T19-82K+950/snapshot"
   },
   {
-   "id": "CCTV-32-0010-433-001",
+   "id": "CCTV-32-0010-433-002",
    "road": "台1線",
    "kind": "省道",
    "name": "台1線 433K+010 台1線433K+010",
@@ -1244,6 +1298,15 @@
    "url": "https://cctv-ss05.thb.gov.tw:443/T1-371K+750/snapshot"
   },
   {
+   "id": "CCTV-31-0010-351-001",
+   "road": "台1線",
+   "kind": "省道",
+   "name": "台1線 351K+100 台1線351K+100",
+   "lat": 22.86673,
+   "lon": 120.25616,
+   "url": "https://cctv-ss04.thb.gov.tw:443/T1-351K+100/snapshot"
+  },
+  {
    "id": "CCTV-54-0010-343-002",
    "road": "台1線",
    "kind": "省道",
@@ -1271,6 +1334,15 @@
    "url": "https://cctv-ss06.thb.gov.tw:443/T1-342K+603/snapshot"
   },
   {
+   "id": "CCTV-54-0010-342-002",
+   "road": "台1線",
+   "kind": "省道",
+   "name": "台1線 342K+590 台南都會公園旁",
+   "lat": 22.93334,
+   "lon": 120.22102,
+   "url": "https://cctv-ss06.thb.gov.tw:443/T1-342K+590(S)/snapshot"
+  },
+  {
    "id": "CCTV-54-0010-333-001",
    "road": "台1線",
    "kind": "省道",
@@ -1278,6 +1350,15 @@
    "lat": 23.00196,
    "lon": 120.23504,
    "url": "https://cctv-ss07.thb.gov.tw:443/T1-333K+900/snapshot"
+  },
+  {
+   "id": "CCTV-54-0010-332-001",
+   "road": "台1線",
+   "kind": "省道",
+   "name": "台1線 332K+600 永康市中華路538號",
+   "lat": 23.01268,
+   "lon": 120.23135,
+   "url": "https://cctv-ss06.thb.gov.tw:443/T1-332K+600/snapshot"
   },
   {
    "id": "CCTV-54-0010-330-002",
@@ -1460,6 +1541,15 @@
    "url": "https://cctv-ss06.thb.gov.tw:443/T20-3K+530/snapshot"
   },
   {
+   "id": "CCTV-54-0200-003-008",
+   "road": "台20線",
+   "kind": "省道",
+   "name": "台20線 3K+430 中山南路119巷與中山南路123巷路口",
+   "lat": 23.012992,
+   "lon": 120.229224,
+   "url": "https://cctv-ss07.thb.gov.tw:443/T20-3K+430-1/snapshot"
+  },
+  {
    "id": "CCTV-54-0200-003-003",
    "road": "台20線",
    "kind": "省道",
@@ -1467,6 +1557,24 @@
    "lat": 23.01428,
    "lon": 120.23295,
    "url": "https://cctv-ss06.thb.gov.tw:443/T20-3K+980/snapshot"
+  },
+  {
+   "id": "CCTV-54-0200-004-002",
+   "road": "台20線",
+   "kind": "省道",
+   "name": "台20線 4K+300 中山東路與中山南路231巷路口",
+   "lat": 23.015399,
+   "lon": 120.235681,
+   "url": "https://cctv-ss07.thb.gov.tw:443/T20-4K+300-2/snapshot"
+  },
+  {
+   "id": "CCTV-54-0200-005-001",
+   "road": "台20線",
+   "kind": "省道",
+   "name": "台20線 5K+400 中山南路與忠孝街-永二街路口",
+   "lat": 23.020258,
+   "lon": 120.244316,
+   "url": "https://cctv-ss07.thb.gov.tw:443/T20-5K+400-1/snapshot"
   },
   {
    "id": "CCTV-54-0200-006-001",
@@ -1494,6 +1602,15 @@
    "lat": 23.04633,
    "lon": 120.31705,
    "url": "https://cctv-ss06.thb.gov.tw:443/T20-13K+580/snapshot"
+  },
+  {
+   "id": "CCTV-54-0200-014-001",
+   "road": "台20線",
+   "kind": "省道",
+   "name": "台20線 14K+450 台南市新化區南橫公路",
+   "lat": 23.0524,
+   "lon": 120.32247,
+   "url": "https://cctv-ss06.thb.gov.tw:443/T20-14K+450/snapshot"
   },
   {
    "id": "CCTV-55-0200-023-001",
@@ -1539,6 +1656,15 @@
    "lat": 23.06939,
    "lon": 120.55239,
    "url": "https://cctv-ss06.thb.gov.tw:443/T20-52K+090/snapshot"
+  },
+  {
+   "id": "CCTV-54-0200-018-002",
+   "road": "台20線",
+   "kind": "省道",
+   "name": "台20線 18K+550 千鳥營區",
+   "lat": 23.07019,
+   "lon": 120.35598,
+   "url": "https://cctv-ss06.thb.gov.tw:443/T20-18K+550/snapshot"
   },
   {
    "id": "CCTV-55-0200-051-001",
@@ -1973,6 +2099,15 @@
    "url": "https://cctv-ss05.thb.gov.tw:443/T27-79K+000/snapshot"
   },
   {
+   "id": "CCTV-38-0270-072-001",
+   "road": "台27線",
+   "kind": "省道",
+   "name": "台27線 72K+000 台27線72K+000",
+   "lat": 22.54439,
+   "lon": 120.4616,
+   "url": "https://cctv-ss05.thb.gov.tw:443/T27-72k+000/snapshot"
+  },
+  {
    "id": "CCTV-38-0270-058-001",
    "road": "台27線",
    "kind": "省道",
@@ -2196,6 +2331,15 @@
    "lat": 22.663245,
    "lon": 120.426427,
    "url": "https://cctv-ss05.thb.gov.tw:443/T29-92K+050/snapshot"
+  },
+  {
+   "id": "CCTV-31-0290-091-003",
+   "road": "台29線",
+   "kind": "省道",
+   "name": "台29線 91K+200 台29線91K+200",
+   "lat": 22.6708401,
+   "lon": 120.4263145,
+   "url": "https://cctv-ss05.thb.gov.tw:443/T29-91K+200/snapshot"
   },
   {
    "id": "CCTV-31-0290-085-004",
@@ -2439,6 +2583,15 @@
    "lat": 25.20117,
    "lon": 121.6716,
    "url": "https://cctv-ss01.thb.gov.tw:443/T2-46K+400(S)/snapshot"
+  },
+  {
+   "id": "CCTV-11-0020-046-002",
+   "road": "台2線",
+   "kind": "省道",
+   "name": "台2線 46K+400 萬里區萬里隧道西口(E)",
+   "lat": 25.20132,
+   "lon": 121.671,
+   "url": "https://cctv-ss01.thb.gov.tw:443/T2-46K+400-2/snapshot"
   },
   {
    "id": "CCTV-52-0370-014-002",
@@ -2756,6 +2909,15 @@
    "url": "https://cctv-ss06.thb.gov.tw:443/T3-296K+980/snapshot"
   },
   {
+   "id": "CCTV-55-0030-298-004",
+   "road": "台3線",
+   "kind": "省道",
+   "name": "台3線 298K+500 嘉義縣中埔鄉中崙一號橋北端南下路側",
+   "lat": 23.38336667,
+   "lon": 120.55205,
+   "url": "https://cctv-ss06.thb.gov.tw:443/T3-298K+500/snapshot"
+  },
+  {
    "id": "CCTV-56-0030-289-002",
    "road": "台3線",
    "kind": "省道",
@@ -2772,6 +2934,15 @@
    "lat": 23.37177,
    "lon": 120.15488,
    "url": "https://cctv-ss06.thb.gov.tw:443/T61-272K+551/snapshot"
+  },
+  {
+   "id": "CCTV-52-0610-272-001",
+   "road": "台61側車道",
+   "kind": "省道",
+   "name": "台61側車道 272K+470 272k南下車道(順樁)(南向)",
+   "lat": 23.37255,
+   "lon": 120.15484,
+   "url": "https://cctv-ss06.thb.gov.tw:443/T61-272K+470/snapshot"
   },
   {
    "id": "CCTV-52-0610-270-001",
@@ -2835,6 +3006,15 @@
    "lat": 23.373,
    "lon": 120.15516,
    "url": "https://cctv-ss06.thb.gov.tw:443/T61-272K+420/snapshot"
+  },
+  {
+   "id": "CCTV-52-0610-271-001",
+   "road": "台61線",
+   "kind": "省道",
+   "name": "台61線 271K+000 271K 布袋二南出口標誌架(南向)",
+   "lat": 23.38379,
+   "lon": 120.16106,
+   "url": "https://cctv-ss06.thb.gov.tw:443/T61-271K+000/snapshot"
   },
   {
    "id": "CCTV-52-0610-264-001",
@@ -2909,6 +3089,15 @@
    "url": "https://cctv-ss07.thb.gov.tw:443/T64-24K+200/snapshot"
   },
   {
+   "id": "CCTV-12-0640-023-002",
+   "road": "台64線",
+   "kind": "省道",
+   "name": "台64線 23K+750 快速公路64號(中和一交流道到中和交流道)(E)",
+   "lat": 25.00267,
+   "lon": 121.4848,
+   "url": "https://cctv-ss08.thb.gov.tw:443/T64-23K+750/snapshot"
+  },
+  {
    "id": "CCTV-12-0640-023-003",
    "road": "台64線",
    "kind": "省道",
@@ -2925,6 +3114,15 @@
    "lat": 25.00973,
    "lon": 121.4813,
    "url": "https://cctv-ss08.thb.gov.tw:443/T64-22K+871/snapshot"
+  },
+  {
+   "id": "CCTV-12-0640-022-006",
+   "road": "台64線",
+   "kind": "省道",
+   "name": "台64線 22K+370 台64線22K+370",
+   "lat": 25.0117614,
+   "lon": 121.4775117,
+   "url": "https://cctv-ss08.thb.gov.tw:443/T64-22K+370/snapshot"
   },
   {
    "id": "CCTV-12-0640-022-003",
@@ -3008,6 +3206,24 @@
    "url": "https://cctv-ss08.thb.gov.tw:443/T64-19K+631/snapshot"
   },
   {
+   "id": "CCTV-12-0640-018-005",
+   "road": "台64線",
+   "kind": "省道",
+   "name": "台64線 18K+890 台64線18K+890",
+   "lat": 25.0351101,
+   "lon": 121.4675437,
+   "url": "https://cctv-ss08.thb.gov.tw:443/T64-18K+890/snapshot"
+  },
+  {
+   "id": "CCTV-12-0640-018-004",
+   "road": "台64線",
+   "kind": "省道",
+   "name": "台64線 18K+911 快速公路64號(板橋交流道到江子翠交流道)(W)",
+   "lat": 25.03594,
+   "lon": 121.4698,
+   "url": "https://cctv-ss08.thb.gov.tw:443/T64-18K+911/snapshot"
+  },
+  {
    "id": "CCTV-12-0640-018-003",
    "road": "台64線",
    "kind": "省道",
@@ -3024,6 +3240,15 @@
    "lat": 25.03868,
    "lon": 121.4806,
    "url": "https://cctv-ss08.thb.gov.tw:443/T64-17K+781/snapshot"
+  },
+  {
+   "id": "CCTV-12-0640-017-005",
+   "road": "台64線",
+   "kind": "省道",
+   "name": "台64線 17K+140 台64線17K+140",
+   "lat": 25.04416667,
+   "lon": 121.4788611,
+   "url": "https://cctv-ss08.thb.gov.tw:443/T64-17K+140/snapshot"
   },
   {
    "id": "CCTV-12-0640-016-002",
@@ -3107,6 +3332,15 @@
    "url": "https://cctv-ss08.thb.gov.tw:443/T64-8K+814/snapshot"
   },
   {
+   "id": "CCTV-12-0640-008-003",
+   "road": "台64線",
+   "kind": "省道",
+   "name": "台64線 8K+220 台64線8K+220",
+   "lat": 25.10688889,
+   "lon": 121.4484167,
+   "url": "https://cctv-ss08.thb.gov.tw:443/T64-8K+220/snapshot"
+  },
+  {
    "id": "CCTV-12-0650-009-002",
    "road": "台65線",
    "kind": "省道",
@@ -3141,6 +3375,15 @@
    "lat": 24.99903,
    "lon": 121.451,
    "url": "https://cctv-ss03.thb.gov.tw:443/T65-7K+851/snapshot"
+  },
+  {
+   "id": "CCTV-12-0650-006-002",
+   "road": "台65線",
+   "kind": "省道",
+   "name": "台65線 6K+650 縣民大道入口到板橋一入口(N)",
+   "lat": 25.01002,
+   "lon": 121.4512,
+   "url": "https://cctv-ss03.thb.gov.tw:443/T65-6K+650/snapshot"
   },
   {
    "id": "CCTV-12-0650-005-002",
@@ -3224,6 +3467,33 @@
    "url": "https://cctv-ss03.thb.gov.tw:443/T65-0K+872/snapshot"
   },
   {
+   "id": "CCTV-52-0820-027-001",
+   "road": "台82線",
+   "kind": "省道",
+   "name": "台82線 27K+214 台82線27K+214E",
+   "lat": 23.4170662,
+   "lon": 120.4015957,
+   "url": "https://cctv-ss08.thb.gov.tw:443/T82-27K+214/snapshot"
+  },
+  {
+   "id": "CCTV-52-0820-028-001",
+   "road": "台82線",
+   "kind": "省道",
+   "name": "台82線 28K+500 台82線28K+500[W]",
+   "lat": 23.420902,
+   "lon": 120.413582,
+   "url": "https://cctv-ss08.thb.gov.tw:443/T82-28K+500/snapshot"
+  },
+  {
+   "id": "CCTV-52-0820-029-001",
+   "road": "台82線",
+   "kind": "省道",
+   "name": "台82線 29K+713 台82線29K+713W",
+   "lat": 23.424477,
+   "lon": 120.424318,
+   "url": "https://cctv-ss08.thb.gov.tw:443/T82-29K+713/snapshot"
+  },
+  {
    "id": "CCTV-52-0820-029-002",
    "road": "台82線",
    "kind": "省道",
@@ -3269,6 +3539,15 @@
    "url": "https://cctv-ss08.thb.gov.tw:443/T82-19K+597/snapshot"
   },
   {
+   "id": "CCTV-52-0820-018-002",
+   "road": "台82線",
+   "kind": "省道",
+   "name": "台82線 18K+869 台82線18K+869E",
+   "lat": 23.428663,
+   "lon": 120.321136,
+   "url": "https://cctv-ss08.thb.gov.tw:443/T82-18K+869/snapshot"
+  },
+  {
    "id": "CCTV-52-0820-018-001",
    "road": "台82線",
    "kind": "省道",
@@ -3312,6 +3591,15 @@
    "lat": 23.441187,
    "lon": 120.285778,
    "url": "https://cctv-ss08.thb.gov.tw:443/T82-14K+800/snapshot"
+  },
+  {
+   "id": "CCTV-52-0820-013-001",
+   "road": "台82線",
+   "kind": "省道",
+   "name": "台82線 13K+090 台82線13K+090W",
+   "lat": 23.450851,
+   "lon": 120.272891,
+   "url": "https://cctv-ss08.thb.gov.tw:443/T82-13K+090/snapshot"
   },
   {
    "id": "CCTV-52-0820-011-001",
@@ -3494,6 +3782,15 @@
    "url": "https://cctv-ss08.thb.gov.tw:443/T84-22K+050/snapshot"
   },
   {
+   "id": "CCTV-53-0840-021-001",
+   "road": "台84線",
+   "kind": "省道",
+   "name": "台84線 21K+151 台84線21K+151[W]",
+   "lat": 23.183396,
+   "lon": 120.294848,
+   "url": "https://cctv-ss08.thb.gov.tw:443/T84-21K+151/snapshot"
+  },
+  {
    "id": "CCTV-53-0840-020-001",
    "road": "台84線",
    "kind": "省道",
@@ -3593,6 +3890,15 @@
    "url": "https://cctv-ss08.thb.gov.tw:443/T84-3K+200/snapshot"
   },
   {
+   "id": "CCTV-53-0840-001-001",
+   "road": "台84線",
+   "kind": "省道",
+   "name": "台84線 1K+300 台84線1K+300[E]",
+   "lat": 23.27449,
+   "lon": 120.137804,
+   "url": "https://cctv-ss08.thb.gov.tw:443/T84-1K-300/snapshot"
+  },
+  {
    "id": "CCTV-54-0860-003-001",
    "road": "台86線",
    "kind": "省道",
@@ -3600,6 +3906,24 @@
    "lat": 22.927042,
    "lon": 120.208861,
    "url": "https://cctv-ss08.thb.gov.tw:443/T86-3K+600/snapshot"
+  },
+  {
+   "id": "CCTV-54-0860-004-001",
+   "road": "台86線",
+   "kind": "省道",
+   "name": "台86線 4K+710 台86線4K+710E",
+   "lat": 22.9286762,
+   "lon": 120.2193664,
+   "url": "https://cctv-ss08.thb.gov.tw:443/T86-4K+710/snapshot"
+  },
+  {
+   "id": "CCTV-54-0860-002-002",
+   "road": "台86線",
+   "kind": "省道",
+   "name": "台86線 2K+500 台86線2K+500E",
+   "lat": 22.931696,
+   "lon": 120.199931,
+   "url": "https://cctv-ss08.thb.gov.tw:443/T86-2K+500-1/snapshot"
   },
   {
    "id": "CCTV-54-0860-002-003",
@@ -3665,6 +3989,15 @@
    "url": "https://cctv-ss08.thb.gov.tw:443/T86-0K+035/snapshot"
   },
   {
+   "id": "CCTV-54-0860-006-002",
+   "road": "台86線",
+   "kind": "省道",
+   "name": "台86線 6K+319 台86線6K+319W",
+   "lat": 22.936389,
+   "lon": 120.232778,
+   "url": "https://cctv-ss08.thb.gov.tw:443/T86-6K+319/snapshot"
+  },
+  {
    "id": "CCTV-54-0860-007-001",
    "road": "台86線",
    "kind": "省道",
@@ -3674,6 +4007,15 @@
    "url": "https://cctv-ss08.thb.gov.tw:443/T86-7K+798/snapshot"
   },
   {
+   "id": "CCTV-54-0860-014-002",
+   "road": "台86線",
+   "kind": "省道",
+   "name": "台86線 14K+909 台86線14K+909順向",
+   "lat": 22.946111,
+   "lon": 120.303611,
+   "url": "https://cctv-ss08.thb.gov.tw:443/T86-14K+909/snapshot"
+  },
+  {
    "id": "CCTV-54-0860-016-001",
    "road": "台86線",
    "kind": "省道",
@@ -3681,6 +4023,15 @@
    "lat": 22.958889,
    "lon": 120.308056,
    "url": "https://cctv-ss08.thb.gov.tw:443/T86-16K+350/snapshot"
+  },
+  {
+   "id": "CCTV-54-0860-017-001",
+   "road": "台86線",
+   "kind": "省道",
+   "name": "台86線 17K+617 台86線17K+617[W]",
+   "lat": 22.96966,
+   "lon": 120.31208,
+   "url": "https://cctv-ss08.thb.gov.tw:443/T86-17K+617/snapshot"
   },
   {
    "id": "CCTV-54-0860-018-002",
@@ -4106,6 +4457,24 @@
    "url": "https://cctv-ss05.thb.gov.tw:443/T9-395K+900S/snapshot"
   },
   {
+   "id": "CCTV-37-0090-395-004",
+   "road": "台9線",
+   "kind": "省道",
+   "name": "台9線 395K+100 台9線395K+100",
+   "lat": 22.55263,
+   "lon": 120.97439,
+   "url": "https://cctv-ss07.thb.gov.tw:443/T9-395K+100/snapshot"
+  },
+  {
+   "id": "CCTV-37-0090-395-005",
+   "road": "台9線",
+   "kind": "省道",
+   "name": "台9線 395K+100 台9線395K+100-1",
+   "lat": 22.55272,
+   "lon": 120.97446,
+   "url": "https://cctv-ss07.thb.gov.tw:443/T9-395K+100-1/snapshot"
+  },
+  {
    "id": "CCTV-37-0090-393-002",
    "road": "台9線",
    "kind": "省道",
@@ -4167,6 +4536,24 @@
    "lat": 22.60287,
    "lon": 121.000488,
    "url": "https://cctv-ss05.thb.gov.tw:443/T9-388K+300/snapshot"
+  },
+  {
+   "id": "CCTV-37-0090-385-002",
+   "road": "台9線",
+   "kind": "省道",
+   "name": "台9線 385K+900 台9線385K+900",
+   "lat": 22.62187,
+   "lon": 121.01078,
+   "url": "https://cctv-ss07.thb.gov.tw:443/T9-385K+900/snapshot"
+  },
+  {
+   "id": "CCTV-37-0090-385-001",
+   "road": "台9線",
+   "kind": "省道",
+   "name": "台9線 385K+300 台9線385K+300",
+   "lat": 22.62629,
+   "lon": 121.01262,
+   "url": "https://cctv-ss05.thb.gov.tw:443/T9-385K+300/snapshot"
   },
   {
    "id": "CCTV-37-0090-382-004",
@@ -4241,6 +4628,15 @@
    "url": "https://cctv-ss03.thb.gov.tw:443/T9-11K+650/snapshot"
   },
   {
+   "id": "CCTV-11-0090-014-001",
+   "road": "台9線",
+   "kind": "省道",
+   "name": "台9線 14K+200 新店區北宜路二段國史館(S)",
+   "lat": 24.95409,
+   "lon": 121.5663,
+   "url": "https://cctv-ss03.thb.gov.tw:443/T9-14K+200/snapshot"
+  },
+  {
    "id": "CCTV-11-0090-023-002",
    "road": "台9線",
    "kind": "省道",
@@ -4266,6 +4662,1905 @@
    "lat": 22.940556,
    "lon": 120.254444,
    "url": "https://cctv-ss08.thb.gov.tw:443/T86-8K+896/snapshot"
+  },
+  {
+   "id": "CCTV-N1-N-250.500-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 250K+500",
+   "lat": 23.611501,
+   "lon": 120.437075,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=243"
+  },
+  {
+   "id": "CCTV-N1-S-250.306-L-NS-1-大林交流道",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 250K+300",
+   "lat": 23.612333,
+   "lon": 120.436493,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=399"
+  },
+  {
+   "id": "CCTV-N1-S-250-I-WS-21-南下入口",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 250K+000",
+   "lat": 23.612372,
+   "lon": 120.436297,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1674"
+  },
+  {
+   "id": "CCTV-N1-S-249.310-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 249K+310",
+   "lat": 23.620947,
+   "lon": 120.43851,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=580"
+  },
+  {
+   "id": "CCTV-N1-S-248.050-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 248K+050",
+   "lat": 23.632384,
+   "lon": 120.440999,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=419"
+  },
+  {
+   "id": "CCTV-N1-N-247.600-M-斗南北地磅站",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 247K+600",
+   "lat": 23.635611,
+   "lon": 120.442021,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=407"
+  },
+  {
+   "id": "CCTV-N1-S-246.780-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 246K+780",
+   "lat": 23.643523,
+   "lon": 120.443979,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=242"
+  },
+  {
+   "id": "CCTV-N1-S-246.150-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 246K+150",
+   "lat": 23.648897,
+   "lon": 120.446306,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=677"
+  },
+  {
+   "id": "CCTV-N1-N-245.060-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 245K+060",
+   "lat": 23.657367,
+   "lon": 120.450717,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=498"
+  },
+  {
+   "id": "CCTV-N1-S-243.950-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 243K+950",
+   "lat": 23.666947,
+   "lon": 120.455452,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=241"
+  },
+  {
+   "id": "CCTV-N1-S-243.500-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 243K+500",
+   "lat": 23.670172,
+   "lon": 120.45764,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=240"
+  },
+  {
+   "id": "CCTV-N1-N-242.050-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 242K+050",
+   "lat": 23.681067,
+   "lon": 120.4648,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=469"
+  },
+  {
+   "id": "CCTV-N1-N-241.515-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 241K+515",
+   "lat": 23.685463,
+   "lon": 120.467496,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=676"
+  },
+  {
+   "id": "CCTV-N1-S-240.370-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 240K+370",
+   "lat": 23.694897,
+   "lon": 120.472218,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=418"
+  },
+  {
+   "id": "CCTV-N1-S-239.450-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 239K+450",
+   "lat": 23.702835,
+   "lon": 120.474883,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=579"
+  },
+  {
+   "id": "CCTV-N1-N-238.025-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 238K+025",
+   "lat": 23.715641,
+   "lon": 120.476171,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=578"
+  },
+  {
+   "id": "CCTV-N1-S-237.042-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 237K+042",
+   "lat": 23.72457,
+   "lon": 120.47439,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=3"
+  },
+  {
+   "id": "CCTV-N1-S-235.750-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 235K+750",
+   "lat": 23.735598,
+   "lon": 120.470363,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=417"
+  },
+  {
+   "id": "CCTV-N1-S-235.700-L-WE-1-虎尾交流道穿越道",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 235K+700",
+   "lat": 23.735754,
+   "lon": 120.470229,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=400"
+  },
+  {
+   "id": "CCTV-N1-N-234.500-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 234K+500",
+   "lat": 23.746723,
+   "lon": 120.467867,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=381"
+  },
+  {
+   "id": "CCTV-N1-N-233.210-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 233K+210",
+   "lat": 23.757773,
+   "lon": 120.467802,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=361"
+  },
+  {
+   "id": "CCTV-N1-N-232.435-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 232K+435",
+   "lat": 23.76489,
+   "lon": 120.46914,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=577"
+  },
+  {
+   "id": "CCTV-N1-N-231.000-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 231K+000",
+   "lat": 23.777083,
+   "lon": 120.473633,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=468"
+  },
+  {
+   "id": "CCTV-N1-N-230-O-SE-2-北上出口",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 230K+000",
+   "lat": 23.779369,
+   "lon": 120.476433,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1670"
+  },
+  {
+   "id": "CCTV-N1-N-230.300-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 230K+300",
+   "lat": 23.783689,
+   "lon": 120.476374,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=237"
+  },
+  {
+   "id": "CCTV-N1-S-229.680-R-西螺服務區-小車區2",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 229K+680",
+   "lat": 23.787868,
+   "lon": 120.477529,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1430"
+  },
+  {
+   "id": "CCTV-N1-S-229.650-R-西螺服務區-小車區1",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 229K+650",
+   "lat": 23.787957,
+   "lon": 120.47776,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1429"
+  },
+  {
+   "id": "CCTV-N1-N-229.700-R-西螺服務區-小車區2",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 229K+700",
+   "lat": 23.78799,
+   "lon": 120.47876,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1432"
+  },
+  {
+   "id": "CCTV-N1-N-229.600-R-西螺服務區-小車區1",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 229K+600",
+   "lat": 23.789241,
+   "lon": 120.479528,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1431"
+  },
+  {
+   "id": "CCTV-N1-S-229.465-R-西螺服務區入口",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 229K+465",
+   "lat": 23.789823,
+   "lon": 120.478521,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=456"
+  },
+  {
+   "id": "CCTV-N1-N-229.280-R-西螺服務區出口",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 229K+280",
+   "lat": 23.790731,
+   "lon": 120.479417,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=455"
+  },
+  {
+   "id": "CCTV-N1-N-229.075-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 229K+075",
+   "lat": 23.793314,
+   "lon": 120.480509,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=555"
+  },
+  {
+   "id": "CCTV-N1-S-228.575-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 228K+575",
+   "lat": 23.798095,
+   "lon": 120.481811,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=2"
+  },
+  {
+   "id": "CCTV-N1-N-227.500-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 227K+500",
+   "lat": 23.807133,
+   "lon": 120.4841,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=487"
+  },
+  {
+   "id": "CCTV-N1-N-226.640-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 226K+640",
+   "lat": 23.815617,
+   "lon": 120.485187,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=675"
+  },
+  {
+   "id": "CCTV-N1-N-225.995-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 225K+995",
+   "lat": 23.820415,
+   "lon": 120.485341,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=4"
+  },
+  {
+   "id": "CCTV-N1-N-224.495-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 224K+495",
+   "lat": 23.834239,
+   "lon": 120.484682,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=576"
+  },
+  {
+   "id": "CCTV-N1-S-223.160-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 223K+160",
+   "lat": 23.845385,
+   "lon": 120.484259,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=236"
+  },
+  {
+   "id": "CCTV-N1-S-222.050-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 222K+050",
+   "lat": 23.856185,
+   "lon": 120.486179,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=416"
+  },
+  {
+   "id": "CCTV-N1-S-221.067-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 221K+067",
+   "lat": 23.865148,
+   "lon": 120.488676,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=674"
+  },
+  {
+   "id": "CCTV-N1-S-220-I-WS-1-南下入口",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 220K+000",
+   "lat": 23.870203,
+   "lon": 120.489473,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1668"
+  },
+  {
+   "id": "CCTV-N1-N-220.050-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 220K+050",
+   "lat": 23.87374,
+   "lon": 120.490353,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=235"
+  },
+  {
+   "id": "CCTV-N1-S-220-O-NW-1-南下出口",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 220K+860",
+   "lat": 23.875789,
+   "lon": 120.489628,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1669"
+  },
+  {
+   "id": "CCTV-N1-S-219.160-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 219K+160",
+   "lat": 23.882223,
+   "lon": 120.491253,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=672"
+  },
+  {
+   "id": "CCTV-N1-S-218.900-M-員林北地磅站",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 218K+900",
+   "lat": 23.884058,
+   "lon": 120.491677,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=415"
+  },
+  {
+   "id": "CCTV-N1-S-218.270-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 218K+270",
+   "lat": 23.889326,
+   "lon": 120.493048,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=234"
+  },
+  {
+   "id": "CCTV-N1-N-217.695-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 217K+695",
+   "lat": 23.894372,
+   "lon": 120.49526,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=554"
+  },
+  {
+   "id": "CCTV-N1-S-217.300-M-員林南地磅站",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 217K+300",
+   "lat": 23.898104,
+   "lon": 120.496355,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=414"
+  },
+  {
+   "id": "CCTV-N1-N-216.010-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 216K+010",
+   "lat": 23.909685,
+   "lon": 120.498002,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=406"
+  },
+  {
+   "id": "CCTV-N1-S-215.100-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 215K+100",
+   "lat": 23.917576,
+   "lon": 120.497363,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=670"
+  },
+  {
+   "id": "CCTV-N1-S-214.140-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 214K+140",
+   "lat": 23.926253,
+   "lon": 120.498568,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=233"
+  },
+  {
+   "id": "CCTV-N1-N-212.995-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 212K+995",
+   "lat": 23.935848,
+   "lon": 120.502406,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=575"
+  },
+  {
+   "id": "CCTV-N1-N-212.060-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 212K+060",
+   "lat": 23.94365,
+   "lon": 120.504897,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=345"
+  },
+  {
+   "id": "CCTV-N1-S-210-I-WS-1-南下入口",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 210K+880",
+   "lat": 23.952467,
+   "lon": 120.504891,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1664"
+  },
+  {
+   "id": "CCTV-N1-N-210.880-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 210K+880",
+   "lat": 23.954549,
+   "lon": 120.506544,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=232"
+  },
+  {
+   "id": "CCTV-N1-N-209.815-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 209K+815",
+   "lat": 23.963959,
+   "lon": 120.506475,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=553"
+  },
+  {
+   "id": "CCTV-N1-N-209.110-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 209K+110",
+   "lat": 23.971277,
+   "lon": 120.506198,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=231"
+  },
+  {
+   "id": "CCTV-N1-S-208.300-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 208K+300",
+   "lat": 23.977337,
+   "lon": 120.50634,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=413"
+  },
+  {
+   "id": "CCTV-N1-S-207.100-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 207K+100",
+   "lat": 23.98832,
+   "lon": 120.50817,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=574"
+  },
+  {
+   "id": "CCTV-N1-S-207-O-NE-1",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 207K+000",
+   "lat": 23.988444,
+   "lon": 120.508449,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=230"
+  },
+  {
+   "id": "CCTV-N1-N-206.000-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 206K+000",
+   "lat": 23.998042,
+   "lon": 120.510894,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=505"
+  },
+  {
+   "id": "CCTV-N1-S-210.150-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 210K+150",
+   "lat": 24.005978,
+   "lon": 120.512418,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=669"
+  },
+  {
+   "id": "CCTV-N1-S-204.980-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 204K+980",
+   "lat": 24.006637,
+   "lon": 120.512531,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=668"
+  },
+  {
+   "id": "CCTV-N1-S-203.650-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 203K+650",
+   "lat": 24.018857,
+   "lon": 120.515662,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=229"
+  },
+  {
+   "id": "CCTV-N1-N-202.825-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 202K+825",
+   "lat": 24.026231,
+   "lon": 120.518343,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=667"
+  },
+  {
+   "id": "CCTV-N1-N-202.030-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 202K+030",
+   "lat": 24.033008,
+   "lon": 120.520804,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=228"
+  },
+  {
+   "id": "CCTV-N1-S-201.400-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 201K+400",
+   "lat": 24.038112,
+   "lon": 120.522124,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=666"
+  },
+  {
+   "id": "CCTV-N1-S-200.310-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 200K+310",
+   "lat": 24.047588,
+   "lon": 120.52367,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=227"
+  },
+  {
+   "id": "CCTV-N1-N-200.040-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 200K+040",
+   "lat": 24.0499969,
+   "lon": 120.5239539,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=562"
+  },
+  {
+   "id": "CCTV-N1-N-199.720-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 199K+720",
+   "lat": 24.05325,
+   "lon": 120.524,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=497"
+  },
+  {
+   "id": "CCTV-N1-N-198.650-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 198K+650",
+   "lat": 24.063132,
+   "lon": 120.523029,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=226"
+  },
+  {
+   "id": "CCTV-N1-T-198-A-S-1",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 198K+000",
+   "lat": 24.063749,
+   "lon": 120.520323,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=225"
+  },
+  {
+   "id": "CCTV-N1-N-197.470-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 197K+470",
+   "lat": 24.07349,
+   "lon": 120.52317,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=665"
+  },
+  {
+   "id": "CCTV-N1-S-196.720-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 196K+720",
+   "lat": 24.080003,
+   "lon": 120.524732,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=224"
+  },
+  {
+   "id": "CCTV-N1-S-195.720-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 195K+720",
+   "lat": 24.08805,
+   "lon": 120.52942,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=664"
+  },
+  {
+   "id": "CCTV-N1-N-194.721-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 194K+720",
+   "lat": 24.094233,
+   "lon": 120.536449,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=223"
+  },
+  {
+   "id": "CCTV-N1-N-193.800-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 193K+800",
+   "lat": 24.097567,
+   "lon": 120.544526,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=344"
+  },
+  {
+   "id": "CCTV-N1-N-192.900-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 192K+900",
+   "lat": 24.098952,
+   "lon": 120.553306,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=573"
+  },
+  {
+   "id": "CCTV-N1-N-191.750-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 191K+750",
+   "lat": 24.105813,
+   "lon": 120.561668,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=572"
+  },
+  {
+   "id": "CCTV-N1-N-186.850-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 186K+850",
+   "lat": 24.111571,
+   "lon": 120.601939,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=219"
+  },
+  {
+   "id": "CCTV-N1-S-190.685-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 190K+685",
+   "lat": 24.113527,
+   "lon": 120.568112,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=222"
+  },
+  {
+   "id": "CCTV-N1-S-185.930-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 185K+930",
+   "lat": 24.114176,
+   "lon": 120.610396,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=661"
+  },
+  {
+   "id": "CCTV-N1-S-187.835-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 187K+835",
+   "lat": 24.115849,
+   "lon": 120.592958,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=662"
+  },
+  {
+   "id": "CCTV-N1-N-189-I-WN-1",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 189K+000",
+   "lat": 24.117198,
+   "lon": 120.58146,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=221"
+  },
+  {
+   "id": "CCTV-N1-S-189.750-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 189K+750",
+   "lat": 24.118429,
+   "lon": 120.575833,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=663"
+  },
+  {
+   "id": "CCTV-N1-S-188.700-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 188K+700",
+   "lat": 24.118505,
+   "lon": 120.58596,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=220"
+  },
+  {
+   "id": "CCTV-N1-N-185.008-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 185K+008",
+   "lat": 24.120904,
+   "lon": 120.61579,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=218"
+  },
+  {
+   "id": "CCTV-N1-S-183.150-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 183K+150",
+   "lat": 24.137505,
+   "lon": 120.617731,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=217"
+  },
+  {
+   "id": "CCTV-N1-N-184.080-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 184K+080",
+   "lat": 24.137835,
+   "lon": 120.617952,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=660"
+  },
+  {
+   "id": "CCTV-N1-S-182.420-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 182K+420",
+   "lat": 24.143891,
+   "lon": 120.618514,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=659"
+  },
+  {
+   "id": "CCTV-N1-N-181-O-SE-1",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 181K+000",
+   "lat": 24.149907,
+   "lon": 120.622316,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=215"
+  },
+  {
+   "id": "CCTV-N1-N-181.440-L-EW-1-南屯交流道穿越道",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 181K+440",
+   "lat": 24.152708,
+   "lon": 120.620163,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=398"
+  },
+  {
+   "id": "CCTV-N1-S-181.320-L-南屯交流道",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 181K+320",
+   "lat": 24.153588,
+   "lon": 120.618075,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=533"
+  },
+  {
+   "id": "CCTV-N1-N-181.280-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 181K+280",
+   "lat": 24.154229,
+   "lon": 120.620117,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=216"
+  },
+  {
+   "id": "CCTV-N1-N-180.300-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 180K+300",
+   "lat": 24.162833,
+   "lon": 120.6218,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=486"
+  },
+  {
+   "id": "CCTV-N1-N-179.850-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 179K+850",
+   "lat": 24.166445,
+   "lon": 120.623522,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=214"
+  },
+  {
+   "id": "CCTV-N1-N-178-L-EN-1-台中交流道",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 178K+000",
+   "lat": 24.169562,
+   "lon": 120.638829,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=715"
+  },
+  {
+   "id": "CCTV-N1-N-178-O-NE-1",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 178K+000",
+   "lat": 24.17356,
+   "lon": 120.632436,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=212"
+  },
+  {
+   "id": "CCTV-N1-S-178.650-L-台中交流道",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 178K+650",
+   "lat": 24.17631,
+   "lon": 120.6288,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=532"
+  },
+  {
+   "id": "CCTV-N1-S-178.400-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 178K+400",
+   "lat": 24.177227,
+   "lon": 120.632312,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=213"
+  },
+  {
+   "id": "CCTV-N1-N-177.550-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 177K+550",
+   "lat": 24.183933,
+   "lon": 120.635583,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=485"
+  },
+  {
+   "id": "CCTV-N1-S-177.035-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 177K+035",
+   "lat": 24.188352,
+   "lon": 120.637222,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=563"
+  },
+  {
+   "id": "CCTV-N1-N-176.400-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 176K+400",
+   "lat": 24.193109,
+   "lon": 120.640381,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=211"
+  },
+  {
+   "id": "CCTV-N1-S-173.500-O-SE-21-南下出口-大雅系統",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 173K+500",
+   "lat": 24.20172887,
+   "lon": 120.66612286,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1279"
+  },
+  {
+   "id": "CCTV-N1-N-173-I-EN-北上入口-大雅系統",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 173K+000",
+   "lat": 24.2017295,
+   "lon": 120.6671746,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1317"
+  },
+  {
+   "id": "CCTV-N1-N-174-A-EN-1-大雅交流道",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 174K+000",
+   "lat": 24.201911,
+   "lon": 120.65699,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=701"
+  },
+  {
+   "id": "CCTV-N1-T-174-A-N-1",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 174K+000",
+   "lat": 24.201948,
+   "lon": 120.656997,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=209"
+  },
+  {
+   "id": "CCTV-N1-N-174.930-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 174K+930",
+   "lat": 24.202473,
+   "lon": 120.650844,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=445"
+  },
+  {
+   "id": "CCTV-N1-N-174.400-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 174K+400",
+   "lat": 24.204921,
+   "lon": 120.65527,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=210"
+  },
+  {
+   "id": "CCTV-N1-N-174.180-N-大雅交流道",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 174K+180",
+   "lat": 24.205783,
+   "lon": 120.65715,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=481"
+  },
+  {
+   "id": "CCTV-N1-S-174-O-NE-22X-南下出口",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 174K+150",
+   "lat": 24.206908,
+   "lon": 120.658182,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1651"
+  },
+  {
+   "id": "CCTV-N1-S-174.280-L-大雅交流道",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 174K+280",
+   "lat": 24.207174,
+   "lon": 120.655305,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=531"
+  },
+  {
+   "id": "CCTV-N1-S-173.700-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 173K+700",
+   "lat": 24.207959,
+   "lon": 120.661384,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=412"
+  },
+  {
+   "id": "CCTV-N1-S-173.290-O-SE-1-南下出口-大雅系統",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 173K+200",
+   "lat": 24.20886233,
+   "lon": 120.66495706,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1280"
+  },
+  {
+   "id": "CCTV-N1-S-173.070-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 173K+070",
+   "lat": 24.2104494,
+   "lon": 120.666763,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=742"
+  },
+  {
+   "id": "CCTV-N1-N-172.800-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 172K+800",
+   "lat": 24.2114598174823,
+   "lon": 120.669189523323,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=467"
+  },
+  {
+   "id": "CCTV-N1-S-172.650-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 172K+650",
+   "lat": 24.212431,
+   "lon": 120.670418,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=208"
+  },
+  {
+   "id": "CCTV-N1-N-171.745-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 171K+745",
+   "lat": 24.217317,
+   "lon": 120.677367,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=484"
+  },
+  {
+   "id": "CCTV-N1-N-170.980-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 170K+980",
+   "lat": 24.222839,
+   "lon": 120.682126,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=207"
+  },
+  {
+   "id": "CCTV-N1-S-169.990-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 169K+990",
+   "lat": 24.230865,
+   "lon": 120.686198,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=657"
+  },
+  {
+   "id": "CCTV-N1-N-169.545-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 169K+545",
+   "lat": 24.2344666,
+   "lon": 120.6875283,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=565"
+  },
+  {
+   "id": "CCTV-N1-S-169.270-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 169K+270",
+   "lat": 24.237094,
+   "lon": 120.688241,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=206"
+  },
+  {
+   "id": "CCTV-N1-S-168.300-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 168K+300",
+   "lat": 24.245763,
+   "lon": 120.689788,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=449"
+  },
+  {
+   "id": "CCTV-N1-T-167-A-N-1",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 167K+000",
+   "lat": 24.248514,
+   "lon": 120.694829,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=204"
+  },
+  {
+   "id": "CCTV-N1-S-167-I-EN-1-南下入口",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 167K+800",
+   "lat": 24.25024,
+   "lon": 120.689271,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1649"
+  },
+  {
+   "id": "CCTV-N1-S-167.550-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 167K+550",
+   "lat": 24.253345,
+   "lon": 120.690704,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=205"
+  },
+  {
+   "id": "CCTV-N1-S-166.360-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 166K+360",
+   "lat": 24.263383,
+   "lon": 120.691953,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=203"
+  },
+  {
+   "id": "CCTV-N1-N-165.350-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 165K+350",
+   "lat": 24.272133,
+   "lon": 120.693167,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=466"
+  },
+  {
+   "id": "CCTV-N1-N-164.680-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 164K+680",
+   "lat": 24.278259,
+   "lon": 120.69387,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=343"
+  },
+  {
+   "id": "CCTV-N1-N-163.400-M-后里北地磅站",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 163K+400",
+   "lat": 24.289759,
+   "lon": 120.69524,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=405"
+  },
+  {
+   "id": "CCTV-N1-N-163.360-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 163K+360",
+   "lat": 24.289954,
+   "lon": 120.695265,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=404"
+  },
+  {
+   "id": "CCTV-N1-S-162.750-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 162K+750",
+   "lat": 24.295622,
+   "lon": 120.695987,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=202"
+  },
+  {
+   "id": "CCTV-N1-S-161.780-M-后里南地磅站",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 161K+780",
+   "lat": 24.304096,
+   "lon": 120.698145,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=411"
+  },
+  {
+   "id": "CCTV-N1-N-161.050-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 161K+050",
+   "lat": 24.310062,
+   "lon": 120.700616,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=655"
+  },
+  {
+   "id": "CCTV-N1-S-160-O-SW-1",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 160K+610",
+   "lat": 24.31391,
+   "lon": 120.701213,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=201"
+  },
+  {
+   "id": "CCTV-N1-S-160.135-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 159K+999",
+   "lat": 24.317724,
+   "lon": 120.704466,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=359"
+  },
+  {
+   "id": "CCTV-N1-S-160-O-NW-1-南下出口",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 160K+110",
+   "lat": 24.317781,
+   "lon": 120.703766,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1646"
+  },
+  {
+   "id": "CCTV-N1-S-158.870-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 158K+870",
+   "lat": 24.327214,
+   "lon": 120.712487,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1"
+  },
+  {
+   "id": "CCTV-N1-S-229.520-R-西螺服務區南站",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 229K+520",
+   "lat": 24.3280805,
+   "lon": 120.7153756,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=764"
+  },
+  {
+   "id": "CCTV-N1-N-158.520-R-泰安服務區北站",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 158K+520",
+   "lat": 24.328284,
+   "lon": 120.715346,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1129"
+  },
+  {
+   "id": "CCTV-N1-N-158.055-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 158K+055",
+   "lat": 24.33244,
+   "lon": 120.717016,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=200"
+  },
+  {
+   "id": "CCTV-N1-N-157.040-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 157K+040",
+   "lat": 24.34048,
+   "lon": 120.72183,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=571"
+  },
+  {
+   "id": "CCTV-N1-S-156.025-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 156K+025",
+   "lat": 24.348571,
+   "lon": 120.727778,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=199"
+  },
+  {
+   "id": "CCTV-N1-N-154.995-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 154K+995",
+   "lat": 24.35521,
+   "lon": 120.7339,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=570"
+  },
+  {
+   "id": "CCTV-N1-N-154.015-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 154K+015",
+   "lat": 24.362147,
+   "lon": 120.739956,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=198"
+  },
+  {
+   "id": "CCTV-N1-N-153.480-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 153K+480",
+   "lat": 24.365876,
+   "lon": 120.743142,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=654"
+  },
+  {
+   "id": "CCTV-N1-N-151.385-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 151K+385",
+   "lat": 24.3745929,
+   "lon": 120.7488841,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=653"
+  },
+  {
+   "id": "CCTV-N1-S-152.265-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 152K+265",
+   "lat": 24.375973,
+   "lon": 120.749437,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=197"
+  },
+  {
+   "id": "CCTV-N1-N-150.350-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 150K+350",
+   "lat": 24.391162,
+   "lon": 120.757354,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=196"
+  },
+  {
+   "id": "CCTV-N1-S-150-O-NW-1-南下出口",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 150K+120",
+   "lat": 24.393135,
+   "lon": 120.757918,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1643"
+  },
+  {
+   "id": "CCTV-N1-S-150.110-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 150K+110",
+   "lat": 24.393398,
+   "lon": 120.758686,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=358"
+  },
+  {
+   "id": "CCTV-N1-S-148.610-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 148K+610",
+   "lat": 24.404688,
+   "lon": 120.766644,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=195"
+  },
+  {
+   "id": "CCTV-N1-N-147.600-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 147K+600",
+   "lat": 24.411207,
+   "lon": 120.772969,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=569"
+  },
+  {
+   "id": "CCTV-N1-N-146.590-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 146K+590",
+   "lat": 24.419953,
+   "lon": 120.775633,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=194"
+  },
+  {
+   "id": "CCTV-N1-N-145.746-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 145K+746",
+   "lat": 24.427245,
+   "lon": 120.777074,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=357"
+  },
+  {
+   "id": "CCTV-N1-S-144.680-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 144K+680",
+   "lat": 24.43735,
+   "lon": 120.778339,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=193"
+  },
+  {
+   "id": "CCTV-N1-N-143.707-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 143K+707",
+   "lat": 24.444833,
+   "lon": 120.781623,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=356"
+  },
+  {
+   "id": "CCTV-N1-N-142.810-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 142K+810",
+   "lat": 24.452992,
+   "lon": 120.783165,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=192"
+  },
+  {
+   "id": "CCTV-N1-N-141.670-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 141K+670",
+   "lat": 24.4621,
+   "lon": 120.788067,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=465"
+  },
+  {
+   "id": "CCTV-N1-S-140.990-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 140K+990",
+   "lat": 24.468772,
+   "lon": 120.788027,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=191"
+  },
+  {
+   "id": "CCTV-N1-S-140.060-O-NW-1-銅鑼交流道",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 140K+060",
+   "lat": 24.476212,
+   "lon": 120.784942,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=380"
+  },
+  {
+   "id": "CCTV-N1-N-139.200-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 139K+200",
+   "lat": 24.48385,
+   "lon": 120.78238,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=190"
+  },
+  {
+   "id": "CCTV-N1-S-138.310-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 138K+310",
+   "lat": 24.4914384,
+   "lon": 120.7822459,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=652"
+  },
+  {
+   "id": "CCTV-N1-S-137.370-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 137K+370",
+   "lat": 24.499255,
+   "lon": 120.786547,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=189"
+  },
+  {
+   "id": "CCTV-N1-N-136.390-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 136K+390",
+   "lat": 24.503409,
+   "lon": 120.794854,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=651"
+  },
+  {
+   "id": "CCTV-N1-S-134.360-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 134K+360",
+   "lat": 24.51397422,
+   "lon": 120.81019446,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=650"
+  },
+  {
+   "id": "CCTV-N1-S-133.670-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 133K+670",
+   "lat": 24.51947,
+   "lon": 120.813909,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=187"
+  },
+  {
+   "id": "CCTV-N1-N-132-I-EN-1-北上入口",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 132K+750",
+   "lat": 24.523538,
+   "lon": 120.82097,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1639"
+  },
+  {
+   "id": "CCTV-N1-S-132.750-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 132K+750",
+   "lat": 24.524657,
+   "lon": 120.820926,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=186"
+  },
+  {
+   "id": "CCTV-N1-S-131.900-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 131K+900",
+   "lat": 24.52907,
+   "lon": 120.826079,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=649"
+  },
+  {
+   "id": "CCTV-N1-S-131.010-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 131K+010",
+   "lat": 24.537477,
+   "lon": 120.829366,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=185"
+  },
+  {
+   "id": "CCTV-N1-N-130.270-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 130K+270",
+   "lat": 24.543015,
+   "lon": 120.833754,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=648"
+  },
+  {
+   "id": "CCTV-N1-N-129.300-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 129K+300",
+   "lat": 24.550191,
+   "lon": 120.83891,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=184"
+  },
+  {
+   "id": "CCTV-N1-S-128.310-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 128K+310",
+   "lat": 24.55875896,
+   "lon": 120.84196892,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=647"
+  },
+  {
+   "id": "CCTV-N1-N-127.400-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 127K+400",
+   "lat": 24.565537,
+   "lon": 120.846905,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=183"
+  },
+  {
+   "id": "CCTV-N1-S-125.940-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 125K+940",
+   "lat": 24.576089,
+   "lon": 120.854922,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=448"
+  },
+  {
+   "id": "CCTV-N1-S-125-I-ES-1-南下入口",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 125K+450",
+   "lat": 24.579735,
+   "lon": 120.857558,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1638"
+  },
+  {
+   "id": "CCTV-N1-N-125.330-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 125K+330",
+   "lat": 24.580662,
+   "lon": 120.858027,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=182"
+  },
+  {
+   "id": "CCTV-N1-N-124.500-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 124K+500",
+   "lat": 24.587333,
+   "lon": 120.8612,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=464"
+  },
+  {
+   "id": "CCTV-N1-S-123.560-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 123K+560",
+   "lat": 24.596039,
+   "lon": 120.860728,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=181"
+  },
+  {
+   "id": "CCTV-N1-N-122.690-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 122K+690",
+   "lat": 24.60304,
+   "lon": 120.8644,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=568"
+  },
+  {
+   "id": "CCTV-N1-S-121.355-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 121K+355",
+   "lat": 24.61483,
+   "lon": 120.863533,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=355"
+  },
+  {
+   "id": "CCTV-N1-N-121.190-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 121K+190",
+   "lat": 24.61625,
+   "lon": 120.86375,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=483"
+  },
+  {
+   "id": "CCTV-N1-N-119.995-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 119K+995",
+   "lat": 24.626353,
+   "lon": 120.867433,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=5"
+  },
+  {
+   "id": "CCTV-N1-S-118.630-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 118K+630",
+   "lat": 24.638332,
+   "lon": 120.866935,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=410"
+  },
+  {
+   "id": "CCTV-N1-S-117.680-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 117K+680",
+   "lat": 24.644621,
+   "lon": 120.873261,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=180"
+  },
+  {
+   "id": "CCTV-N1-S-117.150-M-造橋南地磅站",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 117K+150",
+   "lat": 24.647989,
+   "lon": 120.877008,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=409"
+  },
+  {
+   "id": "CCTV-N1-N-116.550-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 116K+550",
+   "lat": 24.652156,
+   "lon": 120.880453,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=403"
+  },
+  {
+   "id": "CCTV-N1-S-115.570-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 115K+570",
+   "lat": 24.661043,
+   "lon": 120.88276,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=644"
+  },
+  {
+   "id": "CCTV-N1-S-114.640-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 114K+640",
+   "lat": 24.668983,
+   "lon": 120.8859,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=10"
+  },
+  {
+   "id": "CCTV-N1-N-113.425-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 113K+425",
+   "lat": 24.67303,
+   "lon": 120.89659,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=567"
+  },
+  {
+   "id": "CCTV-N1-S-112.210-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 112K+210",
+   "lat": 24.680187,
+   "lon": 120.905317,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=354"
+  },
+  {
+   "id": "CCTV-N1-N-111.450-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 111K+450",
+   "lat": 24.684,
+   "lon": 120.91165,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=496"
+  },
+  {
+   "id": "CCTV-N1-N-110.650-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 110K+650",
+   "lat": 24.689155,
+   "lon": 120.917081,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=643"
+  },
+  {
+   "id": "CCTV-N1-N-110-I-WN-22X-北上入口2",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 110K+530",
+   "lat": 24.690424,
+   "lon": 120.91689,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1637"
+  },
+  {
+   "id": "CCTV-N1-S-110-O-NW-21-南下出口",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 110K+240",
+   "lat": 24.692977,
+   "lon": 120.917917,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1635"
+  },
+  {
+   "id": "CCTV-N1-T-110-A-S-1",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 110K+100",
+   "lat": 24.693014,
+   "lon": 120.915372,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=179"
+  },
+  {
+   "id": "CCTV-N1-N-110-I-WN-1",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 110K+000",
+   "lat": 24.693256,
+   "lon": 120.919964,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=178"
+  },
+  {
+   "id": "CCTV-N1-N-109.735-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 109K+735",
+   "lat": 24.696579,
+   "lon": 120.921697,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=550"
+  },
+  {
+   "id": "CCTV-N1-N-109.620-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 109K+620",
+   "lat": 24.69735,
+   "lon": 120.922217,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=463"
+  },
+  {
+   "id": "CCTV-N1-S-109.010-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 109K+010",
+   "lat": 24.701654,
+   "lon": 120.926079,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=8"
+  },
+  {
+   "id": "CCTV-N1-S-108.175-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 108K+175",
+   "lat": 24.708615,
+   "lon": 120.929094,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=618"
+  },
+  {
+   "id": "CCTV-N1-S-107.340-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 107K+340",
+   "lat": 24.715763,
+   "lon": 120.929817,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=353"
+  },
+  {
+   "id": "CCTV-N1-S-106.400-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 106K+400",
+   "lat": 24.722955,
+   "lon": 120.934358,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=352"
+  },
+  {
+   "id": "CCTV-N1-S-105.695-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 105K+695",
+   "lat": 24.726424,
+   "lon": 120.941255,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=7"
+  },
+  {
+   "id": "CCTV-N1-S-104.890-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 104K+890",
+   "lat": 24.727132,
+   "lon": 120.948464,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=617"
+  },
+  {
+   "id": "CCTV-N1-N-103.987-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 103K+987",
+   "lat": 24.727887,
+   "lon": 120.957436,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=351"
+  },
+  {
+   "id": "CCTV-N1-S-103.005-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 103K+005",
+   "lat": 24.73341,
+   "lon": 120.96468,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=566"
+  },
+  {
+   "id": "CCTV-N1-N-102.046-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 102K+046",
+   "lat": 24.738777,
+   "lon": 120.972065,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=350"
+  },
+  {
+   "id": "CCTV-N1-N-101.205-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 101K+205",
+   "lat": 24.7452622,
+   "lon": 120.9754545,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=564"
+  },
+  {
+   "id": "CCTV-N1-S-101.040-M",
+   "road": "國道1號",
+   "kind": "國道",
+   "name": "國道1號 101K+040",
+   "lat": 24.74701,
+   "lon": 120.97635,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=495"
   },
   {
    "id": "CCTV-N1-S-101.040-M-北區",
@@ -6680,6 +8975,717 @@
    "url": "https://cctv-ss08.thb.gov.tw:443/T84-27K+020/snapshot"
   },
   {
+   "id": "CCTV-N3-N-269.990-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 269K+990",
+   "lat": 23.657456,
+   "lon": 120.572368,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=480"
+  },
+  {
+   "id": "CCTV-N3-N-268.480-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 268K+480",
+   "lat": 23.669673,
+   "lon": 120.577491,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=429"
+  },
+  {
+   "id": "CCTV-N3-N-267.550-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 267K+550",
+   "lat": 23.674905,
+   "lon": 120.585064,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=428"
+  },
+  {
+   "id": "CCTV-N3-S-266.324-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 266K+324",
+   "lat": 23.68358,
+   "lon": 120.59177,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=598"
+  },
+  {
+   "id": "CCTV-N3-S-265.540-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 265K+540",
+   "lat": 23.689389,
+   "lon": 120.595111,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1118"
+  },
+  {
+   "id": "CCTV-N3-N-264.730-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 264K+730",
+   "lat": 23.69532,
+   "lon": 120.600635,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=15"
+  },
+  {
+   "id": "CCTV-N3-S-263.760-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 263K+760",
+   "lat": 23.703932,
+   "lon": 120.603253,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=291"
+  },
+  {
+   "id": "CCTV-N3-S-262.595-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 262K+595",
+   "lat": 23.714222,
+   "lon": 120.602981,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1117"
+  },
+  {
+   "id": "CCTV-N3-N-262.110-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 262K+110",
+   "lat": 23.71855,
+   "lon": 120.6037,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=482"
+  },
+  {
+   "id": "CCTV-N3-N-261.220-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 261K+220",
+   "lat": 23.726038,
+   "lon": 120.600757,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=290"
+  },
+  {
+   "id": "CCTV-N3-S-260.165-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 260K+165",
+   "lat": 23.73399,
+   "lon": 120.594471,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=289"
+  },
+  {
+   "id": "CCTV-N3-N-259.320-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 259K+320",
+   "lat": 23.7408717,
+   "lon": 120.5918595,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1116"
+  },
+  {
+   "id": "CCTV-N3-S-258.475-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 258K+475",
+   "lat": 23.748475,
+   "lon": 120.59346,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=288"
+  },
+  {
+   "id": "CCTV-N3-S-257.424-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 257K+424",
+   "lat": 23.7550599,
+   "lon": 120.6003698,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1115"
+  },
+  {
+   "id": "CCTV-N3-N-256.910-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 256K+910",
+   "lat": 23.758685,
+   "lon": 120.603774,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=427"
+  },
+  {
+   "id": "CCTV-N3-N-255.520-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 255K+520",
+   "lat": 23.770333,
+   "lon": 120.608765,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=13"
+  },
+  {
+   "id": "CCTV-N3-S-254.978-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 254K+978",
+   "lat": 23.773935,
+   "lon": 120.612366,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=17"
+  },
+  {
+   "id": "CCTV-N3-N-252.050-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 252K+050",
+   "lat": 23.77411,
+   "lon": 120.639949,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=14"
+  },
+  {
+   "id": "CCTV-N3-N-250.725-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 250K+725",
+   "lat": 23.7743029,
+   "lon": 120.6531509,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1113"
+  },
+  {
+   "id": "CCTV-N3-S-251.566-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 251K+566",
+   "lat": 23.774342,
+   "lon": 120.645086,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=19"
+  },
+  {
+   "id": "CCTV-N3-N-249.953-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 249K+953",
+   "lat": 23.774441,
+   "lon": 120.660578,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=401"
+  },
+  {
+   "id": "CCTV-N3-S-253.000-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 253K+000",
+   "lat": 23.774651,
+   "lon": 120.629807,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1114"
+  },
+  {
+   "id": "CCTV-N3-N-249.548-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 249K+548",
+   "lat": 23.774998,
+   "lon": 120.664791,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=372"
+  },
+  {
+   "id": "CCTV-N3-S-254.010-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 254K+010",
+   "lat": 23.77641,
+   "lon": 120.621332,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=439"
+  },
+  {
+   "id": "CCTV-N3-N-246.530-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 246K+530",
+   "lat": 23.777106,
+   "lon": 120.693307,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=426"
+  },
+  {
+   "id": "CCTV-N3-N-248.801-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 248K+801",
+   "lat": 23.7773742,
+   "lon": 120.671397,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1112"
+  },
+  {
+   "id": "CCTV-N3-S-247.845-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 247K+845",
+   "lat": 23.778456,
+   "lon": 120.680846,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=18"
+  },
+  {
+   "id": "CCTV-N3-N-245.760-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 245K+760",
+   "lat": 23.779727,
+   "lon": 120.700496,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1111"
+  },
+  {
+   "id": "CCTV-N3-N-244.990-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 244K+990",
+   "lat": 23.785365,
+   "lon": 120.704232,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=425"
+  },
+  {
+   "id": "CCTV-N3-N-243.701-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 243K+701",
+   "lat": 23.79658,
+   "lon": 120.701671,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=287"
+  },
+  {
+   "id": "CCTV-N3-N-241.500-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 241K+500",
+   "lat": 23.815014,
+   "lon": 120.700457,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=479"
+  },
+  {
+   "id": "CCTV-N3-S-241.285-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 241K+285",
+   "lat": 23.816561,
+   "lon": 120.70169,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=561"
+  },
+  {
+   "id": "CCTV-N3-S-240.541-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 240K+541",
+   "lat": 23.822108,
+   "lon": 120.706247,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=286"
+  },
+  {
+   "id": "CCTV-N3-N-239.500-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 239K+500",
+   "lat": 23.830885,
+   "lon": 120.708526,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=596"
+  },
+  {
+   "id": "CCTV-N3-S-238.414-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 238K+414",
+   "lat": 23.840558,
+   "lon": 120.705411,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=371"
+  },
+  {
+   "id": "CCTV-N3-S-236.966-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 236K+966",
+   "lat": 23.853019,
+   "lon": 120.702284,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=285"
+  },
+  {
+   "id": "CCTV-N3-S-235.640-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 235K+640",
+   "lat": 23.864765,
+   "lon": 120.703162,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=438"
+  },
+  {
+   "id": "CCTV-N3-N-234.391-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 234K+391",
+   "lat": 23.875347,
+   "lon": 120.707484,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=284"
+  },
+  {
+   "id": "CCTV-N3-S-233.790-M-名間南地磅站",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 233K+790",
+   "lat": 23.880835,
+   "lon": 120.708731,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=437"
+  },
+  {
+   "id": "CCTV-N3-N-233.081-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 233K+081",
+   "lat": 23.886868,
+   "lon": 120.709965,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1108"
+  },
+  {
+   "id": "CCTV-N3-N-232.541-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 232K+541",
+   "lat": 23.891666,
+   "lon": 120.710819,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=283"
+  },
+  {
+   "id": "CCTV-N3-N-231.700-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 231K+700",
+   "lat": 23.898857,
+   "lon": 120.709428,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1107"
+  },
+  {
+   "id": "CCTV-N3-N-231.598-南投服務區F區2",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 231K+598",
+   "lat": 23.899155,
+   "lon": 120.708633,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=47"
+  },
+  {
+   "id": "CCTV-N3-N-231.598-南投服務區F區1",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 231K+598",
+   "lat": 23.899386,
+   "lon": 120.709009,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=46"
+  },
+  {
+   "id": "CCTV-N3-N-231.598-南投服務區D區",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 231K+598",
+   "lat": 23.899705,
+   "lon": 120.709245,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=45"
+  },
+  {
+   "id": "CCTV-N3-N-231.598-南投服務區C區",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 231K+598",
+   "lat": 23.899758,
+   "lon": 120.709395,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=44"
+  },
+  {
+   "id": "CCTV-N3-N-231.598-南投服務區B區",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 231K+598",
+   "lat": 23.899886,
+   "lon": 120.709685,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=43"
+  },
+  {
+   "id": "CCTV-N3-N-230.950-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 230K+950",
+   "lat": 23.90398,
+   "lon": 120.70443,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=478"
+  },
+  {
+   "id": "CCTV-N3-N-230.915-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 230K+915",
+   "lat": 23.904767,
+   "lon": 120.703899,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=560"
+  },
+  {
+   "id": "CCTV-N3-N-230.621-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 230K+621",
+   "lat": 23.90658,
+   "lon": 120.702957,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=282"
+  },
+  {
+   "id": "CCTV-N3-S-229.664-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 229K+664",
+   "lat": 23.912224,
+   "lon": 120.696006,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1106"
+  },
+  {
+   "id": "CCTV-N3-N-228.653-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 228K+653",
+   "lat": 23.918983,
+   "lon": 120.689232,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=281"
+  },
+  {
+   "id": "CCTV-N3-T-227-A-S-1",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 227K+000",
+   "lat": 23.923583,
+   "lon": 120.682899,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=451"
+  },
+  {
+   "id": "CCTV-N3-N-227.777-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 227K+777",
+   "lat": 23.924076,
+   "lon": 120.682932,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1105"
+  },
+  {
+   "id": "CCTV-N3-N-226.715-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 226K+715",
+   "lat": 23.933173,
+   "lon": 120.680024,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=280"
+  },
+  {
+   "id": "CCTV-N3-S-225.730-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 225K+730",
+   "lat": 23.940129,
+   "lon": 120.674037,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1104"
+  },
+  {
+   "id": "CCTV-N3-S-224-I-ES-1-南下入口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 224K+780",
+   "lat": 23.947672,
+   "lon": 120.667614,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1714"
+  },
+  {
+   "id": "CCTV-N3-N-224.741-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 224K+741",
+   "lat": 23.948,
+   "lon": 120.669617,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=279"
+  },
+  {
+   "id": "CCTV-N3-N-224-I-WN-1-北上入口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 224K+000",
+   "lat": 23.949479,
+   "lon": 120.66998,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1713"
+  },
+  {
+   "id": "CCTV-N3-S-224-O-ES-南下出口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 224K+395",
+   "lat": 23.949926,
+   "lon": 120.666602,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1772"
+  },
+  {
+   "id": "CCTV-N3-N-223.700-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 223K+700",
+   "lat": 23.954854,
+   "lon": 120.662918,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=370"
+  },
+  {
+   "id": "CCTV-N3-N-222-I-EN-北上入口-中興系統",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 222K+000",
+   "lat": 23.956954,
+   "lon": 120.653577,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=239"
+  },
+  {
+   "id": "CCTV-N3-S-223-I-ES-南下入口-中興系統",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 222K+500",
+   "lat": 23.95743855,
+   "lon": 120.65561639,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1310"
+  },
+  {
+   "id": "CCTV-N3-S-222.691-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 222K+691",
+   "lat": 23.95901,
+   "lon": 120.653907,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=278"
+  },
+  {
+   "id": "CCTV-N3-N-223-I-EN-北上入口-中興系統",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 222K+275",
+   "lat": 23.96216702,
+   "lon": 120.6519541,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1309"
+  },
+  {
+   "id": "CCTV-N3-S-221.536-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 221K+536",
+   "lat": 23.968042,
+   "lon": 120.648587,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=369"
+  },
+  {
+   "id": "CCTV-N3-N-220.330-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 220K+330",
+   "lat": 23.978271,
+   "lon": 120.651363,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=595"
+  },
+  {
+   "id": "CCTV-N3-S-219.080-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 219K+080",
+   "lat": 23.989575,
+   "lon": 120.652228,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=368"
+  },
+  {
+   "id": "CCTV-N3-S-218.085-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 218K+085",
+   "lat": 23.997533,
+   "lon": 120.650087,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1103"
+  },
+  {
+   "id": "CCTV-N3-N-217-O-SE-1A-北上出口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 217K+000",
+   "lat": 24.004118,
+   "lon": 120.652443,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1711"
+  },
+  {
+   "id": "CCTV-N3-T-217-北上入口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 217K+000",
+   "lat": 24.004545,
+   "lon": 120.65372,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1709"
+  },
+  {
+   "id": "CCTV-N3-S-217-I-WS-1-南下入口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 217K+350",
+   "lat": 24.004862,
+   "lon": 120.650928,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1710"
+  },
+  {
+   "id": "CCTV-N3-S-217.091-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 217K+091",
+   "lat": 24.006829,
+   "lon": 120.653219,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=277"
+  },
+  {
+   "id": "CCTV-N3-S-216.340-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 216K+340",
+   "lat": 24.011617,
+   "lon": 120.657908,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1102"
+  },
+  {
+   "id": "CCTV-N3-S-215.319-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 215K+319",
+   "lat": 24.019713,
+   "lon": 120.663041,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=276"
+  },
+  {
+   "id": "CCTV-N3-N-214.357-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 214K+357",
+   "lat": 24.026697,
+   "lon": 120.668422,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1101"
+  },
+  {
+   "id": "CCTV-N3-S-213.401-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 213K+401",
+   "lat": 24.034191,
+   "lon": 120.673695,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=275"
+  },
+  {
+   "id": "CCTV-N3-N-212.250-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 212K+250",
+   "lat": 24.042801,
+   "lon": 120.678662,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=341"
+  },
+  {
+   "id": "CCTV-N3-S-211.396-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 211K+396",
+   "lat": 24.050687,
+   "lon": 120.678514,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=274"
+  },
+  {
    "id": "CCTV-28-0740-038-001",
    "road": "國道3號",
    "kind": "省道",
@@ -6687,6 +9693,15 @@
    "lat": 24.051775,
    "lon": 120.681038,
    "url": "https://cctv-ss07.thb.gov.tw:443/T74-38K+265/snapshot"
+  },
+  {
+   "id": "CCTV-N3-N-211-L-EN-1-北上入口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 211K+420",
+   "lat": 24.052118,
+   "lon": 120.693963,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1708"
   },
   {
    "id": "CCTV-28-0740-038-002",
@@ -6698,6 +9713,150 @@
    "url": "https://cctv-ss02.thb.gov.tw:443/T74-38K+167/snapshot"
   },
   {
+   "id": "CCTV-N3-N-210.500-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 210K+500",
+   "lat": 24.05796,
+   "lon": 120.67453,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=488"
+  },
+  {
+   "id": "CCTV-N3-N-210.060-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 210K+060",
+   "lat": 24.061387,
+   "lon": 120.670266,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=340"
+  },
+  {
+   "id": "CCTV-N3-S-209-I-WS-1-南下入口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 209K+300",
+   "lat": 24.064024,
+   "lon": 120.665345,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1705"
+  },
+  {
+   "id": "CCTV-N3-N-209-O-SE-1-北上出口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 209K+420",
+   "lat": 24.064833,
+   "lon": 120.664515,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1706"
+  },
+  {
+   "id": "CCTV-N3-S-208-O-NE-南下出口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 208K+941",
+   "lat": 24.065526,
+   "lon": 120.661765,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1704"
+  },
+  {
+   "id": "CCTV-N3-N-208.904-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 208K+904",
+   "lat": 24.06584,
+   "lon": 120.66176,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=273"
+  },
+  {
+   "id": "CCTV-N3-S-207-I-ES-南下入口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 207K+340",
+   "lat": 24.067389,
+   "lon": 120.646515,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1702"
+  },
+  {
+   "id": "CCTV-N3-S-207.995-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 207K+995",
+   "lat": 24.067657,
+   "lon": 120.652837,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=995"
+  },
+  {
+   "id": "CCTV-N3-S-207.241-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 207K+241",
+   "lat": 24.06834,
+   "lon": 120.645519,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=272"
+  },
+  {
+   "id": "CCTV-N3-N-207-I-SE-1-北上入口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 207K+440",
+   "lat": 24.069044,
+   "lon": 120.647646,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1703"
+  },
+  {
+   "id": "CCTV-N3-S-206.000-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 206K+000",
+   "lat": 24.074122,
+   "lon": 120.635196,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=436"
+  },
+  {
+   "id": "CCTV-N3-N-204.900-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 204K+900",
+   "lat": 24.081353,
+   "lon": 120.628214,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=700"
+  },
+  {
+   "id": "CCTV-N3-N-204.294-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 204K+294",
+   "lat": 24.082937,
+   "lon": 120.622515,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=28"
+  },
+  {
+   "id": "CCTV-N3-S-203.230-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 203K+230",
+   "lat": 24.084917,
+   "lon": 120.612556,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=382"
+  },
+  {
+   "id": "CCTV-N3-N-202.520-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 202K+520",
+   "lat": 24.0894,
+   "lon": 120.60715,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=494"
+  },
+  {
+   "id": "CCTV-N3-S-202.015-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 202K+015",
+   "lat": 24.092468,
+   "lon": 120.60326,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=271"
+  },
+  {
    "id": "CCTV-28-0740-000-001",
    "road": "國道3號",
    "kind": "省道",
@@ -6707,6 +9866,42 @@
    "url": "https://cctv-ss07.thb.gov.tw:443/T74-0K+610/snapshot"
   },
   {
+   "id": "CCTV-N3-N-201.072-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 201K+072",
+   "lat": 24.097353,
+   "lon": 120.596083,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=699"
+  },
+  {
+   "id": "CCTV-N3-S-200.452-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 200K+452",
+   "lat": 24.098831,
+   "lon": 120.589847,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=270"
+  },
+  {
+   "id": "CCTV-N3-N-196-O-N-1",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 196K+000",
+   "lat": 24.099363,
+   "lon": 120.555851,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=267"
+  },
+  {
+   "id": "CCTV-N3-S-199.662-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 199K+662",
+   "lat": 24.10069,
+   "lon": 120.582618,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=698"
+  },
+  {
    "id": "CCTV-22-0010-185-001",
    "road": "國道3號",
    "kind": "省道",
@@ -6714,6 +9909,1014 @@
    "lat": 24.1016577,
    "lon": 120.580106,
    "url": "https://cctv-ss04.thb.gov.tw:443/T1-185K+485/snapshot"
+  },
+  {
+   "id": "CCTV-N3-S-198.850-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 198K+850",
+   "lat": 24.1037,
+   "lon": 120.574923,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=269"
+  },
+  {
+   "id": "CCTV-N3-S-197.930-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 197K+930",
+   "lat": 24.105132,
+   "lon": 120.566409,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=435"
+  },
+  {
+   "id": "CCTV-N3-N-196.756-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 196K+756",
+   "lat": 24.107009,
+   "lon": 120.555008,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=268"
+  },
+  {
+   "id": "CCTV-N3-S-195.330-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 195K+330",
+   "lat": 24.11322,
+   "lon": 120.54291,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=594"
+  },
+  {
+   "id": "CCTV-N3-N-194.640-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 194K+640",
+   "lat": 24.11768,
+   "lon": 120.538305,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=424"
+  },
+  {
+   "id": "CCTV-N3-N-189.737-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 189K+737",
+   "lat": 24.118301,
+   "lon": 120.57541,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=696"
+  },
+  {
+   "id": "CCTV-N3-N-193.272-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 193K+272",
+   "lat": 24.126544,
+   "lon": 120.528722,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=266"
+  },
+  {
+   "id": "CCTV-N3-N-192.477-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 192K+477",
+   "lat": 24.131687,
+   "lon": 120.525618,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=697"
+  },
+  {
+   "id": "CCTV-N3-N-191.732-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 191K+732",
+   "lat": 24.13856,
+   "lon": 120.521873,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=265"
+  },
+  {
+   "id": "CCTV-N3-S-190.305-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 190K+305",
+   "lat": 24.15109,
+   "lon": 120.51972,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=593"
+  },
+  {
+   "id": "CCTV-N3-N-188.730-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 188K+730",
+   "lat": 24.161975,
+   "lon": 120.529197,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=423"
+  },
+  {
+   "id": "CCTV-N3-N-187.822-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 187K+822",
+   "lat": 24.16855,
+   "lon": 120.534713,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=22"
+  },
+  {
+   "id": "CCTV-N3-S-187.112-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 187K+112",
+   "lat": 24.172226,
+   "lon": 120.540365,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=695"
+  },
+  {
+   "id": "CCTV-N3-N-186.000-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 186K+000",
+   "lat": 24.179012,
+   "lon": 120.549049,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=453"
+  },
+  {
+   "id": "CCTV-N3-S-184.828-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 184K+828",
+   "lat": 24.187358,
+   "lon": 120.554191,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=366"
+  },
+  {
+   "id": "CCTV-N3-N-183.942-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 183K+942",
+   "lat": 24.190767,
+   "lon": 120.5623,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=501"
+  },
+  {
+   "id": "CCTV-N3-N-183.072-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 183K+072",
+   "lat": 24.19383,
+   "lon": 120.570322,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=264"
+  },
+  {
+   "id": "CCTV-N3-N-182-I-EN-北上入口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 182K+660",
+   "lat": 24.194295,
+   "lon": 120.57375,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1692"
+  },
+  {
+   "id": "CCTV-N3-S-182-O-21-南下出口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 182K+830",
+   "lat": 24.195288,
+   "lon": 120.57184,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1695"
+  },
+  {
+   "id": "CCTV-N3-S-182-I-21X-南下入口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 182K+800",
+   "lat": 24.195849,
+   "lon": 120.570565,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1694"
+  },
+  {
+   "id": "CCTV-N3-S-182-O-NW-南下出口-龍井",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 182K+400",
+   "lat": 24.197339,
+   "lon": 120.572868,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1691"
+  },
+  {
+   "id": "CCTV-N3-S-181.684-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 181K+684",
+   "lat": 24.20325,
+   "lon": 120.57885,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=504"
+  },
+  {
+   "id": "CCTV-N3-N-181.010-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 181K+010",
+   "lat": 24.20863,
+   "lon": 120.58208,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=346"
+  },
+  {
+   "id": "CCTV-N3-S-180.366-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 180K+366",
+   "lat": 24.214079,
+   "lon": 120.584046,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=592"
+  },
+  {
+   "id": "CCTV-N3-S-178.894-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 178K+894",
+   "lat": 24.22672,
+   "lon": 120.58906,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=21"
+  },
+  {
+   "id": "CCTV-N3-N-178.090-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 178K+090",
+   "lat": 24.232903,
+   "lon": 120.592894,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=694"
+  },
+  {
+   "id": "CCTV-N3-N-177.280-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 177K+280",
+   "lat": 24.240079,
+   "lon": 120.593975,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=591"
+  },
+  {
+   "id": "CCTV-N3-S-176-I-WS-1-南下入口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 176K+000",
+   "lat": 24.246295,
+   "lon": 120.591799,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1690"
+  },
+  {
+   "id": "CCTV-N3-S-176-O-NW-21-南下出口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 176K+630",
+   "lat": 24.250162,
+   "lon": 120.589453,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1686"
+  },
+  {
+   "id": "CCTV-N3-N-176-I-EN-21X-北上入口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 176K+000",
+   "lat": 24.251922,
+   "lon": 120.591261,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1687"
+  },
+  {
+   "id": "CCTV-N3-S-175.942-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 175K+942",
+   "lat": 24.25207,
+   "lon": 120.589579,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=263"
+  },
+  {
+   "id": "CCTV-N3-S-175.250-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 175K+250",
+   "lat": 24.257753,
+   "lon": 120.588425,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=693"
+  },
+  {
+   "id": "CCTV-N3-S-174.420-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 174K+420",
+   "lat": 24.265554,
+   "lon": 120.589417,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=434"
+  },
+  {
+   "id": "CCTV-N3-S-173.382-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 173K+382",
+   "lat": 24.273905,
+   "lon": 120.593034,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=262"
+  },
+  {
+   "id": "CCTV-N3-N-172.400-R-清水服務區入口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 172K+400",
+   "lat": 24.278451,
+   "lon": 120.598274,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1130"
+  },
+  {
+   "id": "CCTV-N3-N-172.400-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 172K+400",
+   "lat": 24.282517,
+   "lon": 120.599717,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=477"
+  },
+  {
+   "id": "CCTV-N3-N-171.142-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 171K+142",
+   "lat": 24.291994,
+   "lon": 120.601863,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=261"
+  },
+  {
+   "id": "CCTV-N3-S-170.300-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 170K+300",
+   "lat": 24.299233,
+   "lon": 120.603817,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=476"
+  },
+  {
+   "id": "CCTV-N3-S-168.810-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 168K+810",
+   "lat": 24.308541,
+   "lon": 120.614486,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=260"
+  },
+  {
+   "id": "CCTV-N3-S-167.514-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 167K+514",
+   "lat": 24.318517,
+   "lon": 120.6205,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=499"
+  },
+  {
+   "id": "CCTV-N3-N-166.292-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 166K+292",
+   "lat": 24.328226,
+   "lon": 120.626237,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=558"
+  },
+  {
+   "id": "CCTV-N3-N-166.200-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 166K+200",
+   "lat": 24.328683,
+   "lon": 120.626833,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=475"
+  },
+  {
+   "id": "CCTV-N3-S-166.057-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 166K+057",
+   "lat": 24.329712,
+   "lon": 120.62762,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=365"
+  },
+  {
+   "id": "CCTV-N3-N-164.780-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 164K+780",
+   "lat": 24.335617,
+   "lon": 120.6386,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=474"
+  },
+  {
+   "id": "CCTV-N3-S-162.780-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 162K+780",
+   "lat": 24.344659,
+   "lon": 120.655206,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=25"
+  },
+  {
+   "id": "CCTV-N3-N-161.310-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 161K+310",
+   "lat": 24.356464,
+   "lon": 120.661157,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=590"
+  },
+  {
+   "id": "CCTV-N3-N-159.840-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 159K+840",
+   "lat": 24.369561,
+   "lon": 120.664023,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=422"
+  },
+  {
+   "id": "CCTV-N3-N-159.500-M-大甲北地磅站",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 159K+500",
+   "lat": 24.372378,
+   "lon": 120.664568,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=421"
+  },
+  {
+   "id": "CCTV-N3-S-158.751-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 158K+751",
+   "lat": 24.379529,
+   "lon": 120.665761,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=258"
+  },
+  {
+   "id": "CCTV-N3-N-157.650-M-大甲南地磅站",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 157K+650",
+   "lat": 24.388962,
+   "lon": 120.667944,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=420"
+  },
+  {
+   "id": "CCTV-N3-N-156-I-EN-1-北上入口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 156K+000",
+   "lat": 24.396034,
+   "lon": 120.670009,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1682"
+  },
+  {
+   "id": "CCTV-N3-S-156.651-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 156K+651",
+   "lat": 24.39807,
+   "lon": 120.669504,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=257"
+  },
+  {
+   "id": "CCTV-N3-S-155.690-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 155K+690",
+   "lat": 24.40608,
+   "lon": 120.671379,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=690"
+  },
+  {
+   "id": "CCTV-N3-N-154.771-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 154K+771",
+   "lat": 24.414299,
+   "lon": 120.67522,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=256"
+  },
+  {
+   "id": "CCTV-N3-N-153.360-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 153K+360",
+   "lat": 24.424945,
+   "lon": 120.681816,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=589"
+  },
+  {
+   "id": "CCTV-N3-N-152.790-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 152K+790",
+   "lat": 24.429998,
+   "lon": 120.683258,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=689"
+  },
+  {
+   "id": "CCTV-N3-N-151.710-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 151K+710",
+   "lat": 24.439966,
+   "lon": 120.681748,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=26"
+  },
+  {
+   "id": "CCTV-N3-S-150.610-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 150K+610",
+   "lat": 24.44913,
+   "lon": 120.67879,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=588"
+  },
+  {
+   "id": "CCTV-N3-S-150.250-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 150K+250",
+   "lat": 24.45236,
+   "lon": 120.678409,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=688"
+  },
+  {
+   "id": "CCTV-N3-N-149.511-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 149K+511",
+   "lat": 24.459309,
+   "lon": 120.678744,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=255"
+  },
+  {
+   "id": "CCTV-N3-S-148.110-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 148K+110",
+   "lat": 24.470949,
+   "lon": 120.683579,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=433"
+  },
+  {
+   "id": "CCTV-N3-S-146.970-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 146K+970",
+   "lat": 24.47766,
+   "lon": 120.69183,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=587"
+  },
+  {
+   "id": "CCTV-N3-N-146.101-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 146K+101",
+   "lat": 24.482412,
+   "lon": 120.69891,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=27"
+  },
+  {
+   "id": "CCTV-N3-N-145.250-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 145K+250",
+   "lat": 24.48891,
+   "lon": 120.703419,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=687"
+  },
+  {
+   "id": "CCTV-N3-S-144.171-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 144K+171",
+   "lat": 24.498399,
+   "lon": 120.705575,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=254"
+  },
+  {
+   "id": "CCTV-N3-N-143.693-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 143K+693",
+   "lat": 24.501935,
+   "lon": 120.707816,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=557"
+  },
+  {
+   "id": "CCTV-N3-N-143.630-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 143K+630",
+   "lat": 24.5024,
+   "lon": 120.708283,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=473"
+  },
+  {
+   "id": "CCTV-N3-S-142.916-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 142K+916",
+   "lat": 24.507198,
+   "lon": 120.71307,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=364"
+  },
+  {
+   "id": "CCTV-N3-N-141.815-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 141K+815",
+   "lat": 24.514387,
+   "lon": 120.720471,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=586"
+  },
+  {
+   "id": "CCTV-N3-S-140.835-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 140K+835",
+   "lat": 24.522253,
+   "lon": 120.724948,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=253"
+  },
+  {
+   "id": "CCTV-N3-N-139.931-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 139K+931",
+   "lat": 24.528424,
+   "lon": 120.730473,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=686"
+  },
+  {
+   "id": "CCTV-N3-N-138.948-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 138K+948",
+   "lat": 24.535094,
+   "lon": 120.737144,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=252"
+  },
+  {
+   "id": "CCTV-N3-S-138.721-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 138K+721",
+   "lat": 24.537007,
+   "lon": 120.73844,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=685"
+  },
+  {
+   "id": "CCTV-N3-S-137.450-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 137K+450",
+   "lat": 24.546711,
+   "lon": 120.744622,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=432"
+  },
+  {
+   "id": "CCTV-N3-N-136.675-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 136K+675",
+   "lat": 24.55231,
+   "lon": 120.749081,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=684"
+  },
+  {
+   "id": "CCTV-N3-N-135.900-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 135K+900",
+   "lat": 24.557548,
+   "lon": 120.754168,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=585"
+  },
+  {
+   "id": "CCTV-N3-N-135.390-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 135K+390",
+   "lat": 24.561091,
+   "lon": 120.757416,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=251"
+  },
+  {
+   "id": "CCTV-N3-N-134.988-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 134K+988",
+   "lat": 24.563994,
+   "lon": 120.759327,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=20"
+  },
+  {
+   "id": "CCTV-N3-N-134.650-R-西湖服務區-小車區C",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 134K+650",
+   "lat": 24.5643983,
+   "lon": 120.759905,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1633"
+  },
+  {
+   "id": "CCTV-N3-N-134.630-R-西湖服務區-小車區B",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 134K+630",
+   "lat": 24.564424,
+   "lon": 120.760057,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1632"
+  },
+  {
+   "id": "CCTV-N3-N-134.600-R-西湖服務區-小車區A",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 134K+600",
+   "lat": 24.564617,
+   "lon": 120.760175,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1631"
+  },
+  {
+   "id": "CCTV-N3-S-134.590-R-西湖服務區-大車區",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 134K+590",
+   "lat": 24.564662,
+   "lon": 120.75916,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=462"
+  },
+  {
+   "id": "CCTV-N3-S-134.320-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 134K+320",
+   "lat": 24.570105,
+   "lon": 120.761505,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=23"
+  },
+  {
+   "id": "CCTV-N3-S-133.390-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 133K+390",
+   "lat": 24.57815,
+   "lon": 120.76355,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=584"
+  },
+  {
+   "id": "CCTV-N3-N-131.924-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 131K+924",
+   "lat": 24.587889,
+   "lon": 120.773075,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=30"
+  },
+  {
+   "id": "CCTV-N3-S-131.040-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 131K+040",
+   "lat": 24.5925,
+   "lon": 120.780317,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=472"
+  },
+  {
+   "id": "CCTV-N3-S-130.097-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 130K+097",
+   "lat": 24.59874,
+   "lon": 120.786544,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=250"
+  },
+  {
+   "id": "CCTV-N3-S-129.241-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 129K+241",
+   "lat": 24.604367,
+   "lon": 120.792084,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=683"
+  },
+  {
+   "id": "CCTV-N3-S-128.385-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 128K+385",
+   "lat": 24.608342,
+   "lon": 120.799528,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=11"
+  },
+  {
+   "id": "CCTV-N3-N-127.465-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 127K+465",
+   "lat": 24.6125,
+   "lon": 120.80724,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=583"
+  },
+  {
+   "id": "CCTV-N3-S-125.995-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 125K+995",
+   "lat": 24.624193,
+   "lon": 120.813432,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=363"
+  },
+  {
+   "id": "CCTV-N3-N-125.240-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 125K+240",
+   "lat": 24.6309271,
+   "lon": 120.8151767,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=682"
+  },
+  {
+   "id": "CCTV-N3-S-124-I-WS-1X-南下入口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 124K+530",
+   "lat": 24.635489,
+   "lon": 120.816857,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1679"
+  },
+  {
+   "id": "CCTV-N3-N-124.580-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 124K+580",
+   "lat": 24.636138,
+   "lon": 120.817827,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1678"
+  },
+  {
+   "id": "CCTV-N3-S-124.493-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 124K+493",
+   "lat": 24.636745,
+   "lon": 120.818085,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=249"
+  },
+  {
+   "id": "CCTV-N3-S-123.620-M-後龍北地磅站",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 123K+620",
+   "lat": 24.642977,
+   "lon": 120.824007,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=431"
+  },
+  {
+   "id": "CCTV-N3-S-122.473-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 122K+473",
+   "lat": 24.650384,
+   "lon": 120.831706,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=248"
+  },
+  {
+   "id": "CCTV-N3-S-121.390-M-後龍南地磅站",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 121K+390",
+   "lat": 24.657159,
+   "lon": 120.839412,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=430"
+  },
+  {
+   "id": "CCTV-N3-N-120.430-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 120K+430",
+   "lat": 24.664165,
+   "lon": 120.845096,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=582"
+  },
+  {
+   "id": "CCTV-N3-N-119.203-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 119K+203",
+   "lat": 24.674583,
+   "lon": 120.847374,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=247"
+  },
+  {
+   "id": "CCTV-N3-N-119-I-SN-1-北上入口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 119K+020",
+   "lat": 24.675783,
+   "lon": 120.847833,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1676"
+  },
+  {
+   "id": "CCTV-N3-S-119-I-WS-21-南下入口",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 119K+020",
+   "lat": 24.676235,
+   "lon": 120.846864,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1677"
+  },
+  {
+   "id": "CCTV-N3-S-118.318-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 118K+318",
+   "lat": 24.682857,
+   "lon": 120.847595,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=680"
+  },
+  {
+   "id": "CCTV-N3-S-117.380-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 117K+380",
+   "lat": 24.69023,
+   "lon": 120.851838,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=362"
+  },
+  {
+   "id": "CCTV-N3-S-116.400-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 116K+400",
+   "lat": 24.696895,
+   "lon": 120.858345,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=679"
+  },
+  {
+   "id": "CCTV-N3-N-115.519-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 115K+519",
+   "lat": 24.700927,
+   "lon": 120.865489,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=246"
+  },
+  {
+   "id": "CCTV-N3-S-114.580-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 114K+580",
+   "lat": 24.70452,
+   "lon": 120.874123,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=245"
+  },
+  {
+   "id": "CCTV-N3-N-113.165-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 113K+165",
+   "lat": 24.70964,
+   "lon": 120.887,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=581"
+  },
+  {
+   "id": "CCTV-N3-S-112.203-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 112K+203",
+   "lat": 24.715247,
+   "lon": 120.894113,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=244"
+  },
+  {
+   "id": "CCTV-N3-S-112.065-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 112K+065",
+   "lat": 24.716165,
+   "lon": 120.89492,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=556"
+  },
+  {
+   "id": "CCTV-N3-S-112.020-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 112K+020",
+   "lat": 24.7167,
+   "lon": 120.8953,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=471"
+  },
+  {
+   "id": "CCTV-N3-S-111.040-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 111K+040",
+   "lat": 24.723917,
+   "lon": 120.90035,
+   "url": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=470"
   },
   {
    "id": "CCTV-N3-S-110.560-M",
@@ -6986,6 +11189,15 @@
    "url": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=40300"
   },
   {
+   "id": "CCTV-N3-S-93.550-M",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 93K+550",
+   "lat": 24.7593429185164,
+   "lon": 121.053397008432,
+   "url": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=39350"
+  },
+  {
    "id": "CCTV-N3-S-95.628-M",
    "road": "國道3號",
    "kind": "國道",
@@ -7146,15 +11358,6 @@
    "lat": 24.7983038837761,
    "lon": 121.130812630165,
    "url": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=38370"
-  },
-  {
-   "id": "CCTV-N3-N-78.800-M",
-   "road": "國道3號",
-   "kind": "國道",
-   "name": "國道3號 78K+800",
-   "lat": 24.7991390494123,
-   "lon": 121.174944133362,
-   "url": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=37880"
   },
   {
    "id": "CCTV-N3-S-79.000-O-關西交流道",
@@ -7452,15 +11655,6 @@
    "lat": 24.8924483158184,
    "lon": 121.264780375605,
    "url": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=36260"
-  },
-  {
-   "id": "CCTV-N3-N-62.625-I-大溪系統",
-   "road": "國道3號",
-   "kind": "國道",
-   "name": "國道3號 62K+625",
-   "lat": 24.8925662242211,
-   "lon": 121.264401121547,
-   "url": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=36261"
   },
   {
    "id": "CCTV-N3-S-62.100-O-大溪系統",
@@ -7929,6 +12123,15 @@
    "lat": 24.9592208922786,
    "lon": 121.540640701488,
    "url": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=72890"
+  },
+  {
+   "id": "CCTV-N3-N-42.460-O-土城交流道",
+   "road": "國道3號",
+   "kind": "國道",
+   "name": "國道3號 42K+460",
+   "lat": 24.9595343254547,
+   "lon": 121.432129515727,
+   "url": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=34241"
   },
   {
    "id": "CCTV-N3-N-42.700-M",
@@ -9461,6 +13664,15 @@
    "url": "https://cctvn5.freeway.gov.tw/abs2mjpg/bmjpg?camera=da02e874-e4d2-4ba6-bb42-1703b7d1e0b2"
   },
   {
+   "id": "CCTV-37-0090-386-002",
+   "road": "外環路",
+   "kind": "省道",
+   "name": "外環路 386K+700 台9線386K+700",
+   "lat": 22.614519,
+   "lon": 121.007779,
+   "url": "https://cctv-ss07.thb.gov.tw:443/T9-386K+700/snapshot"
+  },
+  {
    "id": "CCTV-32-0010-423-003",
    "road": "大同路",
    "kind": "省道",
@@ -9639,6 +13851,15 @@
    "lat": 22.931944,
    "lon": 120.268056,
    "url": "https://cctv-ss08.thb.gov.tw:443/T86-10K+648/snapshot"
+  },
+  {
+   "id": "CCTV-54-0860-009-001",
+   "road": "無名道路5",
+   "kind": "省道",
+   "name": "無名道路5 9K+682 台86線9K+682E",
+   "lat": 22.935278,
+   "lon": 120.259444,
+   "url": "https://cctv-ss08.thb.gov.tw:443/T86-9K+682/snapshot"
   },
   {
    "id": "CCTV-54-0860-014-001",
