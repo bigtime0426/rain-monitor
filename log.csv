@@ -7381,3 +7381,11 @@ Error opening input files: En"
 2026-11-07 10:09:10,關渡,台15線 關渡橋近淡水端（0K+500）,臺北市北投區 關渡,1.2,2026-11-07T10:00:00+08:00,9,0.0,0.0,no,False,0.9,路面乾燥無反光且未見雨絲，天氣陰暗但無降雨跡象。,gemini-3.5-flash-lite,,OK
 2026-11-07 10:09:10,國道1號·基隆市,國道1號 1K+000,基隆市安樂區 國一S001K,0.0,2026-11-07T10:00:00+08:00,9,0.5,0.5,yes,True,0.9,路面明顯濕潤並帶有反光，顯示正在下雨。,gemini-3.5-flash-lite,frames/20261107-1009_2.jpg,OK
 2026-11-07 10:09:10,國道1號·基隆市,國道1號 0K+700,基隆市安樂區 國一S001K,0.3,2026-11-07T10:00:00+08:00,9,0.5,0.5,no,False,0.9,路面乾燥且無反光，天空雖陰暗但無雨絲與水花痕跡。,gemini-3.5-flash-lite,frames/20261107-1009_3.jpg,OK
+2026-11-07 10:39:01,國道3號·基隆市,國道3號 4K+110（編號 CCTV-N3-S-4.110-M-2-七堵地磅站-指示牌）,基隆市七堵區 國三S004K,0.0,2026-11-07T10:30:00+08:00,9,0.5,1.0,,,,,,,"Gemini HTTP 0 HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeo"
+2026-11-07 10:39:01,國道3號·基隆市,國道3號 4K+110（編號 CCTV-N3-S-4.110-M-1）,基隆市七堵區 國三S004K,0.0,2026-11-07T10:30:00+08:00,9,0.5,1.0,,,,,,,"Gemini HTTP 0 HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeo"
+2026-11-07 10:39:01,國道1號·基隆市,國道1號 1K+000,基隆市安樂區 國一S001K,0.0,2026-11-07T10:30:00+08:00,9,0.5,1.0,,,,,,,"Gemini HTTP 0 HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeo"
+2026-11-07 10:39:01,國道3號·基隆市,國道3號 7K+110,基隆市七堵區 國三S007K,0.0,2026-11-07T10:30:00+08:00,9,0.5,0.5,,,,,,,"Gemini HTTP 0 HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeo"
+2026-11-07 10:39:01,國道1號·基隆市,國道1號 0K+700,基隆市安樂區 國一S001K,0.3,2026-11-07T10:30:00+08:00,9,0.5,1.0,,,,,,,Gemini HTTP 0 本輪 Gemini 連續逾時，略過
+2026-11-07 10:39:01,國道3號·基隆市,國道3號 7K+950,基隆市七堵區 國三S007K,0.8,2026-11-07T10:30:00+08:00,9,0.5,0.5,,,,,,,Gemini HTTP 0 本輪 Gemini 連續逾時，略過
+2026-11-07 10:39:01,國道1號·基隆市,國道1號 3K+180,基隆市七堵區 七堵,0.8,2026-11-07T10:30:00+08:00,9,0.5,0.5,,,,,,,Gemini HTTP 0 本輪 Gemini 連續逾時，略過
+2026-11-07 10:39:01,國道1號·基隆市,國道1號 2K+640,基隆市七堵區 七堵,1.0,2026-11-07T10:30:00+08:00,9,0.5,0.5,,,,,,,Gemini HTTP 0 本輪 Gemini 連續逾時，略過
