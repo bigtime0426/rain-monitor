@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T15:18:59.965308+08:00",
+ "updated": "2026-11-14T15:29:00.632960+08:00",
  "stats": {
   "國道": {
    "總筆數": 682,
@@ -17,44 +17,8 @@
    "warnings": [],
    "roads": []
   },
-  "高雄市": {
-   "county": "高雄市",
-   "radius": 20,
-   "warnings": [],
-   "roads": []
-  },
   "國道1號·雲林縣": {
    "county": "雲林縣",
-   "radius": 20,
-   "warnings": [],
-   "roads": []
-  },
-  "國道3號·苗栗縣": {
-   "county": "苗栗縣",
-   "radius": 20,
-   "warnings": [],
-   "roads": []
-  },
-  "國道3號·臺中市": {
-   "county": "臺中市",
-   "radius": 20,
-   "warnings": [],
-   "roads": []
-  },
-  "國道1號·彰化縣": {
-   "county": "彰化縣",
-   "radius": 20,
-   "warnings": [],
-   "roads": []
-  },
-  "國道1號·苗栗縣": {
-   "county": "苗栗縣",
-   "radius": 20,
-   "warnings": [],
-   "roads": []
-  },
-  "國道3號·彰化縣": {
-   "county": "彰化縣",
    "radius": 20,
    "warnings": [],
    "roads": []
