@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T04:45:07.247841+08:00",
+ "updated": "2026-11-15T04:51:16.213261+08:00",
  "stats": {
   "國道": {
    "總筆數": 682,
@@ -17,8 +17,32 @@
    "warnings": [],
    "roads": []
   },
+  "國道3號·基隆市": {
+   "county": "基隆市",
+   "radius": 20,
+   "warnings": [],
+   "roads": []
+  },
+  "國道1號·苗栗縣": {
+   "county": "苗栗縣",
+   "radius": 20,
+   "warnings": [],
+   "roads": []
+  },
   "國道3號·新竹縣": {
    "county": "新竹縣",
+   "radius": 20,
+   "warnings": [],
+   "roads": []
+  },
+  "國道3號·新北市": {
+   "county": "新北市",
+   "radius": 20,
+   "warnings": [],
+   "roads": []
+  },
+  "國道1號·基隆市": {
+   "county": "基隆市",
    "radius": 20,
    "warnings": [],
    "roads": []
