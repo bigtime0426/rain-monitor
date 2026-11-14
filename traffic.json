@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T15:49:19.295302+08:00",
+ "updated": "2026-11-14T15:59:17.569756+08:00",
  "stats": {
   "國道": {
    "總筆數": 682,
@@ -11,20 +11,20 @@
   }
  },
  "areas": {
-  "台北中山": {
-   "county": "臺北市",
-   "radius": 20,
-   "warnings": [],
-   "roads": []
-  },
-  "關渡": {
-   "county": "臺北市",
-   "radius": 20,
-   "warnings": [],
-   "roads": []
-  },
   "臺北市": {
    "county": "臺北市",
+   "radius": 20,
+   "warnings": [],
+   "roads": []
+  },
+  "高雄市": {
+   "county": "高雄市",
+   "radius": 20,
+   "warnings": [],
+   "roads": []
+  },
+  "國道1號·臺南市（無鏡頭）": {
+   "county": "臺南市",
    "radius": 20,
    "warnings": [],
    "roads": []
