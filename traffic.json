@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T12:58:59.824860+08:00",
+ "updated": "2026-11-14T13:09:34.060916+08:00",
  "stats": {
   "國道": {
    "總筆數": 682,
@@ -11,6 +11,30 @@
   }
  },
  "areas": {
+  "台北中山": {
+   "county": "臺北市",
+   "radius": 20,
+   "warnings": [],
+   "roads": []
+  },
+  "關渡": {
+   "county": "臺北市",
+   "radius": 20,
+   "warnings": [],
+   "roads": []
+  },
+  "國道3號·彰化縣": {
+   "county": "彰化縣",
+   "radius": 20,
+   "warnings": [],
+   "roads": []
+  },
+  "國道3號·南投縣": {
+   "county": "南投縣",
+   "radius": 20,
+   "warnings": [],
+   "roads": []
+  },
   "國道1號·彰化縣": {
    "county": "彰化縣",
    "radius": 20,
@@ -19,24 +43,6 @@
   },
   "國道3號·臺中市": {
    "county": "臺中市",
-   "radius": 20,
-   "warnings": [],
-   "roads": []
-  },
-  "國道1號·苗栗縣": {
-   "county": "苗栗縣",
-   "radius": 20,
-   "warnings": [],
-   "roads": []
-  },
-  "國道3號·苗栗縣": {
-   "county": "苗栗縣",
-   "radius": 20,
-   "warnings": [],
-   "roads": []
-  },
-  "國道3號·南投縣": {
-   "county": "南投縣",
    "radius": 20,
    "warnings": [],
    "roads": []
