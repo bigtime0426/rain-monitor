@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T16:19:01.524582+08:00",
+ "updated": "2026-11-14T16:29:02.700479+08:00",
  "stats": {
   "國道": {
    "總筆數": 682,
@@ -11,8 +11,38 @@
   }
  },
  "areas": {
+  "高雄市": {
+   "county": "高雄市",
+   "radius": 20,
+   "warnings": [],
+   "roads": []
+  },
   "臺北市": {
    "county": "臺北市",
+   "radius": 20,
+   "warnings": [],
+   "roads": []
+  },
+  "國道1號·彰化縣": {
+   "county": "彰化縣",
+   "radius": 20,
+   "warnings": [],
+   "roads": []
+  },
+  "國道3號·南投縣": {
+   "county": "南投縣",
+   "radius": 20,
+   "warnings": [],
+   "roads": []
+  },
+  "國道1號·雲林縣": {
+   "county": "雲林縣",
+   "radius": 20,
+   "warnings": [],
+   "roads": []
+  },
+  "國道3號·嘉義縣（無鏡頭）": {
+   "county": "嘉義縣",
    "radius": 20,
    "warnings": [],
    "roads": []
@@ -29,8 +59,14 @@
    "warnings": [],
    "roads": []
   },
-  "國道3號·嘉義縣（無鏡頭）": {
-   "county": "嘉義縣",
+  "國道3號·臺南市（無鏡頭）": {
+   "county": "臺南市",
+   "radius": 20,
+   "warnings": [],
+   "roads": []
+  },
+  "國道3號·南投縣（無鏡頭）": {
+   "county": "南投縣",
    "radius": 20,
    "warnings": [],
    "roads": []
