@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T12:49:27.973697+08:00",
+ "updated": "2026-11-14T12:58:59.824860+08:00",
  "stats": {
   "國道": {
    "總筆數": 682,
@@ -11,8 +11,20 @@
   }
  },
  "areas": {
-  "國道3號·新竹市": {
-   "county": "新竹市",
+  "國道1號·彰化縣": {
+   "county": "彰化縣",
+   "radius": 20,
+   "warnings": [],
+   "roads": []
+  },
+  "國道3號·臺中市": {
+   "county": "臺中市",
+   "radius": 20,
+   "warnings": [],
+   "roads": []
+  },
+  "國道1號·苗栗縣": {
+   "county": "苗栗縣",
    "radius": 20,
    "warnings": [],
    "roads": []
@@ -23,26 +35,14 @@
    "warnings": [],
    "roads": []
   },
-  "國道1號·雲林縣": {
-   "county": "雲林縣",
+  "國道3號·南投縣": {
+   "county": "南投縣",
    "radius": 20,
    "warnings": [],
    "roads": []
   },
   "國道3號·雲林縣": {
    "county": "雲林縣",
-   "radius": 20,
-   "warnings": [],
-   "roads": []
-  },
-  "國道1號·嘉義縣": {
-   "county": "嘉義縣",
-   "radius": 20,
-   "warnings": [],
-   "roads": []
-  },
-  "國道1號·彰化縣": {
-   "county": "彰化縣",
    "radius": 20,
    "warnings": [],
    "roads": []
