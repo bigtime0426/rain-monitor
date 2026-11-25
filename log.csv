@@ -13709,3 +13709,5 @@ Error opening input files: Connection rese"
 2026-11-26 07:39:28,國道1號·苗栗縣,國道1號 127K+400,苗栗縣頭屋鄉 國一N128K,1.2,2026-11-26T07:30:00+08:00,9,0.5,0.5,,,,,,,"ffmpeg 失敗：#0 @ 0x560c0c346dc0] Error opening input: Connection reset by peer
 Error opening input file https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=183.
 Error opening input files: Connection rese"
+2026-11-26 07:49:47,國道3號·新北市,國道3號 47K+350,新北市樹林區 桃改樹林分場,0.8,2026-11-26T07:40:00+08:00,10,0.5,0.5,no,False,0.9,路面乾燥且無明顯反光，車輛未濺起水花。,gemini-3.5-flash-lite,frames/20261126-0749_0.jpg,OK
+2026-11-26 07:49:47,國道3號·新北市,國道3號 47K+550,新北市樹林區 桃改樹林分場,0.8,2026-11-26T07:40:00+08:00,10,0.5,0.5,yes,True,0.9,路面明顯濕潤且有反光,gemini-3.5-flash-lite,frames/20261126-0749_1.jpg,OK
