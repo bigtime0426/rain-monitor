@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T09:10:38.023051+00:00",
+ "updated": "2026-11-26T09:25:09.261984+00:00",
  "cameras": [
   {
    "id": "CCTV-12-0150-001-001",
@@ -695,15 +695,6 @@
    "url": "https://cctv-ss06.thb.gov.tw:443/T18-39K+400/snapshot"
   },
   {
-   "id": "CCTV-56-0180-034-001",
-   "road": "台18線",
-   "kind": "省道",
-   "name": "台18線 34K+300 嘉義縣番路鄉觸口龍隱寺(全家超商) 西向路側",
-   "lat": 23.43827,
-   "lon": 120.60715,
-   "url": "https://cctv-ss06.thb.gov.tw:443/T18-34K+300/snapshot"
-  },
-  {
    "id": "CCTV-56-0180-034-002",
    "road": "台18線",
    "kind": "省道",
@@ -711,6 +702,15 @@
    "lat": 23.43827,
    "lon": 120.60757,
    "url": "https://cctv-ss06.thb.gov.tw:443/T18-34K+650/snapshot"
+  },
+  {
+   "id": "CCTV-56-0180-034-001",
+   "road": "台18線",
+   "kind": "省道",
+   "name": "台18線 34K+300 嘉義縣番路鄉觸口龍隱寺(全家超商) 西向路側",
+   "lat": 23.43827,
+   "lon": 120.60715,
+   "url": "https://cctv-ss06.thb.gov.tw:443/T18-34K+300/snapshot"
   },
   {
    "id": "CCTV-56-0180-056-001",
@@ -2106,15 +2106,6 @@
    "lat": 22.96364,
    "lon": 120.642563,
    "url": "https://cctv-ss05.thb.gov.tw:443/T27A-5K+620/snapshot"
-  },
-  {
-   "id": "CCTV-34-027A-001-001",
-   "road": "台27甲線",
-   "kind": "省道",
-   "name": "台27甲線 1K+300 台27甲線1K+300",
-   "lat": 22.9962838,
-   "lon": 120.6408504,
-   "url": "https://cctv-ss06.thb.gov.tw:443/T27A-1K+300/snapshot"
   },
   {
    "id": "CCTV-38-0270-079-001",
@@ -3926,15 +3917,6 @@
    "url": "https://cctv-ss08.thb.gov.tw:443/T86-4K+710/snapshot"
   },
   {
-   "id": "CCTV-54-0860-002-003",
-   "road": "台86線",
-   "kind": "省道",
-   "name": "台86線 2K+500 台86線2K+500W",
-   "lat": 22.931696,
-   "lon": 120.199931,
-   "url": "https://cctv-ss08.thb.gov.tw:443/T86-2K+500-2/snapshot"
-  },
-  {
    "id": "CCTV-54-0860-002-002",
    "road": "台86線",
    "kind": "省道",
@@ -3942,6 +3924,15 @@
    "lat": 22.931696,
    "lon": 120.199931,
    "url": "https://cctv-ss08.thb.gov.tw:443/T86-2K+500-1/snapshot"
+  },
+  {
+   "id": "CCTV-54-0860-002-003",
+   "road": "台86線",
+   "kind": "省道",
+   "name": "台86線 2K+500 台86線2K+500W",
+   "lat": 22.931696,
+   "lon": 120.199931,
+   "url": "https://cctv-ss08.thb.gov.tw:443/T86-2K+500-2/snapshot"
   },
   {
    "id": "CCTV-54-0860-011-001",
@@ -4635,15 +4626,6 @@
    "lat": 24.95282,
    "lon": 121.5413,
    "url": "https://cctv-ss03.thb.gov.tw:443/T9-11K+650/snapshot"
-  },
-  {
-   "id": "CCTV-11-0090-014-001",
-   "road": "台9線",
-   "kind": "省道",
-   "name": "台9線 14K+200 新店區北宜路二段國史館(S)",
-   "lat": 24.95409,
-   "lon": 121.5663,
-   "url": "https://cctv-ss03.thb.gov.tw:443/T9-14K+200/snapshot"
   },
   {
    "id": "CCTV-11-0090-023-002",
@@ -13745,15 +13727,6 @@
    "url": "https://cctv-ss07.thb.gov.tw:443/T65-8K+100/snapshot"
   },
   {
-   "id": "CCTV-12-0650-008-005",
-   "road": "板城路",
-   "kind": "省道",
-   "name": "板城路 8K+300 12K+950下匝道",
-   "lat": 24.99575,
-   "lon": 121.44695,
-   "url": "https://cctv-ss07.thb.gov.tw:443/T65-8K+300/snapshot"
-  },
-  {
    "id": "CCTV-12-0650-008-006",
    "road": "板城路",
    "kind": "省道",
@@ -13761,6 +13734,15 @@
    "lat": 24.99575,
    "lon": 121.44695,
    "url": "https://cctv-ss07.thb.gov.tw:443/T65-8K+400/snapshot"
+  },
+  {
+   "id": "CCTV-12-0650-008-005",
+   "road": "板城路",
+   "kind": "省道",
+   "name": "板城路 8K+300 12K+950下匝道",
+   "lat": 24.99575,
+   "lon": 121.44695,
+   "url": "https://cctv-ss07.thb.gov.tw:443/T65-8K+300/snapshot"
   },
   {
    "id": "CCTV-12-0650-007-002",
